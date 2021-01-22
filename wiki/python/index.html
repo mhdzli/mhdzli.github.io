@@ -1,0 +1,909 @@
+<!DOCTYPE html> <html lang="fa"> <head prefix="og: http://ogp.me/ns#"> <meta charset="UTF-8" /> <meta http-equiv="X-UA-Compatible" content="ie=edge" /> <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <meta name="mobile-web-app-capable" content="yes" /> <meta name="apple-mobile-web-app-capable" content="yes" /> <meta name="application-name" content="محمد زینلی" /> <meta name="apple-mobile-web-app-status-bar-style" content="#fff" /> <meta name="apple-mobile-web-app-title" content="محمد زینلی" /> <title> My Python Learninng Notes - محمد زینلی </title> <link rel="alternate" href="http://localhost:4000/wiki/python/" hreflang="fa" /> <link rel="canonical" href="http://localhost:4000/wiki/python/" /> <meta name="description" content="Python cheat sheet." /> <meta name="referrer" content="no-referrer-when-downgrade" /> <meta property="fb:app_id" content="" /> <meta property="og:site_name" content="My Python Learninng Notes | " /> <meta property="og:title" content="My Python Learninng Notes | " /> <meta property="og:type" content="website" /> <meta property="og:url" content="http://localhost:4000/wiki/python/" /> <meta property="og:description" content="Python cheat sheet." /> <meta property="og:image" content="http://localhost:4000/assets/img/ogp.png" /> <meta property="og:image:width" content="640" /> <meta property="og:image:height" content="640" /> <meta name="twitter:card" content="summary" /> <meta name="twitter:title" content="My Python Learninng Notes | " /> <meta name="twitter:url" content="http://localhost:4000/wiki/python/" /> <meta name="twitter:site" content="@" /> <meta name="twitter:creator" content="@" /> <meta name="twitter:description" content="Python cheat sheet." /> <meta name="twitter:image" content="http://localhost:4000/assets/img/ogp.png" /> <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="محمد زینلی" /> <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" /> <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png" /> <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png" /> <link rel="manifest" href="/assets/favicons/site.webmanifest" /> <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#5bbad5" /> <meta name="apple-mobile-web-app-title" content="Jekyll Klise" /> <meta name="application-name" content="Jekyll Klise" /> <meta name="msapplication-TileColor" content="#da532c" /> <meta name="theme-color" content="#2c2c2c" /> <link rel="stylesheet" href="/assets/css/style.css" /> </head> <body data-theme="dark" class="notransition"> <script> const body = document.body; const data = body.getAttribute("data-theme"); const initTheme = (state) => { if (state === "dark") { body.setAttribute("data-theme", "dark"); } else if (state === "light") { body.removeAttribute("data-theme"); } else { localStorage.setItem("theme", data); } }; initTheme(localStorage.getItem("theme")); setTimeout(() => body.classList.remove("notransition"), 75); </script> <div class="navbar" role="navigation"> <nav class="menu"> <input type="checkbox" id="menu-trigger" class="menu-trigger" /> <label for="menu-trigger"> <span class="menu-icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512" > <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" /> </svg> </span> </label> <a id="mode"> <svg class="mode-sunny" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512" > <title>LIGHT</title> <line x1="256" y1="48" x2="256" y2="96" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="256" y1="416" x2="256" y2="464" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="403.08" y1="108.92" x2="369.14" y2="142.86" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="142.86" y1="369.14" x2="108.92" y2="403.08" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="464" y1="256" x2="416" y2="256" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="96" y1="256" x2="48" y2="256" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="403.08" y1="403.08" x2="369.14" y2="369.14" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="142.86" y1="142.86" x2="108.92" y2="108.92" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <circle cx="256" cy="256" r="80" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> </svg> <svg class="mode-moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512" > <title>DARK</title> <line x1="256" y1="48" x2="256" y2="96" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="256" y1="416" x2="256" y2="464" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="403.08" y1="108.92" x2="369.14" y2="142.86" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="142.86" y1="369.14" x2="108.92" y2="403.08" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="464" y1="256" x2="416" y2="256" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="96" y1="256" x2="48" y2="256" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="403.08" y1="403.08" x2="369.14" y2="369.14" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="142.86" y1="142.86" x2="108.92" y2="108.92" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <circle cx="256" cy="256" r="80" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> </svg> </a> <div class="trigger"> <div class="trigger-container"><a class="menu-link" href="/">خانه</a><a class="menu-link" href="/archive/">بایگانی</a><a class="menu-link" href="/tags/">برچسب‌ها</a><a class="menu-link" href="/wiki/">ویکی</a><a class="menu-link" href="/about/">درباره</a><a class="menu-link rss" href="/feed.xml"> <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 512 512" fill="#ED812E" > <title>خوراک</title> <path d="M108.56,342.78a60.34,60.34,0,1,0,60.56,60.44A60.63,60.63,0,0,0,108.56,342.78Z" /> <path d="M48,186.67v86.55c52,0,101.94,15.39,138.67,52.11s52,86.56,52,138.67h86.66C325.33,312.44,199.67,186.67,48,186.67Z" /> <path d="M48,48v86.56c185.25,0,329.22,144.08,329.22,329.44H464C464,234.66,277.67,48,48,48Z" /> </svg> </a> </div> </div> </nav> </div> <div class="wrapper post"> <main class="page-content" aria-label="Content"> <article itemscope itemtype="https://schema.org/BlogPosting"> <header class="header"> <div class="tags"> <span itemprop="keywords"> <a class="tag" href="/tags/#unix-linux">UNIX/LINUX</a>, <a class="tag" href="/tags/#foss">FOSS</a>, <a class="tag" href="/tags/#python">PYTHON</a> </span> </div> <h1 class="header-title" itemprop="headline">My Python Learninng Notes</h1> <div class="post-meta"> <time class="header-date" datetime="2021-01-05T08:10:47+03:30" itemprop="datePublished"> 16 دی، 1399 </time> <span itemprop="author" itemscope itemtype="https://schema.org/Person"> <span itemprop="name">محمد زینلی</span> </span> <time hidden class="date-modify" datetime="" itemprop="dateModified"> 16 دی، 1399 </time> <span hidden itemprop="publisher" itemtype="Person">محمد زینلی</span> <span hidden itemprop="image"></span> <span hidden itemprop="mainEntityOfPage"><h1 id="python-learning-course">Python Learning Course</h1> </span> </div> </header> <div class="page-content" itemprop="articleBody" dir="ltr" align="left"> <h1 id="python-learning-course"> <a href="#python-learning-course" class="anchor-head"></a> Python Learning Course </h1> <!-- vim-markdown-toc GitLab --> <ul> <li><a href="#session-1">Session 1</a></li> <li><a href="#install">Install</a></li> <li><a href="#python2-vs-python3">Python2 vs Python3</a></li> <li><a href="#code-editors">Code Editors</a></li> <li><a href="#python-cheat-sheets">Python Cheat Sheets</a></li> <li><a href="#primitive-datatypes-and-operators">Primitive Datatypes and Operators</a> <ul> <li><a href="#mathematical-operations">Mathematical Operations</a></li> <li><a href="#variables">Variables</a> <ul> <li><a href="#integer">integer</a></li> <li><a href="#complex-numbers">Complex Numbers</a></li> <li><a href="#string">string</a> <ul> <li><a href="#string-methods">String Methods</a></li> </ul> </li> <li><a href="#float">float</a></li> <li><a href="#booleans-and-logical-operators">Booleans and Logical operators</a></li> <li><a href="#convert-variable-types">Convert Variable Types</a></li> </ul> </li> <li><a href="#print-function">print Function</a></li> <li><a href="#input-function">input Function</a></li> </ul> </li> <li><a href="#session-2">Session 2</a></li> <li><a href="#linter">Linter</a></li> <li><a href="#python-enhancement-proposals">Python Enhancement Proposals</a></li> <li><a href="#source-code-encoding">Source Code Encoding</a></li> <li><a href="#control-flow-and-iterables">Control Flow and Iterables</a> <ul> <li><a href="#if-statement">if Statement</a></li> <li><a href="#for-loops">for Loops</a></li> <li><a href="#while-loops">while Loops</a></li> <li><a href="#break-and-continue-statements-and-else-clauses-on-loops">break and continue Statements, and else Clauses on Loops</a></li> <li><a href="#iterable-object">Iterable Object</a></li> </ul> </li> <li><a href="#session-3">Session 3</a></li> <li><a href="#handling-exceptions">Handling Exceptions</a></li> <li><a href="#session-4">Session 4</a></li> <li><a href="#functions">Functions</a> <ul> <li><a href="#create-a-function">Create A Function</a></li> <li><a href="#procedures-and-functions">Procedures and Functions</a></li> <li><a href="#positional-arguments-and-keyword-arguments">Positional Arguments And Keyword Arguments</a> <ul> <li><a href="#default-argument-values">Default Argument Values</a></li> <li><a href="#special-parameters">Special Parameters</a></li> <li><a href="#unpacking-argument-lists">Unpacking Argument Lists</a></li> </ul> </li> <li><a href="#returning-multiple-values-with-tuple-assignments">Returning Multiple Values (with tuple assignments)</a></li> <li><a href="#function-scope">Function Scope</a></li> <li><a href="#first-class-and-anonymous-functions">First Class And Anonymous Functions</a></li> <li><a href="#list-and-dictionary-comprehensions">List And Dictionary Comprehensions</a></li> <li><a href="#function-annotations">Function Annotations</a></li> </ul> </li> <li><a href="#readwrite-fromto-a-file">Read/Write From/To A File</a></li> </ul> <!-- vim-markdown-toc --> <hr /> <p>Session 1 —</p> <h2 id="install"> <a href="#install" class="anchor-head"></a> Install </h2> <ul> <li>windows <ul> <li>Set the <code class="language-plaintext highlighter-rouge">Add Python *.* to PATH</code> option during the installation process.</li> </ul> </li> <li>linux/mac</li> <li><a href="https://extendsclass.com/python.html">online interpreter</a></li> </ul> <h2 id="python2-vs-python3"> <a href="#python2-vs-python3" class="anchor-head"></a> Python2 vs Python3 </h2> <ul> <li>Python3 history <ul> <li>Python 3.0 - December 3, 2008</li> <li>Python 3.1 - 2009</li> <li>Python 3.2 - 2011</li> <li>Python 3.3 - 2012</li> <li>Python 3.4 - 2014</li> <li>Python 3.5 - 2015</li> <li>Python 3.6 - 2016</li> <li>Python 3.7 - 2018</li> <li>Python 3.8 - 2019</li> <li>Python 3.9 - 2020</li> </ul> </li> <li>Key differences</li> </ul> <table> <thead> <tr> <th>Python3</th> <th>Pythom2</th> </tr> </thead> <tbody> <tr> <td>syntax is simpler and easily understandable.</td> <td>syntax is comparatively difficult to understand</td> </tr> <tr> <td>default storing of strings is Unicode</td> <td>define Unicode string value with “u.”</td> </tr> <tr> <td>value of variables never changes</td> <td>value of the global variable will be changed inside a for-loop</td> </tr> <tr> <td>exceptions, enclosed in parenthesis</td> <td>exceptions, enclosed in notations</td> </tr> <tr> <td>ordering comparisons are simplified</td> <td>rules of ordering comparison are complex</td> </tr> <tr> <td>offers Range() function to perform iterations</td> <td>the xrange() is used for iterations</td> </tr> </tbody> </table> <p>Example:</p> <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># Python 3
+</span><span class="k">print</span><span class="p">(</span><span class="s">"Hello World!"</span><span class="p">)</span>
+
+<span class="c1"># Python 2
+</span><span class="k">print</span> <span class="s">"Hello World!"</span></code></pre></figure> <ul> <li>Python2 EOL (End of Life) 2020</li> </ul> <h2 id="code-editors"> <a href="#code-editors" class="anchor-head"></a> Code Editors </h2> <ul> <li>Python <ul> <li><a href="https://docs.python.org/3/library/idle.html">idle</a></li> <li><a href="https://www.jetbrains.com/pycharm/">pycharm</a></li> <li><a href="https://www.spyder-ide.org/">spyder</a> Vim Mode: <code class="language-plaintext highlighter-rouge">pip install git+git://github.com/spyder-ide/spyder.vim.git</code></li> <li><a href="https://www.anaconda.com/">anaconda</a></li> <li><a href="">jupyter-notebook</a></li> </ul> </li> <li>General <ul> <li><a href="https://code.visualstudio.com">Vscode</a> <ul> <li><a href="https://github.com/VSCodium/vscodium/releases">Vscodium</a></li> <li><a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python">python plugin</a></li> </ul> </li> <li><a href="https://www.vim.org/">Vim</a>/<a href="https://neovim.io/">Neovim</a> + <a href="https://github.com/neoclide/coc.nvim">Coc</a></li> </ul> </li> <li>Online Interpreter <ul> <li><a href="https://extendsclass.com/python.html">extendsclass</a></li> </ul> </li> </ul> <h2 id="python-cheat-sheets"> <a href="#python-cheat-sheets" class="anchor-head"></a> Python Cheat Sheets </h2> <ul> <li><a href="https://zealdocs.org/download.html">zeal</a></li> <li><a href="http://cht.sh/">cheat.sh</a> <code class="language-plaintext highlighter-rouge">curl cheat.sh/python</code></li> </ul> <h2 id="primitive-datatypes-and-operators"> <a href="#primitive-datatypes-and-operators" class="anchor-head"></a> Primitive Datatypes and Operators </h2> <h3 id="mathematical-operations"> <a href="#mathematical-operations" class="anchor-head"></a> Mathematical Operations </h3> <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># Numbers
+</span><span class="mi">3</span>    <span class="c1"># =&gt; 3
+</span>
+<span class="c1"># Simple math
+</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span>     <span class="c1"># =&gt; 2
+</span><span class="mi">8</span> <span class="o">-</span> <span class="mi">1</span>     <span class="c1"># =&gt; 7
+</span><span class="mi">10</span> <span class="o">*</span> <span class="mi">2</span>    <span class="c1"># =&gt; 20
+</span><span class="mi">35</span> <span class="o">/</span> <span class="mi">5</span>    <span class="c1"># =&gt; 7.0
+</span>
+
+<span class="c1">#Integer division rounds down for both positive and negative numbers.
+</span><span class="mi">5</span> <span class="o">//</span> <span class="mi">3</span>         <span class="c1"># =&gt; 1
+</span><span class="o">-</span><span class="mi">5</span> <span class="o">//</span> <span class="mi">3</span>        <span class="c1"># =&gt; -2
+</span><span class="mf">5.0</span> <span class="o">//</span> <span class="mf">3.0</span>     <span class="c1"># =&gt; 1.0 # works on floats too
+</span><span class="o">-</span><span class="mf">5.0</span> <span class="o">//</span> <span class="mf">3.0</span>    <span class="c1"># =&gt; -2.0
+</span>
+
+<span class="c1"># The result of division is always a float
+</span><span class="mf">10.0</span> <span class="o">/</span> <span class="mi">3</span>    <span class="c1"># =&gt; 3.3333333333333335
+</span>
+<span class="c1"># Modulo operation
+</span><span class="mi">7</span> <span class="o">%</span> <span class="mi">3</span>     <span class="c1"># =&gt; 1
+# i % j have the same sign as j, unlike C
+</span><span class="o">-</span><span class="mi">7</span> <span class="o">%</span> <span class="mi">3</span>    <span class="c1"># =&gt; 2
+</span>
+<span class="c1"># Exponentiation (x**y, x to the yth power)
+</span><span class="mi">2</span><span class="o">**</span><span class="mi">3</span>    <span class="c1"># =&gt; 8
+</span>
+<span class="c1"># Enforce precedence with parentheses
+</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">*</span> <span class="mi">2</span>      <span class="c1"># =&gt; 7
+</span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">3</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2</span>    <span class="c1"># =&gt; 8</span></code></pre></figure> <h3 id="variables"> <a href="#variables" class="anchor-head"></a> Variables </h3> <p>There are no declarations, only assignments. Convention is to use lower_case_with_underscores</p> <h4 id="integer"> <a href="#integer" class="anchor-head"></a> integer </h4> <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">nunber</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">number</span>    <span class="c1"># =&gt; 5
+</span>
+<span class="c1"># Define an integer in binry
+</span><span class="n">number</span> <span class="o">=</span> <span class="mb">0b10</span>
+<span class="n">number</span>    <span class="c1"># =&gt; 2
+</span><span class="nb">bin</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>    <span class="c1"># =&gt; 0b10
+</span>
+<span class="c1"># Define an integer in hexadecimal
+</span><span class="n">number</span> <span class="o">=</span> <span class="mh">0x10</span>
+<span class="n">number</span>    <span class="c1"># =&gt; 16
+</span><span class="nb">hex</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>    <span class="c1"># =&gt; 0x10</span></code></pre></figure> <h4 id="complex-numbers"> <a href="#complex-numbers" class="anchor-head"></a> Complex Numbers </h4> <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">x</span> <span class="o">=</span> <span class="mi">0</span> <span class="o">+</span> <span class="mf">1j</span>
+<span class="n">x</span> <span class="o">*</span> <span class="n">x</span>    <span class="c1"># =&gt; (-1+0j)</span></code></pre></figure> <h4 id="string"> <a href="#string" class="anchor-head"></a> string </h4> <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">string</span> <span class="o">=</span> <span class="s">"I'm a string variable"</span>
+<span class="n">string</span>        <span class="c1"># =&gt; "I'm a string variable"
+</span><span class="n">string</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>     <span class="c1"># =&gt; "I"
+</span><span class="n">string</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>    <span class="c1"># =&gt; "e"
+</span><span class="n">string</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>   <span class="c1"># =&gt; "I'm"
+</span>
+<span class="c1"># Strings are created with " or '
+</span><span class="s">"This is a string."</span>
+<span class="s">'This is also a string.'</span>
+
+<span class="c1"># Strings can be added too
+</span><span class="s">"Hello "</span> <span class="o">+</span> <span class="s">"world!"</span>    <span class="c1"># =&gt; "Hello world!"
+# String literals (but not variables) can be concatenated without 
+# using '+'
+</span><span class="s">"Hello "</span> <span class="s">"world!"</span>      <span class="c1"># =&gt; "Hello world!"
+</span>
+<span class="c1"># A string can be treated like a list of characters
+</span><span class="s">"Hello world!"</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>    <span class="c1"># =&gt; 'H'
+</span>
+<span class="c1"># You can find the length of a string
+</span><span class="nb">len</span><span class="p">(</span><span class="s">"This is a string"</span><span class="p">)</span>    <span class="c1"># =&gt; 16
+</span>
+<span class="c1"># You can also format using f-strings or formatted string literals 
+# (in Python 3.6+)
+</span><span class="n">name</span> <span class="o">=</span> <span class="s">"Reiko"</span>
+<span class="s">f"She said her name is </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s">."</span>   <span class="c1"># =&gt; "She said her name is Reiko"
+# You can basically put any Python expression inside the braces and 
+# it will be output in the string.
+</span><span class="s">f"</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s"> is </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">name</span><span class="p">)</span><span class="si">}</span><span class="s"> characters long."</span>   <span class="c1"># =&gt; "Reiko is 5 
+</span>						<span class="c1"># characters long."
+</span>
+<span class="n">multi_line_string</span> <span class="o">=</span><span class="s">"""
+First line
+Second line
+...
+Last line
+"""</span>
+<span class="n">multi_line_string</span>    <span class="c1"># =&gt; '\nFirst line\nSecond line\n...\nLast line\n'</span></code></pre></figure> <h5 id="string-methods"> String Methods </h5> <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="nb">str</span><span class="p">.</span><span class="n">title</span><span class="p">()</span>
+<span class="s">"""
+Return a titlecased version of the string where words start with an 
+uppercase character and the remaining characters are lowercase.
+"""</span>
+
+<span class="s">'Hello world'</span><span class="p">.</span><span class="n">title</span><span class="p">()</span>   <span class="c1"># =&gt; 'Hello World'
+</span>
+<span class="nb">str</span><span class="p">.</span><span class="n">strip</span><span class="p">()</span>
+<span class="s">"""
+Return a copy of the string with the leading and trailing characters
+removed. The chars argument is a string specifying the set of 
+characters to be removed. If omitted or None, the chars argument 
+defaults to removing whitespace. The chars argument is not a 
+prefix or suffix; rather, all combinations of its 
+values are stripped.
+"""</span>
+
+<span class="s">'   spacious   '</span><span class="p">.</span><span class="n">strip</span><span class="p">()</span>		  <span class="c1"># =&gt; 'spacious'
+</span><span class="s">'www.example.com'</span><span class="p">.</span><span class="n">strip</span><span class="p">(</span><span class="s">'cmowz.'</span><span class="p">)</span>	  <span class="c1"># =&gt; 'example'
+</span>
+<span class="nb">str</span><span class="p">.</span><span class="n">rstrip</span><span class="p">()</span>
+<span class="s">"""
+Return a copy of the string with trailing characters removed. The 
+chars argument is a string specifying the set of characters to be 
+removed. If omitted or None, the chars argument defaults to removing
+whitespace. The chars argument is not a suffix; rather, all 
+combinations of its values are stripped.
+"""</span>
+
+<span class="nb">str</span><span class="p">.</span><span class="n">lstrip</span><span class="p">()</span>
+<span class="s">"""
+Return a copy of the string with leading characters removed. The 
+chars argument is a string specifying the set of characters to be 
+removed. If omitted or None, the chars argument defaults to removing 
+whitespace. The chars argument is not a prefix; rather, all 
+combinations of its values are stripped.
+"""</span>
+
+<span class="nb">str</span><span class="p">.</span><span class="n">find</span><span class="p">(</span><span class="n">sub</span><span class="p">[,</span> <span class="n">start</span><span class="p">[,</span> <span class="n">end</span><span class="p">]])</span>
+<span class="s">"""
+Return the lowest index in the string where substring sub is found 
+within the slice s[start:end]. Optional arguments start and end are
+interpreted as in slice notation. Return -1 if sub is not found.
+"""</span>
+
+<span class="s">"""
+ Note The find() method should be used only if you need to know the
+position of sub. To check if sub is a substring or not, use the in
+operator:
+"""</span>
+<span class="s">'Py'</span> <span class="ow">in</span> <span class="s">'Python'</span>   <span class="c1"># =&gt; True
+</span>
+<span class="nb">str</span><span class="p">.</span><span class="n">replace</span><span class="p">(</span><span class="n">old</span><span class="p">,</span> <span class="n">new</span><span class="p">[,</span> <span class="n">count</span><span class="p">])</span>
+<span class="s">"""
+Return a copy of the string with all occurrences of substring old
+replaced by new. If the optional argument count is given, only the
+first count occurrences are replaced.
+"""</span>
+
+<span class="nb">str</span><span class="p">.</span><span class="n">lower</span><span class="p">()</span>
+<span class="s">"""
+Return a copy of the string with all the cased characters 4 
+converted to lowercase.
+"""</span>
+
+<span class="nb">str</span><span class="p">.</span><span class="n">upper</span><span class="p">()</span>
+<span class="s">"""
+Return a copy of the string with all the cased characters 4 
+converted to uppercase. Note that s.upper().isupper() might 
+be False if s contains uncased characters or if the Unicode 
+category of the resulting character(s) is not “Lu” (Letter,
+uppercase), but e.g. “Lt” (Letter, titlecase).
+"""</span>
+
+<span class="nb">str</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="n">sep</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">maxsplit</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+<span class="s">"""
+Return a list of the words in the string, using sep as the delimiter string. 
+If maxsplit is given, at most maxsplit splits are done (thus, the list will 
+have at most maxsplit+1 elements). If maxsplit is not specified or -1, then 
+there is no limit on the number of splits (all possible splits are made).
+If sep is given, consecutive delimiters are not grouped together and are deemed
+to delimit empty strings (for example, '1,,2'.split(',') returns ['1', '', '2']). 
+The sep argument may consist of multiple characters (for example, 
+'1&lt;&gt;2&lt;&gt;3'.split('&lt;&gt;') returns ['1', '2', '3']). Splitting an empty string with a 
+specified separator returns [''].
+"""</span>
+<span class="s">'1,2,3'</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="s">','</span><span class="p">)</span>		  <span class="c1"># =&gt; ['1', '2', '3']
+</span><span class="s">'1,2,3'</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="s">','</span><span class="p">,</span> <span class="n">maxsplit</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>	  <span class="c1"># =&gt; ['1', '2,3']
+</span><span class="s">'1,2,,3,'</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="s">','</span><span class="p">)</span>		  <span class="c1"># =&gt; ['1', '2', '', '3', '']
+</span>
+<span class="nb">str</span><span class="p">.</span><span class="n">splitlines</span><span class="p">([</span><span class="n">keepends</span><span class="p">])</span>
+<span class="s">"""
+Return a list of the lines in the string, breaking at line boundaries. Line 
+breaks are not included in the resulting list unless keepends is given and true.
+This method splits on the following line boundaries. In particular, the 
+boundaries are a superset of universal newlines.
+
+Representation	Description
+-----------------------------===============
+</span><span class="se">\n</span><span class="s">		Line Feed
+</span><span class="se">\r</span><span class="s">		Carriage Return
+</span><span class="se">\r\n</span><span class="s">		Carriage Return + Line Feed
+</span><span class="se">\v</span><span class="s"> or </span><span class="se">\x0b</span><span class="s">	Line Tabulation
+</span><span class="se">\f</span><span class="s"> or </span><span class="se">\x0c</span><span class="s">	Form Feed
+</span><span class="se">\x1c</span><span class="s">		File Separator
+</span><span class="se">\x1d</span><span class="s">		Group Separator
+</span><span class="se">\x1e</span><span class="s">		Record Separator
+</span><span class="se">\x85</span><span class="s">		Next Line (C1 Control Code)
+</span><span class="se">\u2028</span><span class="s">		Line Separator
+</span><span class="se">\u2029</span><span class="s">		Paragraph Separator
+"""</span>
+
+<span class="nb">sorted</span><span class="p">(</span><span class="s">"This is a test string from Andrew"</span><span class="p">.</span><span class="n">split</span><span class="p">(),</span> <span class="n">key</span><span class="o">=</span><span class="nb">str</span><span class="p">.</span><span class="n">lower</span><span class="p">)</span>
+<span class="s">"""
+# =&gt; ['a', 'Andrew', 'from', 'is', 'string', 'test', 'This']
+"""</span></code></pre></figure> <h4 id="float"> <a href="#float" class="anchor-head"></a> float </h4> <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">number</span> <span class="o">=</span> <span class="mi">45</span>
+<span class="n">real_number</span> <span class="o">=</span> <span class="mf">3.14159265359</span></code></pre></figure> <h4 id="booleans-and-logical-operators"> <a href="#booleans-and-logical-operators" class="anchor-head"></a> Booleans and Logical operators </h4> <p>Boolean values are primitives (Note: the capitalization)</p> <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="bp">True</span>     <span class="c1"># =&gt; True
+</span><span class="bp">False</span>    <span class="c1"># =&gt; False
+</span>
+<span class="c1"># negate with not
+</span><span class="ow">not</span> <span class="bp">True</span>     <span class="c1"># =&gt; False
+</span><span class="ow">not</span> <span class="bp">False</span>    <span class="c1"># =&gt; True
+</span>
+<span class="c1"># Boolean Operators
+# Note "and" and "or" are case-sensitive
+</span><span class="bp">True</span> <span class="ow">and</span> <span class="bp">False</span>    <span class="c1"># =&gt; False
+</span><span class="bp">False</span> <span class="ow">or</span> <span class="bp">True</span>     <span class="c1"># =&gt; True
+</span>
+<span class="c1"># True and False are actually 1 and 0 but with different keywords
+</span><span class="bp">True</span> <span class="o">+</span> <span class="bp">True</span>   <span class="c1"># =&gt; 2
+</span><span class="bp">True</span> <span class="o">*</span> <span class="mi">8</span>      <span class="c1"># =&gt; 8
+</span><span class="bp">False</span> <span class="o">-</span> <span class="mi">5</span>     <span class="c1"># =&gt; -5
+</span>
+<span class="c1"># Comparison operators look at the numerical value of True and False
+</span><span class="mi">0</span> <span class="o">==</span> <span class="bp">False</span>    <span class="c1"># =&gt; True
+</span><span class="mi">1</span> <span class="o">==</span> <span class="bp">True</span>     <span class="c1"># =&gt; True
+</span><span class="mi">2</span> <span class="o">==</span> <span class="bp">True</span>     <span class="c1"># =&gt; False
+</span><span class="o">-</span><span class="mi">5</span> <span class="o">!=</span> <span class="bp">False</span>   <span class="c1"># =&gt; True
+</span>
+<span class="s">"""
+Using boolean logical operators on ints casts them to booleans for
+evaluation, but their non-cast value is returned
+Don't mix up with bool(ints) and bitwise and/or (&amp;,|)
+"""</span>
+<span class="nb">bool</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>       <span class="c1"># =&gt; False
+</span><span class="nb">bool</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>       <span class="c1"># =&gt; True
+</span><span class="nb">bool</span><span class="p">(</span><span class="o">-</span><span class="mi">6</span><span class="p">)</span>      <span class="c1"># =&gt; True
+</span><span class="mi">0</span> <span class="ow">and</span> <span class="mi">2</span>       <span class="c1"># =&gt; 0
+</span><span class="o">-</span><span class="mi">5</span> <span class="ow">or</span> <span class="mi">0</span>       <span class="c1"># =&gt; -5
+</span>
+<span class="c1"># Equality is ==
+</span><span class="mi">1</span> <span class="o">==</span> <span class="mi">1</span>    <span class="c1"># =&gt; True
+</span><span class="mi">2</span> <span class="o">==</span> <span class="mi">1</span>    <span class="c1"># =&gt; False
+</span>
+<span class="c1"># Inequality is !=
+</span><span class="mi">1</span> <span class="o">!=</span> <span class="mi">1</span>    <span class="c1"># =&gt; False
+</span><span class="mi">2</span> <span class="o">!=</span> <span class="mi">1</span>    <span class="c1"># =&gt; True
+</span>
+<span class="c1"># More comparisons
+</span><span class="mi">1</span> <span class="o">&lt;</span> <span class="mi">10</span>    <span class="c1"># =&gt; True
+</span><span class="mi">1</span> <span class="o">&gt;</span> <span class="mi">10</span>    <span class="c1"># =&gt; False
+</span><span class="mi">2</span> <span class="o">&lt;=</span> <span class="mi">2</span>    <span class="c1"># =&gt; True
+</span><span class="mi">2</span> <span class="o">&gt;=</span> <span class="mi">2</span>    <span class="c1"># =&gt; True
+</span>
+<span class="c1"># Seeing whether a value is in a range
+</span><span class="mi">1</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="ow">and</span> <span class="mi">2</span> <span class="o">&lt;</span> <span class="mi">3</span>    <span class="c1"># =&gt; True
+</span><span class="mi">2</span> <span class="o">&lt;</span> <span class="mi">3</span> <span class="ow">and</span> <span class="mi">3</span> <span class="o">&lt;</span> <span class="mi">2</span>    <span class="c1"># =&gt; False
+# Chaining makes this look nicer
+</span><span class="mi">1</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="o">&lt;</span> <span class="mi">3</span>    <span class="c1"># =&gt; True
+</span><span class="mi">2</span> <span class="o">&lt;</span> <span class="mi">3</span> <span class="o">&lt;</span> <span class="mi">2</span>    <span class="c1"># =&gt; False
+</span>
+<span class="c1"># (is vs. ==) is checks if two variables refer to the same object,
+# but == checks if the objects pointed to have the same values.
+</span><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">b</span> <span class="ow">is</span> <span class="n">a</span>              <span class="c1"># =&gt; True, a and b refer to the same object
+</span>
+<span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>    <span class="c1"># Point a at a new list, [1, 2, 3, 4]
+</span><span class="n">b</span> <span class="o">=</span> <span class="n">a</span>               <span class="c1"># Point b at what a is pointing to
+</span><span class="n">b</span> <span class="ow">is</span> <span class="n">a</span>              <span class="c1"># =&gt; True, a and b refer to the same object
+</span><span class="n">b</span> <span class="o">==</span> <span class="n">a</span>              <span class="c1"># =&gt; True, a's and b's objects are equal
+</span><span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>  <span class="c1"># Point b at a new list, [1, 2, 3, 4]
+</span><span class="n">b</span> <span class="ow">is</span> <span class="n">a</span>              <span class="c1"># =&gt; False, a and b do not refer to the same object
+</span><span class="n">b</span> <span class="o">==</span> <span class="n">a</span>              <span class="c1"># =&gt; True, a's and b's objects are equal
+</span><span class="n">b</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">a</span>
+<span class="s">"""
+# =&gt;
+True, a's and b's objects are equal but a and b do 
+not refer to the same object
+"""</span>
+
+<span class="c1"># id(some_var) returns the address of the memory location that "some_var"
+# references
+</span>
+<span class="c1"># None is an object
+</span><span class="bp">None</span>    <span class="c1"># =&gt; None
+</span>
+<span class="c1"># Don't use the equality "==" symbol to compare objects to None
+# Use "is" instead. This checks for equality of object identity.
+</span><span class="s">"etc"</span> <span class="ow">is</span> <span class="bp">None</span>    <span class="c1"># =&gt; False
+</span><span class="bp">None</span> <span class="ow">is</span> <span class="bp">None</span>     <span class="c1"># =&gt; True
+</span>
+<span class="c1"># None, 0, and empty strings/lists/dicts/tuples all evaluate to False.
+# All other values are True
+</span><span class="nb">bool</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>     <span class="c1"># =&gt; False
+</span><span class="nb">bool</span><span class="p">(</span><span class="s">""</span><span class="p">)</span>    <span class="c1"># =&gt; False
+</span><span class="nb">bool</span><span class="p">([])</span>    <span class="c1"># =&gt; False
+</span><span class="nb">bool</span><span class="p">({})</span>    <span class="c1"># =&gt; False
+</span><span class="nb">bool</span><span class="p">(())</span>    <span class="c1"># =&gt; False</span></code></pre></figure> <h4 id="convert-variable-types"> <a href="#convert-variable-types" class="anchor-head"></a> Convert Variable Types </h4> <p>You can use type(variable) to get the type of variable.</p> <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">string_as_float</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">string</span><span class="p">)</span>
+<span class="n">real_number_as_int</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">real_number</span><span class="p">)</span>
+<span class="n">number_as_bool</span> <span class="o">=</span> <span class="nb">bool</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>
+<span class="n">boolean_as_str</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">boolean</span><span class="p">)</span></code></pre></figure> <h3 id="print-function"> <a href="#print-function" class="anchor-head"></a> print Function </h3> <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">print</span><span class="p">(</span><span class="s">"I'm Python. Nice to meet you!"</span><span class="p">)</span>    <span class="c1"># =&gt; I'm Python. Nice to meet you!
+</span>
+<span class="c1"># By default the print function also prints out a newline at the end.
+# Use the optional argument end to change the end string.
+</span><span class="k">print</span><span class="p">(</span><span class="s">"Hello, World"</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s">"!"</span><span class="p">)</span>    <span class="c1"># =&gt; Hello, World!</span></code></pre></figure> <h3 id="input-function"> <a href="#input-function" class="anchor-head"></a> input Function </h3> <p>Simple way to get input data from console</p> <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">input_string_var</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter some data: "</span><span class="p">)</span> <span class="c1"># Returns the data as a string</span></code></pre></figure> <hr /> <p>Session 2 —</p> <h2 id="linter"> <a href="#linter" class="anchor-head"></a> Linter </h2> <p>A linter, is a tool that analyzes source code to flag programming errors, bugs, stylistic errors, and suspicious constructs.</p> <p><a href="https://pylint.org/">Pylint</a> is a tool that checks for errors in Python code, tries to enforce a coding standard and looks for code smells. It can also look for certain type errors, it can recommend suggestions about how particular blocks can be refactored and can offer you details about the code’s complexity.</p> <h2 id="python-enhancement-proposals"> <a href="#python-enhancement-proposals" class="anchor-head"></a> <a href="https://www.python.org/dev/peps/">Python Enhancement Proposals</a> </h2> <p>How to Write Beautiful Python Code. <a href="https://pep8.org">PEP 8</a> exists to improve the readability of Python code.</p> <h2 id="source-code-encoding"> <a href="#source-code-encoding" class="anchor-head"></a> Source Code Encoding </h2> <p>By default, Python source files are treated as encoded in UTF-8. In that encoding, characters of most languages in the world can be used simultaneously in string literals, identifiers and comments — although the standard library only uses ASCII characters for identifiers, a convention that any portable code should follow. To display all these characters properly, your editor must recognize that the file is UTF-8, and it must use a font that supports all the characters in the file.</p> <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># To declare that Windows-1252 encoding is to be used
+# -*- coding: cp1252 -*-</span></code></pre></figure> <h2 id="control-flow-and-iterables"> <a href="#control-flow-and-iterables" class="anchor-head"></a> Control Flow and Iterables </h2> <p>Indentation is significant in Python! Convention is to use four spaces, not tabs.</p> <h3 id="if-statement"> <a href="#if-statement" class="anchor-head"></a> if Statement </h3> <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># Here is an if statement.
+# This prints "some_var is smaller than 10"
+# In python "else if" is spelled "elif".
+# Also, you need a colon after the elif and the else.
+</span>
+<span class="k">if</span> <span class="n">some_var</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"some_var is totally bigger than 10."</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">some_var</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>    <span class="c1"># This elif clause is optional.
+</span>    <span class="k">print</span><span class="p">(</span><span class="s">"some_var is smaller than 10."</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>                  <span class="c1"># This is optional too.
+</span>    <span class="k">print</span><span class="p">(</span><span class="s">"some_var is indeed 10."</span><span class="p">)</span>
+
+<span class="c1"># Putting a simple if-then-else statement on one line (Ternary Operator)
+</span><span class="n">value_when_true</span> <span class="k">if</span> <span class="n">condition</span> <span class="k">else</span> <span class="n">value_when_false</span>
+
+<span class="n">body_temperature</span> <span class="o">=</span> <span class="mi">39</span>
+<span class="n">have_fever</span> <span class="o">=</span> <span class="bp">True</span> <span class="k">if</span> <span class="n">body_temperature</span> <span class="o">&gt;</span> <span class="mi">37</span> <span class="k">else</span> <span class="bp">False</span>	  <span class="c1"># =&gt; have_fever = True</span></code></pre></figure> <h3 id="for-loops"> <a href="#for-loops" class="anchor-head"></a> for Loops </h3> <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># range(number)" returns an iterable of numbers
+# from zero to the given number
+</span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<span class="s">"""
+# =&gt;
+    0
+    1
+    2
+    3
+"""</span>
+
+<span class="c1"># "range(lower, upper)" returns an iterable of numbers
+# from the lower number to the upper number
+</span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<span class="s">"""
+# =&gt;
+    4
+    5
+    6
+    7
+"""</span>
+
+
+<span class="c1"># "range(lower, upper, step)" returns an iterable of numbers
+# from the lower number to the upper number, while incrementing
+# by step. If step is not indicated, the default value is 1.
+</span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">2</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<span class="s">"""
+# =&gt;
+    4
+    6
+"""</span>
+
+<span class="k">print</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>	  <span class="c1"># =&gt; range(0, 10)
+</span>
+<span class="nb">sum</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">))</span>		  <span class="c1"># =&gt; 0 + 1 + 2 + 3 = 6
+</span>
+<span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">))</span>		  <span class="c1"># =&gt; [0, 1, 2, 3]
+</span>
+<span class="nb">type</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">))</span>		  <span class="c1"># =&gt; &lt;class 'range'&gt;
+</span>
+
+<span class="c1"># To loop over a list, and retrieve both the index and the value of each item
+# in the list
+</span><span class="n">animals</span> <span class="o">=</span> <span class="p">[</span><span class="s">"dog"</span><span class="p">,</span> <span class="s">"cat"</span><span class="p">,</span> <span class="s">"mouse"</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">animals</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+<span class="s">"""
+# =&gt;
+    0 dog
+    1 cat
+    2 mouse
+"""</span>
+
+<span class="c1"># For loops iterate over lists
+</span><span class="k">for</span> <span class="n">animal</span> <span class="ow">in</span> <span class="p">[</span><span class="s">"dog"</span><span class="p">,</span> <span class="s">"cat"</span><span class="p">,</span> <span class="s">"mouse"</span><span class="p">]:</span>
+    <span class="c1"># You can use format() to interpolate formatted strings
+</span>    <span class="k">print</span><span class="p">(</span><span class="s">"{} is a mammal"</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="n">animal</span><span class="p">))</span>
+<span class="s">"""
+# =&gt;
+    dog is a mammal
+    cat is a mammal
+    mouse is a mammal
+"""</span>
+
+<span class="c1"># Code that modifies a collection while iterating over that same collection
+# can be tricky to get right. Instead, it is usually more straight-forward 
+# to loop over a copy of the collection or to create a new collection.
+# Strategy:  Iterate over a copy
+</span><span class="k">for</span> <span class="n">user</span><span class="p">,</span> <span class="n">status</span> <span class="ow">in</span> <span class="n">users</span><span class="p">.</span><span class="n">copy</span><span class="p">().</span><span class="n">items</span><span class="p">():</span>
+    <span class="k">if</span> <span class="n">status</span> <span class="o">==</span> <span class="s">'inactive'</span><span class="p">:</span>
+        <span class="k">del</span> <span class="n">users</span><span class="p">[</span><span class="n">user</span><span class="p">]</span>
+<span class="c1"># Strategy:  Create a new collection
+</span><span class="n">active_users</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">user</span><span class="p">,</span> <span class="n">status</span> <span class="ow">in</span> <span class="n">users</span><span class="p">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="k">if</span> <span class="n">status</span> <span class="o">==</span> <span class="s">'active'</span><span class="p">:</span>
+        <span class="n">active_users</span><span class="p">[</span><span class="n">user</span><span class="p">]</span> <span class="o">=</span> <span class="n">status</span>
+
+<span class="c1"># To iterate over the indices of a sequence, you can combine range() and len().
+</span><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="s">'Mary'</span><span class="p">,</span> <span class="s">'had'</span><span class="p">,</span> <span class="s">'a'</span><span class="p">,</span> <span class="s">'little'</span><span class="p">,</span> <span class="s">'lamb'</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+<span class="s">"""
+# =&gt;
+0 Mary
+1 had
+2 a
+3 little
+4 lamb
+"""</span></code></pre></figure> <h3 id="while-loops"> <a href="#while-loops" class="anchor-head"></a> while Loops </h3> <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># While loops go until a condition is no longer met.
+</span><span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="n">x</span> <span class="o">+=</span> <span class="mi">1</span>  <span class="c1"># Shorthand for x = x + 1
+</span><span class="s">"""
+#+&gt;
+    0
+    1
+    2
+    3
+"""</span>
+
+<span class="c1"># An initial sub-sequence of the Fibonacci series.
+</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span>
+<span class="k">while</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="mi">1000</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s">','</span><span class="p">)</span>
+    <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span>
+<span class="c1"># =&gt; 0,1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,</span></code></pre></figure> <h3 id="break-and-continue-statements-and-else-clauses-on-loops"> <a href="#break-and-continue-statements-and-else-clauses-on-loops" class="anchor-head"></a> break and continue Statements, and else Clauses on Loops </h3> <p>The break statement, breaks out of the innermost enclosing for or while loop. Loop statements may have an else clause; it is executed when the loop terminates through exhaustion of the iterable (with for) or when the condition becomes false (with while), but not when the loop is terminated by a break statement.</p> <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># This is exemplified by the following loop, which 
+# searches for prime numbers.
+</span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">10</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">print</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="s">'equals'</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="s">'*'</span><span class="p">,</span> <span class="n">n</span><span class="o">//</span><span class="n">x</span><span class="p">)</span>
+            <span class="k">break</span>
+    <span class="k">else</span><span class="p">:</span> <span class="c1"># else clause belongs to the for loop, not the if statement.
+</span>        <span class="c1"># loop fell through without finding a factor
+</span>        <span class="k">print</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="s">'is a prime number'</span><span class="p">)</span>
+<span class="s">"""
+=&gt;
+2 is a prime number
+3 is a prime number
+4 equals 2 * 2
+5 is a prime number
+6 equals 2 * 3
+7 is a prime number
+8 equals 2 * 4
+9 equals 3 * 3
+"""</span>
+
+<span class="c1"># Like break, the continue statement, also borrowed from C, continues with the
+# next iteration of the loop.
+</span><span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">10</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Found an even number"</span><span class="p">,</span> <span class="n">num</span><span class="p">)</span>
+        <span class="k">continue</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Found a number"</span><span class="p">,</span> <span class="n">num</span><span class="p">)</span>
+<span class="s">"""
+=&gt;
+Found an even number 2
+Found an odd number 3
+Found an even number 4
+Found an odd number 5
+Found an even number 6
+Found an odd number 7
+Found an even number 8
+Found an odd number 9
+"""</span></code></pre></figure> <h3 id="iterable-object"> <a href="#iterable-object" class="anchor-head"></a> Iterable Object </h3> <p>Python offers a fundamental abstraction called the Iterable. An iterable is an object that can be treated as a sequence. The object returned by the range function, is an iterable.</p> <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">filled_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s">"one"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s">"two"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s">"three"</span><span class="p">:</span> <span class="mi">3</span><span class="p">}</span>
+<span class="n">our_iterable</span> <span class="o">=</span> <span class="n">filled_dict</span><span class="p">.</span><span class="n">keys</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="n">our_iterable</span><span class="p">)</span>    <span class="c1"># =&gt; dict_keys(['one', 'two', 'three']).
+</span>			  <span class="c1"># This is an object that implements our
+</span>			  <span class="c1"># Iterable interface.
+</span>
+<span class="c1"># We can loop over it.
+</span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">our_iterable</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>  <span class="c1"># Prints one, two, three
+</span>
+<span class="c1"># However we cannot address elements by index.
+</span><span class="n">our_iterable</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># Raises a TypeError
+</span>
+<span class="c1"># An iterable is an object that knows how to create an iterator.
+</span><span class="n">our_iterator</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">(</span><span class="n">our_iterable</span><span class="p">)</span>
+
+<span class="s">"""
+Our iterator is an object that can remember the state as we 
+traverse through it.
+We get the next object with "next()".
+"""</span>
+<span class="nb">next</span><span class="p">(</span><span class="n">our_iterator</span><span class="p">)</span>    <span class="c1"># =&gt; "one"
+</span>
+<span class="c1"># It maintains state as we iterate.
+</span><span class="nb">next</span><span class="p">(</span><span class="n">our_iterator</span><span class="p">)</span>    <span class="c1"># =&gt; "two"
+</span><span class="nb">next</span><span class="p">(</span><span class="n">our_iterator</span><span class="p">)</span>    <span class="c1"># =&gt; "three"
+</span>
+<span class="c1"># After the iterator has returned all of its data, it raises a 
+# StopIteration exception
+</span><span class="nb">next</span><span class="p">(</span><span class="n">our_iterator</span><span class="p">)</span>  <span class="c1"># Raises StopIteration
+</span>
+<span class="c1"># We can also loop over it, in fact, "for" does this implicitly!
+</span><span class="n">our_iterator</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">(</span><span class="n">our_iterable</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">our_iterator</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>  <span class="c1"># Prints one, two, three
+</span>
+<span class="c1"># You can grab all the elements of an iterable or iterator by
+# calling list() on it.
+</span><span class="nb">list</span><span class="p">(</span><span class="n">our_iterable</span><span class="p">)</span>    <span class="c1"># =&gt; Returns ["one", "two", "three"]
+</span><span class="nb">list</span><span class="p">(</span><span class="n">our_iterator</span><span class="p">)</span>    <span class="c1"># =&gt; Returns [] because state is saved</span></code></pre></figure> <hr /> <p>Session 3 —</p> <h2 id="handling-exceptions"> <a href="#handling-exceptions" class="anchor-head"></a> Handling Exceptions </h2> <p>It is possible to write programs that handle selected exceptions. Look at the following example, which asks the user for input until a valid integer has been entered, but allows the user to interrupt the program (using Control-C or whatever the operating system supports); note that a user-generated interruption is signalled by raising the KeyboardInterrupt exception.</p> <table> <thead> <tr> <th>Built-in Exceptions</th> <th>Description</th> </tr> </thead> <tbody> <tr> <td>ArithmeticError</td> <td>Raised when an error occurs in numeric calculations</td> </tr> <tr> <td>AssertionError</td> <td>Raised when an assert statement fails</td> </tr> <tr> <td>AttributeError</td> <td>Raised when attribute reference or assignment fails</td> </tr> <tr> <td>Exception</td> <td>Base class for all exceptions</td> </tr> <tr> <td>EOFError</td> <td>Raised when the input() method hits an “end of file” condition (EOF)</td> </tr> <tr> <td>FloatingPointError</td> <td>Raised when a floating point calculation fails</td> </tr> <tr> <td>GeneratorExit</td> <td>Raised when a generator is closed (with the close() method)</td> </tr> <tr> <td>ImportError</td> <td>Raised when an imported module does not exist</td> </tr> <tr> <td>IndentationError</td> <td>Raised when indendation is not correct</td> </tr> <tr> <td>IndexError</td> <td>Raised when an index of a sequence does not exist</td> </tr> <tr> <td>KeyError</td> <td>Raised when a key does not exist in a dictionary</td> </tr> <tr> <td>KeyboardInterrupt</td> <td>Raised when the user presses Ctrl+c, Ctrl+z or Delete</td> </tr> <tr> <td>LookupError</td> <td>Raised when errors raised cant be found</td> </tr> <tr> <td>MemoryError</td> <td>Raised when a program runs out of memory</td> </tr> <tr> <td>NameError</td> <td>Raised when a variable does not exist</td> </tr> <tr> <td>NotImplementedError</td> <td>Raised when an abstract method requires an inherited class to override the method</td> </tr> <tr> <td>OSError</td> <td>Raised when a system related operation causes an error</td> </tr> <tr> <td>OverflowError</td> <td>Raised when the result of a numeric calculation is too large</td> </tr> <tr> <td>ReferenceError</td> <td>Raised when a weak reference object does not exist</td> </tr> <tr> <td>RuntimeError</td> <td>Raised when an error occurs that do not belong to any specific expections</td> </tr> <tr> <td>StopIteration</td> <td>Raised when the next() method of an iterator has no further values</td> </tr> <tr> <td>SyntaxError</td> <td>Raised when a syntax error occurs</td> </tr> <tr> <td>TabError</td> <td>Raised when indentation consists of tabs or spaces</td> </tr> <tr> <td>SystemError</td> <td>Raised when a system error occurs</td> </tr> <tr> <td>SystemExit</td> <td>Raised when the sys.exit() function is called</td> </tr> <tr> <td>TypeError</td> <td>Raised when two different types are combined</td> </tr> <tr> <td>UnboundLocalError</td> <td>Raised when a local variable is referenced before assignment</td> </tr> <tr> <td>UnicodeError</td> <td>Raised when a unicode problem occurs</td> </tr> <tr> <td>UnicodeEncodeError</td> <td>Raised when a unicode encoding problem occurs</td> </tr> <tr> <td>UnicodeDecodeError</td> <td>Raised when a unicode decoding problem occurs</td> </tr> <tr> <td>UnicodeTranslateError</td> <td>Raised when a unicode translation problem occurs</td> </tr> <tr> <td>ValueError</td> <td>Raised when there is a wrong value in a specified data type</td> </tr> <tr> <td>ZeroDivisionError</td> <td>Raised when the second operator in a division is zero</td> </tr> </tbody> </table> <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Please enter a number: "</span><span class="p">))</span>
+        <span class="k">break</span>
+    <span class="k">except</span> <span class="nb">ValueError</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Oops!  That was no valid number.  Try again..."</span><span class="p">)</span>
+
+<span class="c1"># Handle exceptions with a try/except block
+</span><span class="k">try</span><span class="p">:</span>
+    <span class="c1"># Use "raise" to raise an error
+</span>    <span class="k">raise</span> <span class="nb">IndexError</span><span class="p">(</span><span class="s">"This is an index error"</span><span class="p">)</span>
+<span class="k">except</span> <span class="nb">IndexError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="k">pass</span>                 <span class="c1"># Pass is just a no-op. Usually you would do recovery here.
+</span><span class="k">except</span> <span class="p">(</span><span class="nb">RuntimeError</span><span class="p">,</span> <span class="nb">TypeError</span><span class="p">,</span> <span class="nb">NameError</span><span class="p">,</span> <span class="nb">ValueError</span><span class="p">):</span>
+    <span class="k">pass</span>                 <span class="c1"># Multiple exceptions can be handled together, if required.
+</span><span class="k">else</span><span class="p">:</span>                    <span class="c1"># Optional clause to the try/except block. Must follow all except blocks
+</span>    <span class="k">print</span><span class="p">(</span><span class="s">"All good!"</span><span class="p">)</span>   <span class="c1"># Runs only if the code in try raises no exceptions
+</span><span class="k">finally</span><span class="p">:</span>                 <span class="c1">#  Execute under all circumstances
+</span>    <span class="k">print</span><span class="p">(</span><span class="s">"We can clean up resources here"</span><span class="p">)</span>
+    </code></pre></figure> <hr /> <p>Session 4 —</p> <h2 id="functions"> <a href="#functions" class="anchor-head"></a> Functions </h2> <h3 id="create-a-function"> <a href="#create-a-function" class="anchor-head"></a> Create A Function </h3> <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># Use "def" to create new functions
+</span><span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"x is {} and y is {}"</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>  <span class="c1"># Return values with a return statement
+</span>
+<span class="c1"># Calling functions with parameters
+</span><span class="n">add</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>  <span class="c1"># =&gt; prints out "x is 5 and y is 6" and returns 11
+</span>
+<span class="c1"># Another way to call functions is with keyword arguments
+</span><span class="n">add</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>  <span class="c1"># Keyword arguments can arrive in any order.</span></code></pre></figure> <h3 id="procedures-and-functions"> <a href="#procedures-and-functions" class="anchor-head"></a> Procedures and Functions </h3> <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="s">"""
+Write Fibonacci series up to n (as a procedure)
+The first statement of the function body can optionally be a string
+literal; this string literal is the function’s documentation string,
+or docstring.
+"""</span>
+<span class="k">def</span> <span class="nf">fib</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>    
+    <span class="s">"""Print a Fibonacci series up to n."""</span>
+    <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span>
+    <span class="k">while</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s">' '</span><span class="p">)</span>
+        <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span>
+    <span class="k">print</span><span class="p">()</span>
+<span class="c1"># Now call the function we just defined:
+</span><span class="n">fib</span><span class="p">(</span><span class="mi">2000</span><span class="p">)</span>  <span class="c1"># =&gt; 0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597
+</span>
+<span class="c1"># You can assign the function name to another name which can then 
+# also be used as a function. This serves as a general renaming mechanism:
+</span>
+<span class="n">fib</span>	  <span class="c1"># =&gt; &lt;function fib at 10042ed0&gt;
+</span><span class="n">f</span> <span class="o">=</span> <span class="n">fib</span>
+<span class="n">f</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>	  <span class="c1"># =&gt; 0 1 1 2 3 5 8 13 21 34 55 89
+</span>
+<span class="c1"># The difference between Procedures and Functions:
+# Even functions without a return statement do return the None value.
+</span><span class="k">print</span><span class="p">(</span><span class="n">fib</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span>	  <span class="c1"># =&gt; None
+</span>
+<span class="c1"># A function that returns a list of the numbers of the Fibonacci series,
+# instead of printing it
+</span><span class="k">def</span> <span class="nf">fib2</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>  <span class="c1"># return Fibonacci series up to n
+</span>    <span class="s">"""Return a list containing the Fibonacci series up to n."""</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span>
+    <span class="k">while</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">:</span>
+        <span class="n">result</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>    <span class="c1"># see below
+</span>        <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span>
+    <span class="k">return</span> <span class="n">result</span>
+
+<span class="n">f100</span> <span class="o">=</span> <span class="n">fib2</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>    <span class="c1"># call it
+# write the result
+</span><span class="n">f100</span>	  <span class="c1"># =&gt; [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]</span></code></pre></figure> <h3 id="positional-arguments-and-keyword-arguments"> <a href="#positional-arguments-and-keyword-arguments" class="anchor-head"></a> Positional Arguments And Keyword Arguments </h3> <p>You can define functions that take a variable number of positional arguments or using keyword arguments of the form kwarg=value. You can also define functions that take a variable number of keyword arguments, as well.</p> <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">varargs</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">args</span>
+
+<span class="n">varargs</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>  <span class="c1"># =&gt; (1, 2, 3)
+</span>
+<span class="k">def</span> <span class="nf">keyword_args</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">kwargs</span>
+
+<span class="c1"># Let's call it to see what happens
+</span><span class="n">keyword_args</span><span class="p">(</span><span class="n">big</span><span class="o">=</span><span class="s">"foot"</span><span class="p">,</span> <span class="n">loch</span><span class="o">=</span><span class="s">"ness"</span><span class="p">)</span>
+<span class="c1"># =&gt; {"big": "foot", "loch": "ness"}
+</span>
+<span class="c1"># You can do both at once, if you like
+</span><span class="k">def</span> <span class="nf">all_the_args</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="s">"""
+all_the_args(1, 2, a=3, b=4) prints:
+    (1, 2)
+    {"a": 3, "b": 4}
+"""</span>
+
+<span class="c1"># When calling functions, you can do the opposite of args/kwargs!
+# Use * to expand tuples and use ** to expand kwargs.
+</span><span class="n">args</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="n">kwargs</span> <span class="o">=</span> <span class="p">{</span><span class="s">"a"</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s">"b"</span><span class="p">:</span> <span class="mi">4</span><span class="p">}</span>
+<span class="n">all_the_args</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">)</span>
+<span class="c1"># equivalent to all_the_args(1, 2, 3, 4)
+</span><span class="n">all_the_args</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="c1"># equivalent to all_the_args(a=3, b=4)
+</span><span class="n">all_the_args</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>	
+<span class="c1"># equivalent to all_the_args(1, 2, 3, 4, a=3, b=4)
+</span>
+<span class="k">def</span> <span class="nf">parrot</span><span class="p">(</span><span class="n">voltage</span><span class="p">,</span> <span class="n">state</span><span class="o">=</span><span class="s">'a stiff'</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s">'voom'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s">'Norwegian Blue'</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"-- This parrot wouldn't"</span><span class="p">,</span> <span class="n">action</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s">' '</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"if you put"</span><span class="p">,</span> <span class="n">voltage</span><span class="p">,</span> <span class="s">"volts through it."</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"-- Lovely plumage, the"</span><span class="p">,</span> <span class="nb">type</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"-- It's"</span><span class="p">,</span> <span class="n">state</span><span class="p">,</span> <span class="s">"!"</span><span class="p">)</span>
+
+<span class="c1"># Valid way of calling parrot function
+# 1 positional argument
+</span><span class="n">parrot</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>                                          
+<span class="c1"># 1 keyword argument
+</span><span class="n">parrot</span><span class="p">(</span><span class="n">voltage</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>                                  
+<span class="c1"># 2 keyword arguments
+</span><span class="n">parrot</span><span class="p">(</span><span class="n">voltage</span><span class="o">=</span><span class="mi">1000000</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s">'VOOOOOM'</span><span class="p">)</span>             
+<span class="c1"># 2 keyword arguments
+</span><span class="n">parrot</span><span class="p">(</span><span class="n">action</span><span class="o">=</span><span class="s">'VOOOOOM'</span><span class="p">,</span> <span class="n">voltage</span><span class="o">=</span><span class="mi">1000000</span><span class="p">)</span>             
+<span class="c1"># 3 positional arguments
+</span><span class="n">parrot</span><span class="p">(</span><span class="s">'a million'</span><span class="p">,</span> <span class="s">'bereft of life'</span><span class="p">,</span> <span class="s">'jump'</span><span class="p">)</span>         
+<span class="c1"># 1 positional, 1 keyword
+</span><span class="n">parrot</span><span class="p">(</span><span class="s">'a thousand'</span><span class="p">,</span> <span class="n">state</span><span class="o">=</span><span class="s">'pushing up the daisies'</span><span class="p">)</span>  
+
+<span class="c1"># The following calls would be invalid
+# required argument missing
+</span><span class="n">parrot</span><span class="p">()</span>                     
+<span class="c1"># non-keyword argument after a keyword argument
+</span><span class="n">parrot</span><span class="p">(</span><span class="n">voltage</span><span class="o">=</span><span class="mf">5.0</span><span class="p">,</span> <span class="s">'dead'</span><span class="p">)</span>  
+<span class="c1"># duplicate value for the same argument
+</span><span class="n">parrot</span><span class="p">(</span><span class="mi">110</span><span class="p">,</span> <span class="n">voltage</span><span class="o">=</span><span class="mi">220</span><span class="p">)</span>     
+<span class="c1"># unknown keyword argument
+</span><span class="n">parrot</span><span class="p">(</span><span class="n">actor</span><span class="o">=</span><span class="s">'John Cleese'</span><span class="p">)</span>  </code></pre></figure> <h4 id="default-argument-values"> <a href="#default-argument-values" class="anchor-head"></a> Default Argument Values </h4> <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">ask_ok</span><span class="p">(</span><span class="n">prompt</span><span class="p">,</span> <span class="n">retries</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">reminder</span><span class="o">=</span><span class="s">'Please try again!'</span><span class="p">):</span>
+    <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+        <span class="n">ok</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="n">prompt</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">ok</span> <span class="ow">in</span> <span class="p">(</span><span class="s">'y'</span><span class="p">,</span> <span class="s">'ye'</span><span class="p">,</span> <span class="s">'yes'</span><span class="p">):</span>
+            <span class="k">return</span> <span class="bp">True</span>
+        <span class="k">if</span> <span class="n">ok</span> <span class="ow">in</span> <span class="p">(</span><span class="s">'n'</span><span class="p">,</span> <span class="s">'no'</span><span class="p">,</span> <span class="s">'nop'</span><span class="p">,</span> <span class="s">'nope'</span><span class="p">):</span>
+            <span class="k">return</span> <span class="bp">False</span>
+        <span class="n">retries</span> <span class="o">=</span> <span class="n">retries</span> <span class="o">-</span> <span class="mi">1</span>
+        <span class="k">if</span> <span class="n">retries</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="nb">ValueError</span><span class="p">(</span><span class="s">'invalid user response'</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">reminder</span><span class="p">)</span>
+
+<span class="c1"># This function can be called in several ways:
+</span><span class="n">ask_ok</span><span class="p">(</span><span class="s">'Do you really want to quit?'</span><span class="p">)</span>
+<span class="n">ask_ok</span><span class="p">(</span><span class="s">'OK to overwrite the file?'</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">ask_ok</span><span class="p">(</span><span class="s">'OK to overwrite the file?'</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s">'Come on, only yes or no!'</span><span class="p">)</span></code></pre></figure> <p>The default values are evaluated at the point of function definition in the defining scope. <strong><em>Important warning:</em></strong> The default value is evaluated only once. This makes a difference when the default is a mutable object such as a list, dictionary, or instances of most classes.</p> <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">i</span> <span class="o">=</span> <span class="mi">5</span>
+
+<span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">arg</span><span class="o">=</span><span class="n">i</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">arg</span><span class="p">)</span>
+
+<span class="n">i</span> <span class="o">=</span> <span class="mi">6</span>
+<span class="n">f</span><span class="p">()</span>	  <span class="c1"># =&gt; 5
+</span>
+<span class="s">""" 
+The following function accumulates the arguments passed to it on 
+subsequent calls:
+"""</span>
+<span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">L</span><span class="o">=</span><span class="p">[]):</span>
+    <span class="n">L</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">L</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>	  <span class="c1"># =&gt; [1]
+</span><span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>	  <span class="c1"># =&gt; [1, 2]
+</span><span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>	  <span class="c1"># =&gt; [1, 2, 3]
+</span>
+<span class="s">"""
+If you don’t want the default to be shared between subsequent 
+calls, you can write the function like this instead:
+"""</span>
+<span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">L</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">L</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+        <span class="n">L</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">L</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">L</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>	  <span class="c1"># =&gt; [1]
+</span><span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>	  <span class="c1"># =&gt; [2]
+</span><span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>	  <span class="c1"># =&gt; [3]</span></code></pre></figure> <h4 id="special-parameters"> <a href="#special-parameters" class="anchor-head"></a> Special Parameters </h4> <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">pos1</span><span class="p">,</span> <span class="n">pos2</span><span class="p">,</span> <span class="o">/</span><span class="p">,</span> <span class="n">pos_or_kwd</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">kwd1</span><span class="p">,</span> <span class="n">kwd2</span><span class="p">):</span>
+<span class="c1">#     -----------    ----------     ----------
+#       |             |                  |
+#       |        Positional or keyword   |
+#       |                                - Keyword only
+#        -- Positional only
+</span>
+<span class="k">def</span> <span class="nf">standard_arg</span><span class="p">(</span><span class="n">arg</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">arg</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">pos_only_arg</span><span class="p">(</span><span class="n">arg</span><span class="p">,</span> <span class="o">/</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">arg</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">kwd_only_arg</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">arg</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">arg</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">combined_example</span><span class="p">(</span><span class="n">pos_only</span><span class="p">,</span> <span class="o">/</span><span class="p">,</span> <span class="n">standard</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">kwd_only</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">pos_only</span><span class="p">,</span> <span class="n">standard</span><span class="p">,</span> <span class="n">kwd_only</span><span class="p">)</span>
+
+<span class="n">pos_only_arg</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>	  <span class="c1"># =&gt; 1
+</span><span class="n">pos_only_arg</span><span class="p">(</span><span class="n">arg</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="s">"""
+# =&gt;
+Traceback (most recent call last):
+  File "&lt;stdin&gt;", line 1, in &lt;module&gt;
+TypeError: pos_only_arg() got an unexpected keyword argument 'arg'
+"""</span>
+
+<span class="n">kwd_only_arg</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="s">"""
+# =&gt;
+Traceback (most recent call last):
+  File "&lt;stdin&gt;", line 1, in &lt;module&gt;
+TypeError: kwd_only_arg() takes 0 positional arguments but 1 was given
+"""</span>
+<span class="n">kwd_only_arg</span><span class="p">(</span><span class="n">arg</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>	  <span class="c1"># =&gt; 3
+</span>
+<span class="n">combined_example</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="s">"""
+# =&gt;
+Traceback (most recent call last):
+  File "&lt;stdin&gt;", line 1, in &lt;module&gt;
+TypeError: combined_example() takes 2 positional arguments but 3 were given
+"""</span>
+<span class="n">combined_example</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">kwd_only</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>		  <span class="c1"># =&gt; 1 2 3
+</span><span class="n">combined_example</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">standard</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">kwd_only</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>	  <span class="c1"># =&gt;1 2 3
+</span><span class="n">combined_example</span><span class="p">(</span><span class="n">pos_only</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">standard</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">kwd_only</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="s">"""
+# =&gt;
+Traceback (most recent call last):
+  File "&lt;stdin&gt;", line 1, in &lt;module&gt;
+TypeError: combined_example() got an unexpected keyword argument 'pos_only'
+"""</span>
+
+<span class="c1"># Collision between the positional argument name and **kwds 
+# which has name as a key
+</span><span class="k">def</span> <span class="nf">foo</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">):</span>
+    <span class="k">return</span> <span class="s">'name'</span> <span class="ow">in</span> <span class="n">kwds</span>
+
+<span class="n">foo</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">**</span><span class="p">{</span><span class="s">'name'</span><span class="p">:</span> <span class="mi">2</span><span class="p">})</span>
+<span class="s">"""
+# =&gt;
+Traceback (most recent call last):
+  File "&lt;stdin&gt;", line 1, in &lt;module&gt;
+TypeError: foo() got multiple values for argument 'name'
+"""</span>
+
+<span class="c1"># Using / (positional only arguments), it is possible since it allows
+# name as a positional argument and 
+# 'name' as a key in the keyword arguments:
+</span><span class="k">def</span> <span class="nf">foo</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="o">/</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">):</span>
+    <span class="k">return</span> <span class="s">'name'</span> <span class="ow">in</span> <span class="n">kwds</span>
+
+<span class="n">foo</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">**</span><span class="p">{</span><span class="s">'name'</span><span class="p">:</span> <span class="mi">2</span><span class="p">})</span>  <span class="c1"># =&gt; True</span></code></pre></figure> <h4 id="unpacking-argument-lists"> <a href="#unpacking-argument-lists" class="anchor-head"></a> Unpacking Argument Lists </h4> <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># normal call with separate arguments
+</span><span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>	  <span class="c1"># =&gt;[3, 4, 5]
+# call with arguments unpacked from a list
+</span><span class="n">args</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+<span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">))</span>	  <span class="c1"># =&gt; [3, 4, 5]
+</span>
+<span class="c1"># In the same fashion, dictionaries can deliver keyword arguments 
+# with the **-operator.
+</span><span class="k">def</span> <span class="nf">parrot</span><span class="p">(</span><span class="n">voltage</span><span class="p">,</span> <span class="n">state</span><span class="o">=</span><span class="s">'a stiff'</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s">'voom'</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"-- This parrot wouldn't"</span><span class="p">,</span> <span class="n">action</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s">' '</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"if you put"</span><span class="p">,</span> <span class="n">voltage</span><span class="p">,</span> <span class="s">"volts through it."</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s">' '</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"E's"</span><span class="p">,</span> <span class="n">state</span><span class="p">,</span> <span class="s">"!"</span><span class="p">)</span>
+
+<span class="n">d</span> <span class="o">=</span> <span class="p">{</span><span class="s">"voltage"</span><span class="p">:</span> <span class="s">"four million"</span><span class="p">,</span> <span class="s">"state"</span><span class="p">:</span> <span class="s">"bleedin' demised"</span><span class="p">,</span> <span class="s">"action"</span><span class="p">:</span> <span class="s">"VOOM"</span><span class="p">}</span>
+<span class="n">parrot</span><span class="p">(</span><span class="o">**</span><span class="n">d</span><span class="p">)</span>
+<span class="s">"""
+# =&gt;
+-- This parrot wouldn't VOOM if you put four million volts through 
+it. E's bleedin' demised !
+"""</span></code></pre></figure> <h3 id="returning-multiple-values-with-tuple-assignments"> <a href="#returning-multiple-values-with-tuple-assignments" class="anchor-head"></a> Returning Multiple Values (with tuple assignments) </h3> <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">swap</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">y</span><span class="p">,</span> <span class="n">x</span>	
+<span class="s">"""
+Return multiple values as a tuple without the parenthesis.
+(Note: parenthesis have been excluded but can be included)
+"""</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">swap</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>     <span class="c1"># =&gt; x = 2, y = 1
+# (x, y) = swap(x,y)  # Again parenthesis have been excluded but can
+# be included.</span></code></pre></figure> <h3 id="function-scope"> <a href="#function-scope" class="anchor-head"></a> Function Scope </h3> <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
+
+<span class="k">def</span> <span class="nf">set_x</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+    <span class="c1"># Local var x not the same as global variable x
+</span>    <span class="n">x</span> <span class="o">=</span> <span class="n">num</span>    <span class="c1"># =&gt; 43
+</span>    <span class="p">(</span><span class="k">print</span><span class="p">)(</span><span class="n">x</span><span class="p">)</span>   <span class="c1"># =&gt; 43
+</span>
+<span class="k">def</span> <span class="nf">set_global_x</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">x</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>   <span class="c1"># =&gt; 5
+</span>    <span class="n">x</span> <span class="o">=</span> <span class="n">num</span>    <span class="c1"># global var x is now set to 6
+</span>    <span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>   <span class="c1"># =&gt; 6
+</span>
+<span class="n">set_x</span><span class="p">(</span><span class="mi">43</span><span class="p">)</span>
+<span class="n">set_global_x</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span></code></pre></figure> <h3 id="first-class-and-anonymous-functions"> <a href="#first-class-and-anonymous-functions" class="anchor-head"></a> First Class And Anonymous Functions </h3> <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># Python has first class functions
+</span><span class="k">def</span> <span class="nf">create_adder</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">adder</span><span class="p">(</span><span class="n">y</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+    <span class="k">return</span> <span class="n">adder</span>
+
+<span class="n">add_10</span> <span class="o">=</span> <span class="n">create_adder</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">add_10</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>   <span class="c1"># =&gt; 13
+</span>
+<span class="c1"># There are also anonymous functions
+</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">)(</span><span class="mi">3</span><span class="p">)</span>                  <span class="c1"># =&gt; True
+</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="n">x</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">+</span> <span class="n">y</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>  <span class="c1"># =&gt; 5
+</span>
+<span class="c1"># Sort a list of tuples by 2nd item.
+</span><span class="n">pairs</span> <span class="o">=</span> <span class="p">[(</span><span class="mi">1</span><span class="p">,</span> <span class="s">'one'</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s">'two'</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="s">'three'</span><span class="p">),</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="s">'four'</span><span class="p">)]</span>
+<span class="n">pairs</span><span class="p">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">pair</span><span class="p">:</span> <span class="n">pair</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">pairs</span>  <span class="c1"># =&gt; [(4, 'four'), (1, 'one'), (3, 'three'), (2, 'two')]
+</span>
+<span class="c1"># Using itemgetter(1), which is essentially a faster version of
+# lambda x: x[1], for optimization.
+</span><span class="kn">from</span> <span class="nn">operator</span> <span class="kn">import</span> <span class="n">itemgetter</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">[(</span><span class="mi">1</span><span class="p">,</span> <span class="s">'one'</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s">'two'</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="s">'three'</span><span class="p">),</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="s">'four'</span><span class="p">)]</span>
+<span class="nb">sorted</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="n">key</span><span class="o">=</span><span class="n">itemgetter</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+<span class="c1"># =&gt; [(4, 'four'), (1, 'one'), (3, 'three'), (2, 'two')]</span></code></pre></figure> <p>Using <code class="language-plaintext highlighter-rouge">itemgetter</code> is more readable in this case than the solution by <code class="language-plaintext highlighter-rouge">lambda</code>. It is also faster since almost all of the computation will be done on the <code class="language-plaintext highlighter-rouge">c</code> side (no pun intended) rather than through the use of <code class="language-plaintext highlighter-rouge">lambda</code>.</p> <figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>python <span class="nt">-m</span> timeit <span class="nt">-s</span> <span class="s2">"from operator import itemgetter; data = [(1, 'one'), (
+2, 'two'), (3, 'three'), (4, 'four')]"</span> <span class="s2">"sorted(data,key=itemgetter(1))"</span>
+500000 loops, best of 5: 645 nsec per loop
+
+<span class="nv">$ </span>python <span class="nt">-m</span> timeit <span class="nt">-s</span> <span class="s2">"data = [(1, 'one'), (2, 'two'), (3, 'three'), (
+4, 'four')]"</span> <span class="s2">"sorted(data,key=lambda x: x[1])"</span>
+500000 loops, best of 5: 846 nsec per loop</code></pre></figure> <h3 id="list-and-dictionary-comprehensions"> <a href="#list-and-dictionary-comprehensions" class="anchor-head"></a> List And Dictionary Comprehensions </h3> <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># There are built-in higher order functions
+</span><span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="n">add_10</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]))</span>          <span class="c1"># =&gt; [11, 12, 13]
+</span><span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">max</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">]))</span>  <span class="c1"># =&gt; [4, 2, 3]
+</span>
+<span class="nb">list</span><span class="p">(</span><span class="nb">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">,</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">]))</span>  <span class="c1"># =&gt; [6, 7]
+</span>
+<span class="c1"># We can use list comprehensions for nice maps and filters
+# List comprehension stores the output as a list which can itself be 
+# a nested list
+</span><span class="p">[</span><span class="n">add_10</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]]</span>         <span class="c1"># =&gt; [11, 12, 13]
+</span><span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span> <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">]</span>  <span class="c1"># =&gt; [6, 7]
+</span>
+<span class="c1"># You can construct set and dict comprehensions as well.
+</span><span class="p">{</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="s">'abcddeef'</span> <span class="k">if</span> <span class="n">x</span> <span class="ow">not</span> <span class="ow">in</span> <span class="s">'abc'</span><span class="p">}</span>  <span class="c1"># =&gt; {'d', 'e', 'f'}
+</span><span class="p">{</span><span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)}</span>  <span class="c1"># =&gt; {0: 0, 1: 1, 2: 4, 3: 9, 4: 16}
+</span>
+<span class="c1"># Lists to represent keys and values 
+</span><span class="n">keys</span> <span class="o">=</span> <span class="p">[</span><span class="s">'a'</span><span class="p">,</span><span class="s">'b'</span><span class="p">,</span><span class="s">'c'</span><span class="p">,</span><span class="s">'d'</span><span class="p">,</span><span class="s">'e'</span><span class="p">]</span> 
+<span class="n">values</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>   
+  
+<span class="c1"># but this line shows dict comprehension here   
+</span><span class="n">myDict</span> <span class="o">=</span> <span class="p">{</span> <span class="n">k</span><span class="p">:</span><span class="n">v</span> <span class="k">for</span> <span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="n">v</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">keys</span><span class="p">,</span> <span class="n">values</span><span class="p">)}</span>   
+  
+<span class="c1"># We can use below too 
+# myDict = dict(zip(keys, values))   
+</span>  
+<span class="k">print</span> <span class="p">(</span><span class="n">myDict</span><span class="p">)</span> <span class="c1"># =&gt; {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5}
+</span>
+<span class="c1"># Initialize fahrenheit dictionary 
+</span><span class="n">fahrenheit</span> <span class="o">=</span> <span class="p">{</span><span class="s">'t1'</span><span class="p">:</span><span class="o">-</span><span class="mi">30</span><span class="p">,</span> <span class="s">'t2'</span><span class="p">:</span><span class="o">-</span><span class="mi">20</span><span class="p">,</span> <span class="s">'t3'</span><span class="p">:</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="s">'t4'</span><span class="p">:</span><span class="mi">0</span><span class="p">}</span> 
+
+<span class="c1"># Get the corresponding celsius values
+</span><span class="n">celsius</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span><span class="o">/</span><span class="mi">9</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="mi">32</span><span class="p">),</span> <span class="n">fahrenheit</span><span class="p">.</span><span class="n">values</span><span class="p">()))</span> 
+
+<span class="c1"># Create the celsius dictionary 
+</span><span class="n">celsius_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">fahrenheit</span><span class="p">.</span><span class="n">keys</span><span class="p">(),</span> <span class="n">celsius</span><span class="p">))</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">celsius_dict</span><span class="p">)</span>
+<span class="s">"""
+# =&gt; {'t2': -28.88888888888889, 't3': -23.333333333333336,
+ 't1': -34.44444444444444, 't4': -17.77777777777778}
+"""</span>
+
+<span class="c1">#  Or you can use the .items method
+</span><span class="n">celsius</span> <span class="o">=</span> <span class="p">{</span><span class="n">k</span><span class="p">:(</span><span class="nb">float</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span><span class="o">/</span><span class="mi">9</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">v</span><span class="o">-</span><span class="mi">32</span><span class="p">)</span> <span class="k">for</span> <span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="n">v</span><span class="p">)</span> <span class="ow">in</span> <span class="n">fahrenheit</span><span class="p">.</span><span class="n">items</span><span class="p">()}</span>
+
+<span class="c1"># Dictionary comprehensions with if and else statements and
+# with other expressions
+</span>
+<span class="n">newdict</span> <span class="o">=</span> <span class="p">{</span><span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">**</span><span class="mi">3</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="k">if</span> <span class="n">x</span><span class="o">**</span><span class="mi">3</span> <span class="o">%</span> <span class="mi">4</span> <span class="o">==</span> <span class="mi">0</span><span class="p">}</span> 
+<span class="k">print</span><span class="p">(</span><span class="n">newdict</span><span class="p">)</span> <span class="c1"># =&gt; {0: 0, 8: 512, 2: 8, 4: 64, 6: 216}</span></code></pre></figure> <h3 id="function-annotations"> <a href="#function-annotations" class="anchor-head"></a> Function Annotations </h3> <p>Annotations are stored in the <strong>annotations</strong> attribute of the function as a dictionary and have no effect on any other part of the function.</p> <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">ham</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">eggs</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s">'eggs'</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Annotations:"</span><span class="p">,</span> <span class="n">f</span><span class="p">.</span><span class="n">__annotations__</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Arguments:"</span><span class="p">,</span> <span class="n">ham</span><span class="p">,</span> <span class="n">eggs</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">ham</span> <span class="o">+</span> <span class="s">' and '</span> <span class="o">+</span> <span class="n">eggs</span>
+
+<span class="n">f</span><span class="p">(</span><span class="s">'spam'</span><span class="p">)</span>
+<span class="s">"""
+# =&gt;
+Annotations: {'ham': &lt;class 'str'&gt;, 'return': &lt;class 'str'&gt;, 'eggs': &lt;class 'str'&gt;}
+Arguments: spam eggs
+'spam and eggs
+"""</span></code></pre></figure> <h2 id="readwrite-fromto-a-file"> <a href="#readwrite-fromto-a-file" class="anchor-head"></a> Read/Write From/To A File </h2> <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s">"myfile.txt"</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+
+<span class="c1"># Writing to a file
+</span><span class="n">contents</span> <span class="o">=</span> <span class="p">{</span><span class="s">"aa"</span><span class="p">:</span> <span class="mi">12</span><span class="p">,</span> <span class="s">"bb"</span><span class="p">:</span> <span class="mi">21</span><span class="p">}</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s">"myfile1.txt"</span><span class="p">,</span> <span class="s">"w+"</span><span class="p">)</span> <span class="k">as</span> <span class="nb">file</span><span class="p">:</span>
+    <span class="nb">file</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">contents</span><span class="p">))</span>        <span class="c1"># writes a string to a file
+</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s">"myfile2.txt"</span><span class="p">,</span> <span class="s">"w+"</span><span class="p">)</span> <span class="k">as</span> <span class="nb">file</span><span class="p">:</span>
+    <span class="nb">file</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">json</span><span class="p">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">contents</span><span class="p">))</span> <span class="c1"># writes an object to a file
+</span>
+<span class="c1"># Reading from a file
+</span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s">'myfile1.txt'</span><span class="p">,</span> <span class="s">"r+"</span><span class="p">)</span> <span class="k">as</span> <span class="nb">file</span><span class="p">:</span>
+    <span class="n">contents</span> <span class="o">=</span> <span class="nb">file</span><span class="p">.</span><span class="n">read</span><span class="p">()</span>           <span class="c1"># reads a string from a file
+</span><span class="k">print</span><span class="p">(</span><span class="n">contents</span><span class="p">)</span>
+<span class="c1"># print: {"aa": 12, "bb": 21}
+</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s">'myfile2.txt'</span><span class="p">,</span> <span class="s">"r+"</span><span class="p">)</span> <span class="k">as</span> <span class="nb">file</span><span class="p">:</span>
+    <span class="n">contents</span> <span class="o">=</span> <span class="n">json</span><span class="p">.</span><span class="n">load</span><span class="p">(</span><span class="nb">file</span><span class="p">)</span>       <span class="c1"># reads a json object from a file
+</span><span class="k">print</span><span class="p">(</span><span class="n">contents</span><span class="p">)</span>
+<span class="c1"># print: {"aa": 12, "bb": 21}</span></code></pre></figure> </div> </article> </main> <nav class="post-nav"> <a class="post-nav-item post-nav-prev" href="/wiki/bash/" > <div class="nav-arrow">کهنه‌تر</div> <span class="post-title">Shell Script</span> </a> <a class="post-nav-item post-nav-next" href="/wiki/vim/"> <div class="nav-arrow">نوتر</div> <span class="post-title">Vim</span> </a> </nav> <footer class="footer"> <!-- <a class="footer_item" href="/thanks">سپاس</a> --> <a class="footer item" href="https://github.com/mhdzli"> <i class="fab fa-github"></i> گیت‌هاب </a> <a class="footer item" href="https://fosstodon.org/@mzeinali"> <i class="fab fa-linux"></i> mastodon </a> <a class="footer item" href="https://mas.to/@mz"> <i class="fa fa-hand-peace"></i> مستادون </a> <a class="footer item" href="https://lbry.tv/@mzeinali:c"> <i class="fa fa-video"></i> لایبرری </a> <a class="footer item" href="https://pixelfed.de/mzeinali"> <i class="fa fa-camera"></i> پیکسلفد </a> <a class="footer item" href="/feed.xml"> <i class="fa fa-rss"></i> خوراک </a> <a class="footer item" href="mailto:m@zmim.ir"> <i class="fa fa-envelope-open"></i> تماس </a> <!-- <a class="footer_item" href="javascript::void(0)">رزومه</a> <span class="footer_item">&copy; 2021</span> --> <small class="footer_copyright"> <small id="license"> <i class="fab fa-creative-commons"></i> مطالب این وبلاگ تحت مجوز <a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.fa"> کریتیو کامنز اتریبیوشن ۴.۰ اینترنشنال </a>قرار دارد. </small> <!-- simorq Theme: https://github.com/mhdzli/simorq تم <a href="https://github.com/mhdzli/simorq" target="_blank" rel="noreferrer noopener" > سیمرغ </a> نیرو گرفته از <a href="https://jekyllrb.com" target="_blank" rel="noreferrer noopener"> jekyll </a> --> </small> </footer> <script src="/assets/js/jquery-3.3.1.min.js"></script> <script src="/assets/js/persianumber.js"></script> <script> $(document).ready(function(){ $('.post-item-date').persiaNumber(); $('.archive-date').persiaNumber(); $('.recent-date').persiaNumber(); $('.post-updated-at').persiaNumber(); $('.date-modify').persiaNumber(); $('.header-date').persiaNumber(); }); </script> <script src="/assets/js/main.js" defer="defer"></script> </div> </body> </html>

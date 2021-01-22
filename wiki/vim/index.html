@@ -1,0 +1,269 @@
+<!DOCTYPE html> <html lang="fa"> <head prefix="og: http://ogp.me/ns#"> <meta charset="UTF-8" /> <meta http-equiv="X-UA-Compatible" content="ie=edge" /> <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <meta name="mobile-web-app-capable" content="yes" /> <meta name="apple-mobile-web-app-capable" content="yes" /> <meta name="application-name" content="محمد زینلی" /> <meta name="apple-mobile-web-app-status-bar-style" content="#fff" /> <meta name="apple-mobile-web-app-title" content="محمد زینلی" /> <title> Vim - محمد زینلی </title> <link rel="alternate" href="http://localhost:4000/wiki/vim/" hreflang="fa" /> <link rel="canonical" href="http://localhost:4000/wiki/vim/" /> <meta name="description" content="Vim cheat sheet." /> <meta name="referrer" content="no-referrer-when-downgrade" /> <meta property="fb:app_id" content="" /> <meta property="og:site_name" content="Vim | " /> <meta property="og:title" content="Vim | " /> <meta property="og:type" content="website" /> <meta property="og:url" content="http://localhost:4000/wiki/vim/" /> <meta property="og:description" content="Vim cheat sheet." /> <meta property="og:image" content="http://localhost:4000/assets/img/ogp.png" /> <meta property="og:image:width" content="640" /> <meta property="og:image:height" content="640" /> <meta name="twitter:card" content="summary" /> <meta name="twitter:title" content="Vim | " /> <meta name="twitter:url" content="http://localhost:4000/wiki/vim/" /> <meta name="twitter:site" content="@" /> <meta name="twitter:creator" content="@" /> <meta name="twitter:description" content="Vim cheat sheet." /> <meta name="twitter:image" content="http://localhost:4000/assets/img/ogp.png" /> <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="محمد زینلی" /> <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" /> <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png" /> <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png" /> <link rel="manifest" href="/assets/favicons/site.webmanifest" /> <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#5bbad5" /> <meta name="apple-mobile-web-app-title" content="Jekyll Klise" /> <meta name="application-name" content="Jekyll Klise" /> <meta name="msapplication-TileColor" content="#da532c" /> <meta name="theme-color" content="#2c2c2c" /> <link rel="stylesheet" href="/assets/css/style.css" /> </head> <body data-theme="dark" class="notransition"> <script> const body = document.body; const data = body.getAttribute("data-theme"); const initTheme = (state) => { if (state === "dark") { body.setAttribute("data-theme", "dark"); } else if (state === "light") { body.removeAttribute("data-theme"); } else { localStorage.setItem("theme", data); } }; initTheme(localStorage.getItem("theme")); setTimeout(() => body.classList.remove("notransition"), 75); </script> <div class="navbar" role="navigation"> <nav class="menu"> <input type="checkbox" id="menu-trigger" class="menu-trigger" /> <label for="menu-trigger"> <span class="menu-icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512" > <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" /> </svg> </span> </label> <a id="mode"> <svg class="mode-sunny" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512" > <title>LIGHT</title> <line x1="256" y1="48" x2="256" y2="96" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="256" y1="416" x2="256" y2="464" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="403.08" y1="108.92" x2="369.14" y2="142.86" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="142.86" y1="369.14" x2="108.92" y2="403.08" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="464" y1="256" x2="416" y2="256" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="96" y1="256" x2="48" y2="256" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="403.08" y1="403.08" x2="369.14" y2="369.14" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="142.86" y1="142.86" x2="108.92" y2="108.92" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <circle cx="256" cy="256" r="80" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> </svg> <svg class="mode-moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512" > <title>DARK</title> <line x1="256" y1="48" x2="256" y2="96" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="256" y1="416" x2="256" y2="464" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="403.08" y1="108.92" x2="369.14" y2="142.86" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="142.86" y1="369.14" x2="108.92" y2="403.08" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="464" y1="256" x2="416" y2="256" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="96" y1="256" x2="48" y2="256" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="403.08" y1="403.08" x2="369.14" y2="369.14" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="142.86" y1="142.86" x2="108.92" y2="108.92" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <circle cx="256" cy="256" r="80" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> </svg> </a> <div class="trigger"> <div class="trigger-container"><a class="menu-link" href="/">خانه</a><a class="menu-link" href="/archive/">بایگانی</a><a class="menu-link" href="/tags/">برچسب‌ها</a><a class="menu-link" href="/wiki/">ویکی</a><a class="menu-link" href="/about/">درباره</a><a class="menu-link rss" href="/feed.xml"> <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 512 512" fill="#ED812E" > <title>خوراک</title> <path d="M108.56,342.78a60.34,60.34,0,1,0,60.56,60.44A60.63,60.63,0,0,0,108.56,342.78Z" /> <path d="M48,186.67v86.55c52,0,101.94,15.39,138.67,52.11s52,86.56,52,138.67h86.66C325.33,312.44,199.67,186.67,48,186.67Z" /> <path d="M48,48v86.56c185.25,0,329.22,144.08,329.22,329.44H464C464,234.66,277.67,48,48,48Z" /> </svg> </a> </div> </div> </nav> </div> <div class="wrapper post"> <main class="page-content" aria-label="Content"> <article itemscope itemtype="https://schema.org/BlogPosting"> <header class="header"> <div class="tags"> <span itemprop="keywords"> <a class="tag" href="/tags/#unix-linux">UNIX/LINUX</a>, <a class="tag" href="/tags/#foss">FOSS</a>, <a class="tag" href="/tags/#vim">VIM</a> </span> </div> <h1 class="header-title" itemprop="headline">Vim</h1> <div class="post-meta"> <time class="header-date" datetime="2021-01-07T08:10:47+03:30" itemprop="datePublished"> 18 دی، 1399 </time> <span itemprop="author" itemscope itemtype="https://schema.org/Person"> <span itemprop="name">محمد زینلی</span> </span> <time hidden class="date-modify" datetime="" itemprop="dateModified"> 18 دی، 1399 </time> <span hidden itemprop="publisher" itemtype="Person">محمد زینلی</span> <span hidden itemprop="image"></span> <span hidden itemprop="mainEntityOfPage"><h1 id="normal-mode">Normal Mode</h1> </span> </div> </header> <div class="page-content" itemprop="articleBody" dir="ltr" align="left"> <h1 id="normal-mode"> <a href="#normal-mode" class="anchor-head"></a> Normal Mode </h1> <figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">.</span> <span class="s2">" Repeat last command "</span>
+
+<span class="nv">z</span><span class="o">=</span> <span class="s2">" Check avalable replacement for wrong spelled "</span>
+
+<span class="o">]</span>s <span class="s2">" Next wrong spelled "</span>
+
+q: <span class="s2">" Enter command window "</span>
+
+<span class="o">==</span> <span class="s2">" Indent intelligently "</span>
+
+gq<span class="o">{</span>motion<span class="o">}</span> <span class="s2">" Reformat (rewrap) "</span>
+
+gqq <span class="s2">" Reformat (rewrap) current line "</span>
+
+gu<span class="o">{</span>motion<span class="o">}</span> <span class="s2">" Lowercase "</span>
+
+gU<span class="o">{</span>motion<span class="o">}</span> <span class="s2">" Uppercase "</span>
+
+g~<span class="o">{</span>motion<span class="o">}</span> <span class="s2">" Togglecase "</span>
+-
+C-x <span class="s2">" Decrement the number at the end of the word under the cursor "</span>
+
+C-a <span class="s2">" Increment the number at the end of the word under the cursor "</span>
+
+gv <span class="s2">" Reselect last selection "</span>
+
+g C-g <span class="s2">" Show current cursor position and total counts (columns, lines, words, bytes) "</span>
+
+ga <span class="s2">" Show ASCII info for character under cursor "</span>
+
+g8 <span class="s2">" Show UTF-8 info for character under cursor "</span>
+
+C-w f <span class="s2">" Open the file under the cursor in a split (gf will do this without the split) "</span>
+
+<span class="o">]</span>c/[c <span class="s2">" Next/previous change/conflict "</span></code></pre></figure> <h2 id="movement"> <a href="#movement" class="anchor-head"></a> Movement </h2> <figure class="highlight"><pre><code class="language-bash" data-lang="bash">h, j, k, l <span class="s2">" Per-character/per-line movement through file (left, down, up, right) "</span>
+
+gj, gk <span class="s2">" Per-line movement through buffer, operating on display lines (which may be wrapped) not actual lines in the file (down, up) "</span>
+
+w <span class="s2">" Forward a word (mnemonic: 'word'); here 'word' is an 'keyword' (identifier) like 'foo9' or 'hgo' and the movement is to the _beginning of the next word "</span>
+
+W <span class="s2">" Forward a 'big' word; here a 'word' is anything other than whitespace "</span>
+
+b <span class="s2">" Back a word (mnemonic: 'back'); again the movement is to the beginning of the word "</span>
+
+B <span class="s2">" Back a 'big' word "</span>
+
+e <span class="s2">" Forward to the end of a word (mnemonic: 'end') "</span>
+
+E <span class="s2">" Forward to the end of a 'big' word "</span>
+
+ge <span class="s2">" Back to the end of the last word "</span>
+
+gE <span class="s2">" Back to the end of the last 'big' word "</span>
+
+f<span class="o">{</span>character<span class="o">}</span> <span class="s2">" Forward to the next occurrence of character (mnemonic: 'find/foward') "</span>
+
+F<span class="o">{</span>character<span class="o">}</span> <span class="s2">" Same as f{character}, but search in the opposite direction "</span>
+
+t<span class="o">{</span>character<span class="o">}</span> <span class="s2">" Forward til (until) the next occurrence of character (mnemonic: 'til/to'); the cursor is place immediately before and not on the character "</span>
+
+T<span class="o">{</span>character<span class="o">}</span> <span class="s2">" Same as t{character}, but search in the opposite direction "</span>
+
+<span class="p">;</span> <span class="s2">" Repeat last f, F, t or T operation "</span>
+
+, <span class="s2">" Repeat last f, F, t or T operation, but in the opposite direction "</span>
+
+C-f <span class="s2">" Forward a (full) screen (mnemonic: 'forward') "</span>
+
+C-b <span class="s2">" Back a (full) screen (mnemonic: 'back') "</span>
+
+C-d <span class="s2">" Down a (half) screen (mnemonic: 'down') "</span>
+
+C-u <span class="s2">" Up a (half) screen (mnemonic: 'up') "</span>
+
+H <span class="s2">" Jump to top of screen (mnemonic: 'high') "</span>
+
+M <span class="s2">" Jump to middle of screen (mnemonic: 'middle') "</span>
+
+L <span class="s2">" Jump to bottom of screen (mnemonic: 'low') "</span>
+
+gg <span class="s2">" Jump to top of file (mnemonic: like more or less pagers, except plain g isn’t available so we have to use gg) "</span>
+
+G <span class="s2">" Jump to bottom of file (mnemonic: like more or less pagers) "</span>
+
+200G <span class="s2">" Jump to line 200 "</span>
+
+:200 <span class="s2">" Same as 200G "</span>
+
+<span class="o">{</span> <span class="s2">" Jump to last blank line "</span>
+
+<span class="o">}</span> <span class="s2">" Jump to next blank line "</span>
+
+<span class="o">[[</span> <span class="s2">" Jump to previous { in column 0 "</span>
+
+<span class="o">]]</span> <span class="s2">" Jump to next { in column 0 "</span>
+
+<span class="o">][</span> <span class="s2">" Jump to next } in column 0 "</span>
+
+<span class="o">[]</span> <span class="s2">" Jump to previous } in column 0 "</span>
+
+% <span class="s2">" Jump to matching brace (with matchit.vim you can also jump to matching HTML tags and the like) "</span>
+
+<span class="o">]</span>s <span class="s2">" Jump to next misspelled word "</span>
+
+zg <span class="s2">" Mark a word as good, adding it to the spelling dictionary "</span></code></pre></figure> <h2 id="scrolling"> <a href="#scrolling" class="anchor-head"></a> Scrolling </h2> <figure class="highlight"><pre><code class="language-bash" data-lang="bash">zz <span class="s2">" Center current cursor line within viewport "</span>
+
+zt <span class="s2">" Scroll current cursor line to top of viewport "</span>
+
+zb <span class="s2">" Scroll current cursor line to bottom of viewport "</span>
+
+C#-y <span class="s2">" Scroll down a line "</span>
+
+C-e <span class="s2">" Scroll up a line "</span>
+
+C-d <span class="s2">" Scroll down one page "</span>
+
+C-u <span class="s2">" Scroll up one page "</span></code></pre></figure> <h2 id="autonumbering-several-lines"> <a href="#autonumbering-several-lines" class="anchor-head"></a> Autonumbering Several Lines </h2> <ol> <li>Type “1.” in every line.</li> <li>Select all of them with visual block. (<code class="language-plaintext highlighter-rouge">&lt;C-v&gt;</code>)</li> <li> <table> <tbody> <tr> <td><code class="language-plaintext highlighter-rouge">g&lt;C-a&gt;</code> for ascending</td> <td><code class="language-plaintext highlighter-rouge">g&lt;C-x&gt;</code> for descending</td> </tr> </tbody> </table> </li> </ol> <h1 id="insert-mode"> <a href="#insert-mode" class="anchor-head"></a> Insert Mode </h1> <figure class="highlight"><pre><code class="language-bash" data-lang="bash">C-o <span class="s2">" Switch from insert mode to normal mode just for one normal mode command "</span>
+
+C-w <span class="s2">" Delet to the beginning of current word "</span>
+
+C-t <span class="s2">" Indent current line "</span>
+
+C-d <span class="s2">" Dedent current line "</span>
+
+C-v&lt;tab&gt; <span class="s2">" Insert a hard tab when it normally expands to spaces "</span>
+
+C-r% <span class="s2">" Insert current filename "</span></code></pre></figure> <h1 id="command-mode"> <a href="#command-mode" class="anchor-head"></a> Command Mode </h1> <figure class="highlight"><pre><code class="language-bash" data-lang="bash">:map <span class="s2">" Give a list of user-defined mappings "</span>
+
+:help index <span class="s2">" Give a full list of mappings "</span>
+
+:help map-witch-keys <span class="s2">" Give a list of all unmapped keys "</span>
+
+:helpgrep <span class="o">{</span>pattern<span class="o">}</span> <span class="s2">" Search all help documents for pattern  "</span>
+
+:earlier 5m <span class="s2">" Go backward 5 minutes in time "</span>
+
+:later 5m <span class="s2">" Go forward  5 minutes in time "</span>
+
+:setlocal spell! <span class="nv">spelllang</span><span class="o">=</span>en_us <span class="s2">" Set spell checker "</span>
+
+:set ic <span class="s2">" Case insensitive "</span>
+
+:set hlsearch <span class="s2">" Highlight search "</span>
+
+:m,n bw <span class="s2">" Wipe m-n buffers "</span>
+
+:bd pattern <span class="s2">" Search a pattern in buffers to delete "</span>
+
+:buffers <span class="s2">" Show all buffers "</span>
+
+:nohlsearch <span class="o">(</span>:noh<span class="o">)</span> <span class="s2">" Remove currently visible search highlighting (doesn’t disable highlighting permanently) "</span>
+
+:enew <span class="o">(</span>:ene<span class="o">)</span> <span class="s2">" Open a new scratch buffer "</span>
+
+:write <span class="s2">" Write current buffer to a file "</span>
+
+:read <span class="s2">" Read into current buffer; eg:  "</span>
+
+:read <span class="o">!{</span>shell <span class="nb">command</span><span class="o">}</span> <span class="s2">" Insert output of shell command into current buffer at current cursor location "</span>
+
+:<span class="o">{</span>range<span class="o">}</span>d <span class="s2">" Delete lines in {range} "</span>
+
+:<span class="o">{</span>range<span class="o">}</span>y <span class="s2">" Yank lines in {range} "</span>
+
+:g/<span class="o">{</span>pattern<span class="o">}</span>/<span class="o">{</span>action<span class="o">}</span> <span class="s2">" Perform action on lines matching pattern (eg. :g/a/d would delete all lines matching "</span>a<span class="s2">") "</span>
+
+:v/<span class="o">{</span>pattern<span class="o">}</span>/<span class="o">{</span>action<span class="o">}</span> <span class="s2">" Inverse of :g (performs action on non-matching lines) "</span>
+
+:echo <span class="nb">expand</span><span class="o">(</span><span class="s2">"%"</span><span class="o">)</span> <span class="s2">" Show the current buffer PATH "</span>
+
+:w <span class="o">!</span><span class="nb">sudo tee</span> % <span class="s2">" Write to a read only file with root privileges "</span></code></pre></figure> <h2 id="command-line-window"> <a href="#command-line-window" class="anchor-head"></a> command-line Window </h2> <p>To open the command-line window (showing full command history in a buffer, which you can edit, then use <CR> to run a given line’s command):</CR></p> <figure class="highlight"><pre><code class="language-bash" data-lang="bash">q: <span class="s2">" For commands "</span>
+
+q/ <span class="s2">" For searches (or q?) "</span></code></pre></figure> <h2 id="quickfixlocation-list"> <a href="#quickfixlocation-list" class="anchor-head"></a> Quickfix/Location List </h2> <figure class="highlight"><pre><code class="language-bash" data-lang="bash">:cclose <span class="o">(</span>:ccl<span class="o">)</span> <span class="s2">" Close quickfix window (:lclose and :lcl for location list) "</span>
+
+:colder <span class="o">(</span>:col<span class="o">)</span> <span class="s2">" Show previous quickfix results (:lolder and :lol for location list) "</span>
+
+:cnewer <span class="o">(</span>:cnew<span class="o">)</span> <span class="s2">" Show subsequent quickfix results (:lnewer and :lnew for location list) "</span></code></pre></figure> <h1 id="marks-and-jumps"> <a href="#marks-and-jumps" class="anchor-head"></a> Marks And Jumps </h1> <p>When jumping to a mark, there are two variants:</p> <p>with <code class="language-plaintext highlighter-rouge">'</code>, the jump is line-wise, to the first non-blank character on the line containing the mark</p> <p>with `, the jump is character-wise, to the position of the mark within the line</p> <figure class="highlight"><pre><code class="language-bash" data-lang="bash">m<span class="o">{</span>letter<span class="o">}</span> <span class="s2">" Create a mark at the current position "</span>
+
+<span class="s1">'{letter} " Jump to specified mark (first non-whitespace character on line) "
+
+`{letter} " Jump to specified mark (to column where mark was set) "
+
+'' " Jump back to the last line jumped from "
+
+`` " Jump back to the last position jumped from "
+
+`. " Jump to position where last change occurred in current buffer "
+
+`[ and `] " Jump to beginning/end of last changed or yanked text "
+
+`&lt; and `&gt; " Jump to beginning/end of last visual selection "
+
+:jump " Show the jump list (places you’ve jumped to with motion commands, specifically those listed at :h jump-motions) "
+
+C-o " Move to older position in jump list (mnemonic: "jump out") "
+
+C-i: " Move to newer position in jump list (mnemonic: "jump in") "
+
+:changes " Show the changes list for the current buffer (places you’ve edited) "
+
+g; " Move to older position in change list "
+
+g, " Move to newer position in change list "</span></code></pre></figure> <h1 id="folding"> <a href="#folding" class="anchor-head"></a> Folding </h1> <figure class="highlight"><pre><code class="language-bash" data-lang="bash">zr <span class="s2">" Decrement 'foldlevel' A.K.A. 'fold less' (mnemonic: reduce) "</span>
+
+zm <span class="s2">" Increment 'foldlevel' A.K.A. 'fold more' (mnemonic: more) "</span>
+
+zR <span class="s2">" Decrement 'foldlevel' to zero A.K.A. 'unfold everything' (mnemonic: reduce) "</span>
+
+zM <span class="s2">" Increment 'foldlevel' to maximum A.K.A&gt; 'fold everything' (mnemonic: more) "</span>
+
+zo <span class="s2">" Open current fold "</span>
+
+zO <span class="s2">" Open current fold recursively "</span>
+
+zc <span class="s2">" Close current fold "</span>
+
+zC <span class="s2">" Close current fold recursively "</span>
+
+zv <span class="s2">" View cursor line A.K.A. 'open just enough folds to make cursor line visible' (mnemonic: view/visible) "</span>
+
+zi <span class="s2">" Toggle value of 'foldenable' (mnemonic: invert) "</span></code></pre></figure> <p>#Visual Mode Commands</p> <p>Enter using V:</p> <figure class="highlight"><pre><code class="language-bash" data-lang="bash">gq <span class="s2">" Reformat (rewrap) selection "</span>
+
+o <span class="s2">" Jump to opposite end of selection "</span></code></pre></figure> <h1 id="visual-block-mode-commands"> <a href="#visual-block-mode-commands" class="anchor-head"></a> Visual (block) Mode Commands </h1> <p>Enter using <C-v>:</C-v></p> <figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$A</span><span class="o">{</span>string<span class="o">}</span>&lt;Esc&gt; <span class="s2">" Append to each line, varying lengths (details). "</span></code></pre></figure> <h1 id="mappings"> <a href="#mappings" class="anchor-head"></a> Mappings </h1> <figure class="highlight"><pre><code class="language-bash" data-lang="bash">CTRL-w Enter <span class="s2">" Open current item in a split. "</span></code></pre></figure> <h2 id="mappings-available-in-command-mode"> <a href="#mappings-available-in-command-mode" class="anchor-head"></a> Mappings Available in Command Mode </h2> <figure class="highlight"><pre><code class="language-bash" data-lang="bash">&lt;C-r&gt;<span class="o">{</span>register<span class="o">}</span> <span class="s1">' Paste the text from the specified register into the command line (eg. to paste the last-yanked text, do &lt;C-r&gt;")  '</span>
+
+&lt;C-r&gt;w <span class="s2">" Paste word currently under cursor "</span></code></pre></figure> <h2 id="special-mappings"> <a href="#special-mappings" class="anchor-head"></a> Special Mappings </h2> <figure class="highlight"><pre><code class="language-bash" data-lang="bash">&lt;C-w&gt;&lt;CR&gt; <span class="s2">" Open quickfix entry in a horizontal split "</span></code></pre></figure> <h1 id="global-commands"> <a href="#global-commands" class="anchor-head"></a> Global Commands </h1> <figure class="highlight"><pre><code class="language-bash" data-lang="bash">:g/var[A-Z]<span class="se">\+</span><span class="o">[</span>0-9]/norm_da<span class="o">(</span>0P <span class="s2">" Delete around () in any line that has var'any sequence of a-z''any sequence of 0-9' pattern and paste in in the beginning of the line "</span>
+
+:12read <span class="o">!{</span>a shell <span class="nb">command</span><span class="o">}</span> <span class="s2">" Read the output of shell command and insert that into document after line 12(use </span><span class="nv">$ </span><span class="s2">for the end of document) "</span>
+
+:g/pattern/command <span class="s2">" Run the command on every line that included the pattern (use g! or v for reverse) "</span>
+
+:g/^<span class="se">\s</span><span class="k">*</span><span class="nv">$/</span>d <span class="s2">" Delete all empty lines "</span>
+
+:g/pattern/t<span class="nv">$ </span><span class="s2">" Copy every line that has the pattern in it and paste them at the end of document (use m</span><span class="nv">$ </span><span class="s2">for moving those lines) "</span>
+
+:g/^/m0 <span class="s2">" Reverse the line order in document "</span></code></pre></figure> <h1 id="diff"> <a href="#diff" class="anchor-head"></a> Diff </h1> <figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="o">[</span>c <span class="s2">" Jump to previous change "</span>
+
+<span class="o">]</span>c <span class="s2">" Jump to next change  "</span>
+
+<span class="k">do</span> <span class="s2">" Diff optain "</span>
+
+dp <span class="s2">" Diff put "</span>
+
+zo <span class="s2">" Open folded text "</span>
+
+zc <span class="s2">" Close folded text "</span>
+
+:diffupdate <span class="s2">" Update diffs "</span></code></pre></figure> <h1 id="search"> <a href="#search" class="anchor-head"></a> Search </h1> <figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="k">*</span> <span class="s2">" Find word under cursor "</span>
+
+<span class="c"># " Find word under cursor (reverse direction) "</span>
+
+g<span class="k">*</span> <span class="s2">" Like *, but also looks for matches which are substrings of other words "</span>
+
+g# <span class="s2">" Like #, but also looks for matches which are substrings of other words "</span>
+
+/<span class="o">{</span>pattern<span class="o">}</span> <span class="s2">" Find pattern (mnemonic: like Perl/Ruby/pager etc regex syntax) "</span>
+
+?<span class="o">{</span>pattern<span class="o">}</span> <span class="s2">" Find pattern (reverse direction) "</span>
+
+n <span class="s2">" Repeat last search "</span>
+
+N <span class="s2">" Repeat last search in opposite direction "</span>
+
+gn <span class="s2">" Go to next match and select it visually; can be used as a motion as well (ie. cgn means "</span>change next match<span class="s2">") "</span>
+
+ggn <span class="s2">" Go to first match in file "</span>
+
+Gn <span class="s2">" Go to last match in file "</span></code></pre></figure> <h2 id="ranges-and-patterns"> <a href="#ranges-and-patterns" class="anchor-head"></a> Ranges And Patterns </h2> <figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="s2">" End of the document "</span>
+<span class="nb">.</span> <span class="s2">" Current line "</span>
+^ <span class="s2">" Beginning of line "</span></code></pre></figure> <h1 id="my-vim-nvim-config"> <a href="#my-vim-nvim-config" class="anchor-head"></a> <a href="https://github.com/mhdzli/dotfiles/tree/master/src/.config/nvim">My Vim (Nvim) Config</a> </h1> </div> </article> </main> <nav class="post-nav"> <a class="post-nav-item post-nav-prev" href="/wiki/python/" > <div class="nav-arrow">کهنه‌تر</div> <span class="post-title">My Python Learninng Notes</span> </a> </nav> <footer class="footer"> <!-- <a class="footer_item" href="/thanks">سپاس</a> --> <a class="footer item" href="https://github.com/mhdzli"> <i class="fab fa-github"></i> گیت‌هاب </a> <a class="footer item" href="https://fosstodon.org/@mzeinali"> <i class="fab fa-linux"></i> mastodon </a> <a class="footer item" href="https://mas.to/@mz"> <i class="fa fa-hand-peace"></i> مستادون </a> <a class="footer item" href="https://lbry.tv/@mzeinali:c"> <i class="fa fa-video"></i> لایبرری </a> <a class="footer item" href="https://pixelfed.de/mzeinali"> <i class="fa fa-camera"></i> پیکسلفد </a> <a class="footer item" href="/feed.xml"> <i class="fa fa-rss"></i> خوراک </a> <a class="footer item" href="mailto:m@zmim.ir"> <i class="fa fa-envelope-open"></i> تماس </a> <!-- <a class="footer_item" href="javascript::void(0)">رزومه</a> <span class="footer_item">&copy; 2021</span> --> <small class="footer_copyright"> <small id="license"> <i class="fab fa-creative-commons"></i> مطالب این وبلاگ تحت مجوز <a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.fa"> کریتیو کامنز اتریبیوشن ۴.۰ اینترنشنال </a>قرار دارد. </small> <!-- simorq Theme: https://github.com/mhdzli/simorq تم <a href="https://github.com/mhdzli/simorq" target="_blank" rel="noreferrer noopener" > سیمرغ </a> نیرو گرفته از <a href="https://jekyllrb.com" target="_blank" rel="noreferrer noopener"> jekyll </a> --> </small> </footer> <script src="/assets/js/jquery-3.3.1.min.js"></script> <script src="/assets/js/persianumber.js"></script> <script> $(document).ready(function(){ $('.post-item-date').persiaNumber(); $('.archive-date').persiaNumber(); $('.recent-date').persiaNumber(); $('.post-updated-at').persiaNumber(); $('.date-modify').persiaNumber(); $('.header-date').persiaNumber(); }); </script> <script src="/assets/js/main.js" defer="defer"></script> </div> </body> </html>

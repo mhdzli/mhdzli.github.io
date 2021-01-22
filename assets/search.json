@@ -1,0 +1,45 @@
+[
+  
+    {
+      "title"    : "افزودن بخش دیدگاه‌ها با ماستودون",
+      "tags"     : "foss, mastodon, fediverse",
+      "url"      : "/mastodon-comments/",
+      "date"     : "2021-01-19 14:20:00 +0330"
+    } ,
+  
+    {
+      "title"    : "کاهش نویز با استفاده از sox",
+      "tags"     : "unix/linux, CLI",
+      "url"      : "/sox/",
+      "date"     : "2020-12-28 12:20:00 +0330"
+    } ,
+  
+    {
+      "title"    : "به روز رسانی افزونه ماهور.",
+      "tags"     : "unix/linux, foss, پروژه‌های من",
+      "url"      : "/mahour-update/",
+      "date"     : "2020-11-03 08:10:47 +0330"
+    } ,
+  
+    {
+      "title"    : "ماهور، افزونه تاریخ خورشیدی برای Thunderbird",
+      "tags"     : "unix/linux, foss, پروژه‌های من",
+      "url"      : "/mahour/",
+      "date"     : "2020-10-14 13:08:47 +0330"
+    } ,
+  
+    {
+      "title"    : "افزایش عمر باتری لپ‌‌تاپ",
+      "tags"     : "unix/linux, udev",
+      "url"      : "/tlp/",
+      "date"     : "2020-09-07 23:58:47 +0430"
+    } ,
+  
+    {
+      "title"    : "سیمرغ",
+      "tags"     : "unix/linux, سیمرغ, jekyll",
+      "url"      : "/simorq/",
+      "date"     : "2020-08-07 09:58:47 +0430"
+    } 
+  
+]
