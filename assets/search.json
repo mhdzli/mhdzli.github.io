@@ -1,6 +1,13 @@
 [
   
     {
+      "title"    : "ارثیه",
+      "tags"     : "داستان کوتاه",
+      "url"      : "/heritage/",
+      "date"     : "2021-01-25 14:20:00 +0330"
+    } ,
+  
+    {
       "title"    : "افزودن بخش دیدگاه‌ها با ماستودون",
       "tags"     : "foss, mastodon, fediverse",
       "url"      : "/mastodon-comments/",
