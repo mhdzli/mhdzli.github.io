@@ -1,6 +1,13 @@
 [
   
     {
+      "title"    : "نصب Ubuntu 20.04 روی تبلت Lenovo Thinkpad 10",
+      "tags"     : "foss, ubuntu, touch",
+      "url"      : "/Installing-Ubuntu-20.04-on-a-32-bit-uefi-device/",
+      "date"     : "2021-02-13 10:20:00 +0330"
+    } ,
+  
+    {
       "title"    : "ارثیه",
       "tags"     : "داستان کوتاه",
       "url"      : "/heritage/",
