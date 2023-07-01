@@ -1,0 +1,1278 @@
+<!DOCTYPE html> <html lang="fa"> <head prefix="og: http://ogp.me/ns#"> <meta charset="UTF-8" /> <meta http-equiv="X-UA-Compatible" content="ie=edge" /> <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <meta name="mobile-web-app-capable" content="yes" /> <meta name="apple-mobile-web-app-capable" content="yes" /> <meta name="application-name" content="محمد زینلی" /> <meta name="apple-mobile-web-app-status-bar-style" content="#fff" /> <meta name="apple-mobile-web-app-title" content="محمد زینلی" /> <title> تنظیمات صفحه کلید در گنو/لینوکس - محمد زینلی </title> <link rel="alternate" href="http://localhost:4000/keyboard-configurations/" hreflang="fa" /> <link rel="canonical" href="http://localhost:4000/keyboard-configurations/" /> <meta name="description" content="تنظیمات صفحه کلید در گنو/لینوکس و شخصی‌سازی لایه‌های صفحه کلید." /> <meta name="referrer" content="no-referrer-when-downgrade" /> <meta property="fb:app_id" content="" /> <meta property="og:site_name" content="تنظیمات صفحه کلید در گنو/لینوکس | " /> <meta property="og:title" content="تنظیمات صفحه کلید در گنو/لینوکس | " /> <meta property="og:type" content="website" /> <meta property="og:url" content="http://localhost:4000/keyboard-configurations/" /> <meta property="og:description" content="تنظیمات صفحه کلید در گنو/لینوکس و شخصی‌سازی لایه‌های صفحه کلید." /> <meta property="og:image" content="http://localhost:4000/assets/img/ogp.png" /> <meta property="og:image:width" content="640" /> <meta property="og:image:height" content="640" /> <meta name="twitter:card" content="summary" /> <meta name="twitter:title" content="تنظیمات صفحه کلید در گنو/لینوکس | " /> <meta name="twitter:url" content="http://localhost:4000/keyboard-configurations/" /> <meta name="twitter:site" content="@" /> <meta name="twitter:creator" content="@" /> <meta name="twitter:description" content="تنظیمات صفحه کلید در گنو/لینوکس و شخصی‌سازی لایه‌های صفحه کلید." /> <meta name="twitter:image" content="http://localhost:4000/assets/img/ogp.png" /> <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="محمد زینلی" /> <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" /> <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png" /> <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png" /> <link rel="manifest" href="/assets/favicons/site.webmanifest" /> <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#5bbad5" /> <meta name="apple-mobile-web-app-title" content="Jekyll Klise" /> <meta name="application-name" content="Jekyll Klise" /> <meta name="msapplication-TileColor" content="#da532c" /> <meta name="theme-color" content="#2c2c2c" /> <link rel="stylesheet" href="/assets/css/style.css" /> </head> <body data-theme="dark" class="notransition"> <script> const body = document.body; const data = body.getAttribute("data-theme"); const initTheme = (state) => { if (state === "dark") { body.setAttribute("data-theme", "dark"); } else if (state === "light") { body.removeAttribute("data-theme"); } else { localStorage.setItem("theme", data); } }; initTheme(localStorage.getItem("theme")); setTimeout(() => body.classList.remove("notransition"), 75); </script> <div class="navbar" role="navigation"> <nav class="menu"> <input type="checkbox" id="menu-trigger" class="menu-trigger" /> <label for="menu-trigger"> <span class="menu-icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512" > <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" /> </svg> </span> </label> <a id="mode"> <svg class="mode-sunny" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512" > <title>LIGHT</title> <line x1="256" y1="48" x2="256" y2="96" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="256" y1="416" x2="256" y2="464" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="403.08" y1="108.92" x2="369.14" y2="142.86" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="142.86" y1="369.14" x2="108.92" y2="403.08" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="464" y1="256" x2="416" y2="256" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="96" y1="256" x2="48" y2="256" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="403.08" y1="403.08" x2="369.14" y2="369.14" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="142.86" y1="142.86" x2="108.92" y2="108.92" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <circle cx="256" cy="256" r="80" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> </svg> <svg class="mode-moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512" > <title>DARK</title> <line x1="256" y1="48" x2="256" y2="96" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="256" y1="416" x2="256" y2="464" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="403.08" y1="108.92" x2="369.14" y2="142.86" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="142.86" y1="369.14" x2="108.92" y2="403.08" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="464" y1="256" x2="416" y2="256" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="96" y1="256" x2="48" y2="256" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="403.08" y1="403.08" x2="369.14" y2="369.14" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="142.86" y1="142.86" x2="108.92" y2="108.92" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <circle cx="256" cy="256" r="80" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> </svg> </a> <div class="trigger"> <div class="trigger-container"><a class="menu-link" href="/"> <b><i class="fa fa-home"> خانه</i></b> </a><a class="menu-link" href="/archive/"> <b><i class="fa fa-archive"> بایگانی</i></b> </a><a class="menu-link" href="/tags/"> <b><i class="fa fa-tag"> برچسب‌ها</i></b> </a><a class="menu-link" href="/wiki/"> <b><i class="fab fa-wikipedia-w"> ویکی</i></b> </a><a class="menu-link" href="/about/"> <b><i class="fa fa-address-card"> درباره</i></b> </a><a class="menu-link rss" href="/feed.xml"> <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 512 512" fill="#ED812E" > <title>خوراک</title> <path d="M108.56,342.78a60.34,60.34,0,1,0,60.56,60.44A60.63,60.63,0,0,0,108.56,342.78Z" /> <path d="M48,186.67v86.55c52,0,101.94,15.39,138.67,52.11s52,86.56,52,138.67h86.66C325.33,312.44,199.67,186.67,48,186.67Z" /> <path d="M48,48v86.56c185.25,0,329.22,144.08,329.22,329.44H464C464,234.66,277.67,48,48,48Z" /> </svg> </a> </div> </div> </nav> </div> <div class="wrapper post"> <main class="page-content" aria-label="Content"> <article itemscope itemtype="https://schema.org/BlogPosting"> <header class="header"> <div class="tags"> <span itemprop="keywords"> <a class="tag" href="/tags/#foss">FOSS</a>, <a class="tag" href="/tags/#swaywm">SWAYWM</a>, <a class="tag" href="/tags/#wayland">WAYLAND</a>, <a class="tag" href="/tags/#xorg">XORG</a>, <a class="tag" href="/tags/#linux">LINUX</a> </span> </div> <h1 class="header-title" itemprop="headline">تنظیمات صفحه کلید در گنو/لینوکس</h1> <div class="post-meta"> <time class="header-date" datetime="2022-04-22T10:42:36+04:30" itemprop="datePublished"> 02 اردیبهشت، 1401 </time> <span itemprop="author" itemscope itemtype="https://schema.org/Person"> <span itemprop="name">محمد زینلی</span> </span> <time hidden class="date-modify" datetime="" itemprop="dateModified"> 02 اردیبهشت، 1401 </time> <span hidden itemprop="publisher" itemtype="Person">محمد زینلی</span> <span hidden itemprop="image"></span> <span hidden itemprop="mainEntityOfPage"><p>استفاده از دو زبان فارسی و انگلیسی برای کاربران فارسی رایانه ضروری است. پشتیبانی از زبان فارسی در گنو/لینوکس مدت‌هاست که افزوده شده و همواره استانداردهای بهتری به نسبت ویندوز داشته است. با این حال شخصی سازی بیشتر، همواره تجربه خوشایندتری در کار با رایانه برای ما خواهد داشت. استفاده از دو زبان همزمان و نبود استاندارد یکسان برای فارسی نویسی، موجب می‌شود کاربران فارسی زبان گاه با مشکلاتی مواجه شوند، که هرگز برای کاربران انگلیسی زبان پیش نمی‌آید. چندی پیش یکی از دوستان دنبال راهی برای افزودن یک نویسه خاص به صفحه کلید بود. اینکه نتوانسته بود راهنمای مناسبی برای این کار پیدا کند، موجب شد به فکر نوشتن یک مطلب در این زمینه بیفتم.</p> </span> </div> </header> <ul id="toc" class="toc__list"> <li class="toc-entry toc-h1"><a href="#تفاوت-صفحه-کلیدها-و-layoutهای-مختلف">تفاوت صفحه کلیدها و layoutهای مختلف</a></li> <li class="toc-entry toc-h1"><a href="#تنظیمات-صفحه-کلید-در-tty">تنظیمات صفحه کلید در tty</a></li> <li class="toc-entry toc-h1"><a href="#تنظیمات-صفحه-کلید-در-x11">تنظیمات صفحه کلید در X11</a> <ul class="toc__sublist"> <li class="toc-entry toc-h2"><a href="#setxkbmap">setxkbmap</a></li> <li class="toc-entry toc-h2"><a href="#xmodmap">xmodmap</a></li> </ul> </li> <li class="toc-entry toc-h1"><a href="#swaywm-روی-wayland">Swaywm روی Wayland</a></li> <li class="toc-entry toc-h1"><a href="#ساخت-keymap-شخصی">ساخت keymap شخصی</a></li> </ul> <div class="page-content" itemprop="articleBody"> <p>استفاده از دو زبان فارسی و انگلیسی برای کاربران فارسی رایانه ضروری است. پشتیبانی از زبان فارسی در گنو/لینوکس مدت‌هاست که افزوده شده و همواره استانداردهای بهتری به نسبت ویندوز داشته است. با این حال شخصی سازی بیشتر، همواره تجربه خوشایندتری در کار با رایانه برای ما خواهد داشت. استفاده از دو زبان همزمان و نبود استاندارد یکسان برای فارسی نویسی، موجب می‌شود کاربران فارسی زبان گاه با مشکلاتی مواجه شوند، که هرگز برای کاربران انگلیسی زبان پیش نمی‌آید. چندی پیش یکی از دوستان دنبال راهی برای افزودن یک نویسه خاص به صفحه کلید بود. اینکه نتوانسته بود راهنمای مناسبی برای این کار پیدا کند، موجب شد به فکر نوشتن یک مطلب در این زمینه بیفتم.</p> <p>اینجا تلاش می‌کنم درباره تنظیمات صفحه کلید در محیط کنسول <code class="language-plaintext highlighter-rouge">tty</code> و محیط‌های گرافیکی <code class="language-plaintext highlighter-rouge">X11</code> و مدیر پنجره <code class="language-plaintext highlighter-rouge">Sway</code> روی ویلند بنویسم. تنظیمات صفحه کلید روی ویلند وابسته به کامپوزیتوری است که از آن استفاده می‌کنید. اما عمده آنچه اینجا به آن اشاره می‌شود، بر روی محیط‌های کاربری دیگر ویلند، به ویژه آنها که بر اساس <code class="language-plaintext highlighter-rouge">wlroots</code> هستند نیز فابل انجام است.</p> <h1 id="تفاوت-صفحه-کلیدها-و-layoutهای-مختلف"> <a href="#تفاوت-صفحه-کلیدها-و-layoutهای-مختلف" class="anchor-head"></a> تفاوت صفحه کلیدها و <code class="language-plaintext highlighter-rouge">layout</code>های مختلف </h1> <p>بیشتر ما از <code class="language-plaintext highlighter-rouge">layout</code> انگلیسی و فارسی <code class="language-plaintext highlighter-rouge">QWERTY</code> روی صفحه کلید استفاده می‌کنیم. که نمونه آن را در عکس زیر می‌توانید ببینید.</p> <div style="text-align: center;"> <img src="600px-KB_United_States.png" style="max-width: 80%; margin: 10px;" alt="صفحه کلید qwerty انگلیسی" /> </div> <p>اما چیدمان‌های دیگری نیز برای صفحه کلیدهای <code class="language-plaintext highlighter-rouge">QWERTY</code> بسته به زبان صفحه کلید وجود دارد. به عنوان نمونه صفحه کلید فرانسوی <code class="language-plaintext highlighter-rouge">AZERTY</code> که تغییراتی را در صفحه کلید انگلیسی <code class="language-plaintext highlighter-rouge">QWERTY</code> برای سازگاری بیشتر با زبان فرانسوی داده است:</p> <div style="text-align: center;"> <img src="KB_France.png" style="max-width: 80%; margin: 10px;" alt="صفحه کلید azerty فرانسوی" /> </div> <p>برای اطلاعات بیشتر در این زمینه می‌توانید صفحه مربوط به آن را در <a href="https://en.wikipedia.org/wiki/Keyboard_layout" target="_blank" rel="noopener noreferrer">ویکی‌پدیا</a> بخوانید.</p> <p>همچنین چیدمان‌های دیگری نیز از صفحه کلید انگلیسی وجود دارد که <a href="https://en.wikipedia.org/wiki/Dvorak_keyboard_layout" target="_blank" rel="noopener noreferrer"><code class="language-plaintext highlighter-rouge">DVORAK</code></a> و <a href="https://en.wikipedia.org/wiki/Colemak" target="_blank" rel="noopener noreferrer"><code class="language-plaintext highlighter-rouge">COLEMAK</code></a> شناخته شده‌تر هستند.</p> <p>نمونه صفحه کلید <code class="language-plaintext highlighter-rouge">DVORAK</code>:</p> <div style="text-align: center;"> <img src="KB_United_States_Dvorak.png" style="max-width: 80%; margin: 10px;" alt="صفحه کلید dvorak" /> </div> <p>نمونه صفحه کلید <code class="language-plaintext highlighter-rouge">COLEMAK</code>:</p> <div style="text-align: center;"> <img src="600px-KB_US-Colemak.png" style="max-width: 80%; margin: 10px;" alt="صفحه کلید colemak" /> </div> <p><a href="https://kbdlayout.info/kbdfar" target="_blank" rel="noopener noreferrer">صفحه کلید فارسی استاندارد</a> نیز نمونه‌ای از صفحه کلیدهای <code class="language-plaintext highlighter-rouge">QWERTY</code> دسته‌بندی می‌شود. که چیدمان کلید‌ها در آن به این صورت است:</p> <div style="text-align: center;"> <img src="KB_Persian.png" style="max-width: 80%; margin: 10px;" alt="صفحه کلید فارسی استاندارد" /> </div> <h1 id="تنظیمات-صفحه-کلید-در-tty"> <a href="#تنظیمات-صفحه-کلید-در-tty" class="anchor-head"></a> تنظیمات صفحه کلید در <code class="language-plaintext highlighter-rouge">tty</code> </h1> <p>شاید کمتر برای شما پیش آمده باشد که بخواهید تنظیمات صفحه کلید را در کنسول یا همان محیط <code class="language-plaintext highlighter-rouge">tty</code> تغییر دهید بیشتر ما از صفحه کلید انگلیسی <code class="language-plaintext highlighter-rouge">QWERTY</code> که بیشتر جاها پیش گزیده است، استفاده می‌کنیم. اما همانطور که اشاره شد، چیدمان‌های دیگری هم از حروف انگلیسی وجود دارد. این یکی از دلایلی است که ممکن است بخواهیم در محیط کنسول از یک <code class="language-plaintext highlighter-rouge">layout</code> متفاوت استفاده کنیم.</p> <p>چنانچه از <code class="language-plaintext highlighter-rouge">Systemd</code> به عنوان راه‌انداز استفاده می‌کنید می‌توانید با فرمان <code class="language-plaintext highlighter-rouge">localectl list-keymaps</code> لیستی از چیدمان‌های موجود را ببینید. برای من خروجی این دستور ۲۳۲ صفحه کلید متفاوت را نمایش می‌دهد.</p> <div class="code-block"> <figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>localectl list-keymaps | <span class="nb">wc</span> <span class="nt">-l</span>
+232</code></pre></figure> </div> <p>همچنین می‌توانید با استفاده از <code class="language-plaintext highlighter-rouge">grep</code> صفحه کلید مورد نظرتان را بیابید:</p> <div style="text-align: center;"> <img src="localectl.png" style="max-width: 80%; margin: 10px;" alt="دستور localectl" /> </div> <p>در صورتی که از <code class="language-plaintext highlighter-rouge">Systemd</code> استفاده نمی‌کنید، دستور <code class="language-plaintext highlighter-rouge">find</code> می‌تواند لیستی از صفحه کلیدهای موجود را به شما بدهد. خروجی آن برای من به این صورت است:</p> <div class="code-block"> <figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>find /usr/share/kbd/keymaps/ <span class="nt">-type</span> f <span class="nt">-name</span> <span class="s2">"*"</span>
+/usr/share/kbd/keymaps/amiga/amiga-de.map.gz
+/usr/share/kbd/keymaps/amiga/amiga-us.map.gz
+/usr/share/kbd/keymaps/atari/atari-de.map.gz
+/usr/share/kbd/keymaps/atari/atari-se.map.gz
+/usr/share/kbd/keymaps/atari/atari-uk-falcon.map.gz
+/usr/share/kbd/keymaps/atari/atari-us.map.gz
+/usr/share/kbd/keymaps/i386/azerty/azerty.map.gz
+/usr/share/kbd/keymaps/i386/azerty/be-latin1.map.gz
+/usr/share/kbd/keymaps/i386/azerty/fr-latin1.map.gz
+/usr/share/kbd/keymaps/i386/azerty/fr-latin9.map.gz
+/usr/share/kbd/keymaps/i386/azerty/fr-pc.map.gz
+/usr/share/kbd/keymaps/i386/azerty/fr.map.gz
+/usr/share/kbd/keymaps/i386/azerty/wangbe.map.gz
+/usr/share/kbd/keymaps/i386/azerty/wangbe2.map.gz
+/usr/share/kbd/keymaps/i386/bepo/fr-bepo-latin9.map.gz
+/usr/share/kbd/keymaps/i386/bepo/fr-bepo.map.gz
+/usr/share/kbd/keymaps/i386/carpalx/carpalx-full.map.gz
+/usr/share/kbd/keymaps/i386/carpalx/carpalx.map.gz
+/usr/share/kbd/keymaps/i386/colemak/colemak.map.gz
+/usr/share/kbd/keymaps/i386/dvorak/ANSI-dvorak.map.gz
+/usr/share/kbd/keymaps/i386/dvorak/dvorak-ca-fr.map.gz
+/usr/share/kbd/keymaps/i386/dvorak/dvorak-es.map.gz
+/usr/share/kbd/keymaps/i386/dvorak/dvorak-fr.map.gz
+/usr/share/kbd/keymaps/i386/dvorak/dvorak-l.map.gz
+/usr/share/kbd/keymaps/i386/dvorak/dvorak-la.map.gz
+/usr/share/kbd/keymaps/i386/dvorak/dvorak-no.map.gz
+/usr/share/kbd/keymaps/i386/dvorak/dvorak-programmer.map.gz
+/usr/share/kbd/keymaps/i386/dvorak/dvorak-r.map.gz
+/usr/share/kbd/keymaps/i386/dvorak/dvorak-ru.map.gz
+/usr/share/kbd/keymaps/i386/dvorak/dvorak-sv-a1.map.gz
+/usr/share/kbd/keymaps/i386/dvorak/dvorak-sv-a5.map.gz
+/usr/share/kbd/keymaps/i386/dvorak/dvorak-uk.map.gz
+/usr/share/kbd/keymaps/i386/dvorak/dvorak-ukp.map.gz
+/usr/share/kbd/keymaps/i386/dvorak/dvorak.map.gz
+/usr/share/kbd/keymaps/i386/fgGIod/tr_f-latin5.map.gz
+/usr/share/kbd/keymaps/i386/fgGIod/trf-fgGIod.map.gz
+/usr/share/kbd/keymaps/i386/include/applkey.map.gz
+/usr/share/kbd/keymaps/i386/include/azerty-layout.inc
+/usr/share/kbd/keymaps/i386/include/backspace.map.gz
+/usr/share/kbd/keymaps/i386/include/compose.inc
+/usr/share/kbd/keymaps/i386/include/ctrl.map.gz
+/usr/share/kbd/keymaps/i386/include/euro.map.gz
+/usr/share/kbd/keymaps/i386/include/euro1.inc
+/usr/share/kbd/keymaps/i386/include/euro1.map.gz
+/usr/share/kbd/keymaps/i386/include/euro2.map.gz
+/usr/share/kbd/keymaps/i386/include/keypad.map.gz
+/usr/share/kbd/keymaps/i386/include/linux-keys-bare.inc
+/usr/share/kbd/keymaps/i386/include/linux-keys-extd.inc
+/usr/share/kbd/keymaps/i386/include/linux-with-alt-and-altgr.inc
+/usr/share/kbd/keymaps/i386/include/linux-with-modeshift-altgr.inc
+/usr/share/kbd/keymaps/i386/include/linux-with-two-alt-keys.inc
+/usr/share/kbd/keymaps/i386/include/qwerty-layout.inc
+/usr/share/kbd/keymaps/i386/include/qwertz-layout.inc
+/usr/share/kbd/keymaps/i386/include/unicode.map.gz
+/usr/share/kbd/keymaps/i386/include/windowkeys.map.gz
+/usr/share/kbd/keymaps/i386/neo/README.md
+/usr/share/kbd/keymaps/i386/neo/adnw.map.gz
+/usr/share/kbd/keymaps/i386/neo/bone.map.gz
+/usr/share/kbd/keymaps/i386/neo/koy.map.gz
+/usr/share/kbd/keymaps/i386/neo/neo.map.gz
+/usr/share/kbd/keymaps/i386/neo/neoqwertz.map.gz
+/usr/share/kbd/keymaps/i386/olpc/es-olpc.map.gz
+/usr/share/kbd/keymaps/i386/olpc/pt-olpc.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/bashkir.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/bg-cp1251.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/bg-cp855.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/bg_bds-cp1251.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/bg_bds-utf8.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/bg_pho-cp1251.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/bg_pho-utf8.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/br-abnt.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/br-abnt2.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/br-latin1-abnt2.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/br-latin1-us.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/by-cp1251.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/by.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/bywin-cp1251.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/ca.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/cf.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/cz-cp1250.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/cz-lat2-prog.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/cz-lat2.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/cz.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/defkeymap.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/defkeymap_V1.0.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/dk-latin1.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/dk.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/emacs.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/emacs2.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/es-cp850.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/es.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/et-nodeadkeys.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/et.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/fa.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/fi.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/gr-pc.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/gr.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/hu101.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/hypermap.m4
+/usr/share/kbd/keymaps/i386/qwerty/il-heb.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/il-phonetic.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/il.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/is-latin1-us.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/is-latin1.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/it-ibm.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/it.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/it2.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/jp106.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/kazakh.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/ky_alt_sh-UTF-8.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/kyrgyz.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/la-latin1.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/lt.baltic.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/lt.l4.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/lt.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/lv-tilde.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/lv.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/mk-cp1251.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/mk-utf.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/mk.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/mk0.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/nl.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/nl2.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/no-latin1.doc
+/usr/share/kbd/keymaps/i386/qwerty/no-latin1.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/no.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/pc110.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/pl.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/pl1.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/pl2.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/pl3.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/pl4.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/pt-latin1.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/pt-latin9.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/ro.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/ro_std.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/ro_win.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/ru-cp1251.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/ru-ms.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/ru-yawerty.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/ru.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/ru1.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/ru2.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/ru3.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/ru4.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/ru_win.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/ruwin_alt-CP1251.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/ruwin_alt-KOI8-R.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/ruwin_alt-UTF-8.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/ruwin_alt_sh-UTF-8.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/ruwin_cplk-CP1251.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/ruwin_cplk-KOI8-R.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/ruwin_cplk-UTF-8.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/ruwin_ct_sh-CP1251.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/ruwin_ct_sh-KOI8-R.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/ruwin_ct_sh-UTF-8.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/ruwin_ctrl-CP1251.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/ruwin_ctrl-KOI8-R.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/ruwin_ctrl-UTF-8.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/se-fi-ir209.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/se-fi-lat6.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/se-ir209.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/se-lat6.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/sk-prog-qwerty.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/sk-qwerty.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/sr-cy.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/sv-latin1.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/tj_alt-UTF8.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/tr_q-latin5.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/tralt.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/trf.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/trq.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/ttwin_alt-UTF-8.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/ttwin_cplk-UTF-8.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/ttwin_ct_sh-UTF-8.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/ttwin_ctrl-UTF-8.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/ua-cp1251.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/ua-utf-ws.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/ua-utf.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/ua-ws.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/ua.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/uk.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/us-acentos.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/us.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/us1.map.gz
+/usr/share/kbd/keymaps/i386/qwertz/croat.map.gz
+/usr/share/kbd/keymaps/i386/qwertz/cz-qwertz.map.gz
+/usr/share/kbd/keymaps/i386/qwertz/cz-us-qwertz.map.gz
+/usr/share/kbd/keymaps/i386/qwertz/de-latin1-nodeadkeys.map.gz
+/usr/share/kbd/keymaps/i386/qwertz/de-latin1.map.gz
+/usr/share/kbd/keymaps/i386/qwertz/de-mobii.map.gz
+/usr/share/kbd/keymaps/i386/qwertz/de.map.gz
+/usr/share/kbd/keymaps/i386/qwertz/de_CH-latin1.map.gz
+/usr/share/kbd/keymaps/i386/qwertz/de_alt_UTF-8.map.gz
+/usr/share/kbd/keymaps/i386/qwertz/fr_CH-latin1.map.gz
+/usr/share/kbd/keymaps/i386/qwertz/fr_CH.map.gz
+/usr/share/kbd/keymaps/i386/qwertz/hu.map.gz
+/usr/share/kbd/keymaps/i386/qwertz/sg-latin1-lk450.map.gz
+/usr/share/kbd/keymaps/i386/qwertz/sg-latin1.map.gz
+/usr/share/kbd/keymaps/i386/qwertz/sg.map.gz
+/usr/share/kbd/keymaps/i386/qwertz/sk-prog-qwertz.map.gz
+/usr/share/kbd/keymaps/i386/qwertz/sk-qwertz.map.gz
+/usr/share/kbd/keymaps/i386/qwertz/slovene.map.gz
+/usr/share/kbd/keymaps/i386/qwertz/sr-latin.map.gz
+/usr/share/kbd/keymaps/include/compose.8859_7
+/usr/share/kbd/keymaps/include/compose.8859_8
+/usr/share/kbd/keymaps/include/compose.latin
+/usr/share/kbd/keymaps/include/compose.latin1
+/usr/share/kbd/keymaps/include/compose.latin2
+/usr/share/kbd/keymaps/include/compose.latin3
+/usr/share/kbd/keymaps/include/compose.latin4
+/usr/share/kbd/keymaps/include/vim-compose.latin1
+/usr/share/kbd/keymaps/mac/all/apple-a1048-sv.map.gz
+/usr/share/kbd/keymaps/mac/all/apple-a1243-sv-fn-reverse.map.gz
+/usr/share/kbd/keymaps/mac/all/apple-a1243-sv.map.gz
+/usr/share/kbd/keymaps/mac/all/apple-internal-0x0253-sv-fn-reverse.map.gz
+/usr/share/kbd/keymaps/mac/all/apple-internal-0x0253-sv.map.gz
+/usr/share/kbd/keymaps/mac/all/mac-be.map.gz
+/usr/share/kbd/keymaps/mac/all/mac-de-latin1-nodeadkeys.map.gz
+/usr/share/kbd/keymaps/mac/all/mac-de-latin1.map.gz
+/usr/share/kbd/keymaps/mac/all/mac-de_CH.map.gz
+/usr/share/kbd/keymaps/mac/all/mac-dk-latin1.map.gz
+/usr/share/kbd/keymaps/mac/all/mac-dvorak.map.gz
+/usr/share/kbd/keymaps/mac/all/mac-es.map.gz
+/usr/share/kbd/keymaps/mac/all/mac-fi-latin1.map.gz
+/usr/share/kbd/keymaps/mac/all/mac-fr.map.gz
+/usr/share/kbd/keymaps/mac/all/mac-fr_CH-latin1.map.gz
+/usr/share/kbd/keymaps/mac/all/mac-it.map.gz
+/usr/share/kbd/keymaps/mac/all/mac-no-latin1.map.gz
+/usr/share/kbd/keymaps/mac/all/mac-pl.map.gz
+/usr/share/kbd/keymaps/mac/all/mac-pt-latin1.map.gz
+/usr/share/kbd/keymaps/mac/all/mac-se.map.gz
+/usr/share/kbd/keymaps/mac/all/mac-template.map.gz
+/usr/share/kbd/keymaps/mac/all/mac-uk.map.gz
+/usr/share/kbd/keymaps/mac/all/mac-us.map.gz
+/usr/share/kbd/keymaps/mac/include/apple-a1048-base.inc
+/usr/share/kbd/keymaps/mac/include/apple-a1243-fn-reverse.inc
+/usr/share/kbd/keymaps/mac/include/apple-a1243-fn.inc
+/usr/share/kbd/keymaps/mac/include/mac-azerty-layout.inc
+/usr/share/kbd/keymaps/mac/include/mac-euro.map.gz
+/usr/share/kbd/keymaps/mac/include/mac-euro2.map.gz
+/usr/share/kbd/keymaps/mac/include/mac-linux-keys-bare.inc
+/usr/share/kbd/keymaps/mac/include/mac-qwerty-layout.inc
+/usr/share/kbd/keymaps/mac/include/mac-qwertz-layout.inc
+/usr/share/kbd/keymaps/sun/sun-pl-altgraph.map.gz
+/usr/share/kbd/keymaps/sun/sun-pl.map.gz
+/usr/share/kbd/keymaps/sun/sundvorak.map.gz
+/usr/share/kbd/keymaps/sun/sunkeymap.map.gz
+/usr/share/kbd/keymaps/sun/sunt4-es.map.gz
+/usr/share/kbd/keymaps/sun/sunt4-fi-latin1.map.gz
+/usr/share/kbd/keymaps/sun/sunt4-no-latin1.map.gz
+/usr/share/kbd/keymaps/sun/sunt5-cz-us.map.gz
+/usr/share/kbd/keymaps/sun/sunt5-de-latin1.map.gz
+/usr/share/kbd/keymaps/sun/sunt5-es.map.gz
+/usr/share/kbd/keymaps/sun/sunt5-fi-latin1.map.gz
+/usr/share/kbd/keymaps/sun/sunt5-fr-latin1.map.gz
+/usr/share/kbd/keymaps/sun/sunt5-ru.map.gz
+/usr/share/kbd/keymaps/sun/sunt5-uk.map.gz
+/usr/share/kbd/keymaps/sun/sunt5-us-cz.map.gz
+/usr/share/kbd/keymaps/sun/sunt6-uk.map.gz</code></pre></figure> </div> <p>و برای یافتن صفحه کلید مورد نظرتان به جای <code class="language-plaintext highlighter-rouge">*</code> عبارتی که می‌خواهید پیدا کنید را بین دو علامت <code class="language-plaintext highlighter-rouge">*</code> قرار دهید:</p> <div class="code-block"> <figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>find /usr/share/kbd/keymaps/ <span class="nt">-type</span> f <span class="nt">-name</span> <span class="s2">"*uk*"</span>
+/usr/share/kbd/keymaps/atari/atari-uk-falcon.map.gz
+/usr/share/kbd/keymaps/i386/dvorak/dvorak-uk.map.gz
+/usr/share/kbd/keymaps/i386/dvorak/dvorak-ukp.map.gz
+/usr/share/kbd/keymaps/i386/qwerty/uk.map.gz
+/usr/share/kbd/keymaps/mac/all/mac-uk.map.gz
+/usr/share/kbd/keymaps/sun/sunt5-uk.map.gz
+/usr/share/kbd/keymaps/sun/sunt6-uk.map.gz</code></pre></figure> </div> <p>برای تنظیم کردن صفحه کلید مورد نظرتان باید از فرمان <code class="language-plaintext highlighter-rouge">loadkeys</code> استفاده کنید. توجه کنید که اجرای این فرمان نیاز به دسترسی روت دارد:</p> <div class="code-block"> <figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">sudo </span>loadkeys fr
+<span class="nv">$ </span><span class="nb">sudo </span>loadkeys i386/azerty/fr.map.gz</code></pre></figure> </div> <p>برای این کار هم از نام صفحه کلید و هم از مسیر فایل <code class="language-plaintext highlighter-rouge">keymap</code> می‌توانید استفاده کنید. صفحه کلیدی را که انتخاب می‌کنید باید مناست کنسول بوده و کاراکترهای آن پشتیبانی شوند. چنانچه صفحه کلید فارسی را بخواهید برای کنسول تنظیم کنید با خطا مواجه خواهید شد:</p> <div class="code-block"> <figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">sudo </span>loadkeys fa
+unicode keysym out of range: U+FDFC
+syntax error, unexpected ERROR, expecting NUMBER or LITERAL or PLUS or UNUMBER</code></pre></figure> </div> <p>برای اینکه این تنظیمات به صورت همیشگی انجام شود می‌توانید با کلید واژه <code class="language-plaintext highlighter-rouge">KEYMAP</code> و در فایل ‪<code class="language-plaintext highlighter-rouge">/etc/vconsole.conf</code>‬ این کار را انجام دهید.</p> <div class="code-block"> <figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">cat</span> /etc/vconsole.conf
+<span class="nv">FONT</span><span class="o">=</span>ter-224b
+<span class="nv">KEYMAP</span><span class="o">=</span>us</code></pre></figure> </div> <h1 id="تنظیمات-صفحه-کلید-در-x11"> <a href="#تنظیمات-صفحه-کلید-در-x11" class="anchor-head"></a> تنظیمات صفحه کلید در <code class="language-plaintext highlighter-rouge">X11</code> </h1> <h2 id="setxkbmap"> <a href="#setxkbmap" class="anchor-head"></a> <code class="language-plaintext highlighter-rouge">setxkbmap</code> </h2> <p>برای تنظیم صفحه کلید در محیط‌های کاربری که از <code class="language-plaintext highlighter-rouge">X11</code> سرور استفاده می‌کنند، هر یک از آنها مانند گنوم یا کی‌دی‌ای برنامه خاص خودشان را دارند. یک راه عمومی‌تر و ساده‌تر استفاده از فرمان <code class="language-plaintext highlighter-rouge">setxkbmap</code> است.</p> <p>من این فرمان را به این صورت استفاده می‌کنم:</p> <div class="code-block"> <figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>setxkbmap <span class="nt">-model</span> thinkpad us,ir <span class="nt">-option</span> <span class="s2">"grp:shifts_toggle,caps:escape_shifted_capslock,altwin:prtsc_rwin,lv3:ralt_switch"</span></code></pre></figure> </div> <p>تنظیمات صفحه کلید با فرمان <code class="language-plaintext highlighter-rouge">setxkbmap</code> سه بخش دارد:</p> <ul> <li>مدل صفحه کلید: می‌توانید مدل صفحه کلیدتان را با ‪<code class="language-plaintext highlighter-rouge">-model &lt;YOUR-KEYBOARD-MODEL&gt;</code>‬ مشخص کنید.</li> <li>layout[s]: هر تعداد از <code class="language-plaintext highlighter-rouge">layout</code>‌های موجود را می‌توانید برای استفاده با صفحه کلید تنظیم کنید. دقت کنید که باید از <code class="language-plaintext highlighter-rouge">,</code> برای جدا کردن اسم آنها استفاده کنید.</li> <li>تنظیمات ویژه: می‌توانید تنظیمات ویژه صفحه کلیدتان را با ‪<code class="language-plaintext highlighter-rouge">-options &lt;YOUR-KEYBOARD-OPTIONS&gt;</code>‬ مشخص کنید.</li> </ul> <p>در فرمانی که من استفاده می‌کنم، مدل صفحه کلید را <code class="language-plaintext highlighter-rouge">thinkpad</code> و دو زبان انگلیسی و فارسی را برای آن تنظیم کرده‌ام.</p> <p>در بخش تنظیمات ویژه با استفاده از <code class="language-plaintext highlighter-rouge">grp:shifts_toggle</code> مشخص کرده‌ام که جابجایی بین زبان ‌های صفحه کلید با فشار دادن همزمان دو کلید <code class="language-plaintext highlighter-rouge">Shift</code> انجام شود.</p> <p>شاید برای شما عجیب باشد اما برای من که تقریبا همیشه دستم روی صفحه کلید است، کار راحت‌تری است به نسبت استفاده از <code class="language-plaintext highlighter-rouge">Alt+Shift</code>. البته من کلیدهای دیگری نیز برای تغییر زبان صفحه کلید دارم که چنانچه نیاز باشد با یک دست زبان صفحه کلید را بتوانم عوض کنم.</p> <p>سپس با <code class="language-plaintext highlighter-rouge">caps:escape_shifted_capslock</code> مشخص کرده‌ام که کلید <code class="language-plaintext highlighter-rouge">CapsLock</code> به عنوان کلید <code class="language-plaintext highlighter-rouge">Escape</code> عمل کند.</p> <p>من از ادیتور ویم (<code class="language-plaintext highlighter-rouge">Vim</code>) برای ویرایش فایل‌های متنی استفاده می‌کنم و برای خارج شدن از مودهای مختلف این ادیتور از کلید <code class="language-plaintext highlighter-rouge">Escape</code> زیاد استفاده می‌کنم. محل استاندارد این کلید روی صفحه کلید گوشه بالا و سمت چپ است، که دور از دسترس است. تنظیم کلید <code class="language-plaintext highlighter-rouge">CapsLock</code> به عنوان <code class="language-plaintext highlighter-rouge">Escape</code> استفاده از آن را برای من راحت‌تر می‌کند.</p> <p>گزینه بعدی در تنظیمات ویژه <code class="language-plaintext highlighter-rouge">altwin:prtsc_rwin</code> است که مشخص می‌کند کلید <code class="language-plaintext highlighter-rouge">PrinttScreen (PrtSc)</code> که روی صفحه کلید لپ‌تاپ من کنار <code class="language-plaintext highlighter-rouge">Alt</code> سمت راست قرار دارد به عنوان یک کلید <code class="language-plaintext highlighter-rouge">Meta</code> یا <code class="language-plaintext highlighter-rouge">Mod</code> (همان کلید لوگو <code class="language-plaintext highlighter-rouge">Win</code>) دوم عمل کند.</p> <p>سال‌هاست که من از محیط‌های دسکتاپ روی لرایانه خودم استفاده نکرده‌ام و به جای آنها از مدیر پنجره‌ها استفاده می‌کنم، که سبک‌تر هستند و قابلیت شخصی سازی بیشتری دارند‌. بیشتر کلیدهای میانبر من به صورت ‪<code class="language-plaintext highlighter-rouge">Mod+&lt;SOME-KEY&gt;</code>‬ هستند،که تعدادشان هم زیاد است. داشتن کلید <code class="language-plaintext highlighter-rouge">Mod</code> در دو سمت صفحه کلید استفاده از این میانبرها را برای من راحت‌تر می‌کند.</p> <p>در نهایت هم <code class="language-plaintext highlighter-rouge">lv3:ralt_switch</code> مشخص می‌کند که بتوان به لایه سوم صفحه کلید با استفاده از کلید <code class="language-plaintext highlighter-rouge">Alt</code> سمت راست، دسترسی داشت. همانطور که می‌دانید هر زبان روی صفحه کلید بیش از یک لایه از کاراکترها را دارد. تقریبا همه جا می‌توان با استفاده از کلید <code class="language-plaintext highlighter-rouge">Shift</code> کاراکترهای لایه دوم صفحه کلید را تایپ کرد. این کاراکترها برای زبان انگلیسی حروف بزرگ و برخی کاراکترهای پر کاربرد دیگر هستند. برای فارسی هم در صفحه کلید استاندارد نویسه <code class="language-plaintext highlighter-rouge">ژ</code> روی لایه دوم نویسه <code class="language-plaintext highlighter-rouge">ز</code> قرار دارد. برخی کاراکترهای پر کاربرد دیگر هم در این لایه قرار گرفته‌اند. <code class="language-plaintext highlighter-rouge">ZWNJ</code> یا نیم‌فاصله یکی از آنهاست. جالب است بدانید که تعدادی از کاراکترهای کم کاربردتر هم روی لایه‌های سوم و پایین‌تر صفحه کلید قرار دارند. <code class="language-plaintext highlighter-rouge">NBSP</code> یا فاصله نشکن یکی از آنهاست که روی لایه سوم کلید اسپیس قرار دارد. برای دسترسی به این لایه من از کلید <code class="language-plaintext highlighter-rouge">ALt</code> سمت راست استفاده می‌کنم.</p> <p>سوال مهمی که پیش می‌آید این است که کجا می‌توان لیستی از مدل‌ها، <code class="language-plaintext highlighter-rouge">layout</code>‌ها و تنظیمات ویژه را یافت. کافیست در ترمینال با استفاده از <code class="language-plaintext highlighter-rouge">man xkeyboard-config</code> داکیومنت مربوط به آن را باز کنید و بخوانید. لیست مفصلی از تمامی گزینه‌ها به همراه توضیحی گویا برای هر یک را خواهید یافت. در مرورگرتان هم چنانچه عبارت ‪<code class="language-plaintext highlighter-rouge">man xkeyboard-config &lt;YOUR-DESTRIBUTION&gt;</code>‬ را جست‌وجو کنید، داکیومنت مربوط به توزیعتان را خواهید یافت. برای نمونه توزیع <a href="https://man.archlinux.org/man/xkeyboard-config.7.en" target="_blank" rel="noopener noreferrer"><code class="language-plaintext highlighter-rouge">Arch Linux</code></a></p> <p>البته برای یافتن <code class="language-plaintext highlighter-rouge">layout</code>‌ها می‌توانید مسیر ‪<code class="language-plaintext highlighter-rouge">/usr/share/X11/xkb/symbols</code>‬ را ببینید.</p> <div class="code-block"> <figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">ls</span> /usr/share/X11/xkb/symbols</code></pre></figure> </div> <p>نکته بعدی این است که چطور این تنظیمات را همیشگی کنیم. من برای راه‌اندازی محیط گرافیکی <code class="language-plaintext highlighter-rouge">X11</code> از بسته <code class="language-plaintext highlighter-rouge">xorg-xinit</code> استفاده می‌کنم و فرمان <code class="language-plaintext highlighter-rouge">startx</code> را مستقیم از کنسول اجرا می‌کنم و از <code class="language-plaintext highlighter-rouge">Display Manager</code> استفاده نمی‌کنم. وقتی این فرمان را اجرا می‌کنم تنظیمات مربوط به محیط گرافیکی را از فایل‌های متنی می‌خواند. یکی از این فایل‌ها ‪<code class="language-plaintext highlighter-rouge">.xinitrc</code>‬ است که در دایرکتوری ‪‪<code class="language-plaintext highlighter-rouge">$HOME</code>‬‬ قرار دارد. کافیست من هر فرمانی که برای تنظیم محیط گرافیکی خودم نیاز دارم را در یک فایل قرار دهم و آن را از داخل ‪<code class="language-plaintext highlighter-rouge">.xinitrc</code>‬ فراخوانی کنم. من این فرمان‌ها را در فایل <code class="language-plaintext highlighter-rouge">.xprofile</code> در دایرکتوری ‪<code class="language-plaintext highlighter-rouge">$HOME</code>‬ قرار داده‌ام.</p> <div class="code-block"> <figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">cat</span> ~/.xinitrc
+<span class="c">#!/bin/sh</span>
+
+<span class="c"># xinitrc runs automatically when you run startx.</span>
+
+<span class="c"># There are some small but important commands that need to be run when we start</span>
+<span class="c"># the graphical environment. I keep those commands in ~/.xprofile because that</span>
+<span class="c"># file is run automatically if someone uses a display manager (login screen)</span>
+<span class="c"># and so they are needed there. To prevent doubling up commands, I source them</span>
+<span class="c"># here with the line below.</span>
+
+<span class="o">[</span> <span class="nt">-f</span> ~/.xprofile <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="nb">.</span> ~/.xprofile
+
+<span class="c"># Fix Gnome Apps Slow  Start due to failing services</span>
+<span class="c"># Add this when you include flatpak in your system</span>
+dbus-update-activation-environment <span class="nt">--systemd</span> DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY
+
+<span class="c"># Here we start dwm.</span>
+<span class="c"># The loop is just to enable dwm's "restart" feature (mod+F2).</span>
+<span class="c">#exec dwm</span>
+ssh-agent dwm
+
+<span class="nv">$ </span><span class="nb">cat</span> ~/.xprofile
+<span class="c">#!/usr/bin/sh</span>
+
+xset r rate 300 50 &amp;    <span class="c"># Speed xrate up</span>
+unclutter &amp;     <span class="c"># Remove mouse when idle</span>
+<span class="c">#xcompmgr &amp;     # xcompmgr for transparency</span>
+picom <span class="nt">--config</span> ~/.config/picom/picom.conf &amp;
+dunst &amp;                 <span class="c"># dunst for notifications</span>
+<span class="c">#keymap &amp;       # some keyboard remap</span>
+mpd &amp;
+xrdb ~/.Xdefaults &amp;
+setbg &amp;
+setxkbmap <span class="nt">-model</span> thinkpad us,ir <span class="nt">-option</span> <span class="s2">"grp:shifts_toggle,caps:escape_shifted_capslock,altwin:prtsc_rwin,lv3:ralt_switch"</span> &amp;</code></pre></figure> </div> <p>همانطور که می‌بینید تنظیمات صفحه کلید در خط آخر فایل مشخص شده است. هر <code class="language-plaintext highlighter-rouge">Display Manager</code> فایل‌های تنظیماتی دارد که پیش از بالا آمدن محیط گرافیکی آنها را فراخوانی می‌کند. می‌توانید مسیر این فایل‌ها را با جست‌وجو در اینترنت بیابید و تنظیمات مربوط به صفحه کلید را در آنها قرار دهید تا به صورت خودکار انجام شوند.</p> <h2 id="xmodmap"> <a href="#xmodmap" class="anchor-head"></a> <code class="language-plaintext highlighter-rouge">xmodmap</code> </h2> <p><code class="language-plaintext highlighter-rouge">xmodmap</code> ابزاری برای ویرایش چیدمان کلیدها روی صفحه کلید در <code class="language-plaintext highlighter-rouge">X11</code> است. ممکن است شما نیاز داشته باشید جای دو تا از کلیدها را روی صفحه عوض کنید و این گزینه در بین انتخاب‌های <code class="language-plaintext highlighter-rouge">setxkbmap</code> وجود نداشته باشد، برای اینکار می‌توانید از <code class="language-plaintext highlighter-rouge">xmodmap</code> استفاده کنید:</p> <div class="code-block"> <figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>xmodmap <span class="nt">-e</span> <span class="s1">'keycode 135 = Super_R'</span></code></pre></figure> </div> <p>فرمان بالا کلید <code class="language-plaintext highlighter-rouge">Menu</code> را به کلید <code class="language-plaintext highlighter-rouge">Super</code> تبدیل می‌کند. با مشابه آنچه <code class="language-plaintext highlighter-rouge">setxkbmap -option altwin:menu_win</code> انجام می‌دهد. برای یافتن کد مربوط به هر کلید فیزیکی روی صفحه کلید می‌توانید لیست چیدمان فعلی صفحه کلید را با استفاده از <code class="language-plaintext highlighter-rouge">xmodmap -pk</code> ببینید.</p> <div class="code-block"> <figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>xmodmap <span class="nt">-pk</span>
+There are 10 KeySyms per KeyCode<span class="p">;</span> KeyCodes range from 8 to 255.
+
+    KeyCode Keysym <span class="o">(</span>Keysym<span class="o">)</span> ...
+    Value   Value   <span class="o">(</span>Name<span class="o">)</span>  ...
+
+      8
+      9     0xff1b <span class="o">(</span>Escape<span class="o">)</span> 0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0xff1b <span class="o">(</span>Escape<span class="o">)</span>
+     10     0x0031 <span class="o">(</span>1<span class="o">)</span>  0x0021 <span class="o">(</span>exclam<span class="o">)</span> 0x10006f1 <span class="o">(</span>Farsi_1<span class="o">)</span> 0x0021 <span class="o">(</span>exclam<span class="o">)</span> 0x0060 <span class="o">(</span>grave<span class="o">)</span>  0x0031 <span class="o">(</span>1<span class="o">)</span>
+     11     0x0032 <span class="o">(</span>2<span class="o">)</span>  0x0040 <span class="o">(</span>at<span class="o">)</span> 0x10006f2 <span class="o">(</span>Farsi_2<span class="o">)</span> 0x100066c <span class="o">(</span>U066C<span class="o">)</span>   0x0040 <span class="o">(</span>at<span class="o">)</span> 0x0032 <span class="o">(</span>2<span class="o">)</span>
+     12     0x0033 <span class="o">(</span>3<span class="o">)</span>  0x0023 <span class="o">(</span>numbersign<span class="o">)</span> 0x10006f3 <span class="o">(</span>Farsi_3<span class="o">)</span> 0x100066b <span class="o">(</span>U066B<span class="o">)</span>   0x0023 <span class="o">(</span>numbersign<span class="o">)</span> 0x0033 <span class="o">(</span>3<span class="o">)</span>
+     13     0x0034 <span class="o">(</span>4<span class="o">)</span>  0x0024 <span class="o">(</span>dollar<span class="o">)</span> 0x10006f4 <span class="o">(</span>Farsi_4<span class="o">)</span> 0x100fdfc <span class="o">(</span>UFDFC<span class="o">)</span>   0x0024 <span class="o">(</span>dollar<span class="o">)</span> 0x0034 <span class="o">(</span>4<span class="o">)</span>
+     14     0x0035 <span class="o">(</span>5<span class="o">)</span>  0x0025 <span class="o">(</span>percent<span class="o">)</span>    0x10006f5 <span class="o">(</span>Farsi_5<span class="o">)</span> 0x100066a <span class="o">(</span>Arabic_percent<span class="o">)</span>  0x0025 <span class="o">(</span>percent<span class="o">)</span>    0x0035 <span class="o">(</span>5<span class="o">)</span>
+     15     0x0036 <span class="o">(</span>6<span class="o">)</span>  0x005e <span class="o">(</span>asciicircum<span class="o">)</span>    0x10006f6 <span class="o">(</span>Farsi_6<span class="o">)</span> 0x00d7 <span class="o">(</span>multiply<span class="o">)</span>   0x005e <span class="o">(</span>asciicircum<span class="o">)</span>    0x0036 <span class="o">(</span>6<span class="o">)</span>
+     16     0x0037 <span class="o">(</span>7<span class="o">)</span>  0x0026 <span class="o">(</span>ampersand<span class="o">)</span>  0x10006f7 <span class="o">(</span>Farsi_7<span class="o">)</span> 0x05ac <span class="o">(</span>Arabic_comma<span class="o">)</span>   0x0026 <span class="o">(</span>ampersand<span class="o">)</span>  0x0037 <span class="o">(</span>7<span class="o">)</span>
+     17     0x0038 <span class="o">(</span>8<span class="o">)</span>  0x002a <span class="o">(</span>asterisk<span class="o">)</span>   0x10006f8 <span class="o">(</span>Farsi_8<span class="o">)</span> 0x002a <span class="o">(</span>asterisk<span class="o">)</span>   0x0ae6 <span class="o">(</span>enfilledcircbullet<span class="o">)</span> 0x0038 <span class="o">(</span>8<span class="o">)</span>
+     18     0x0039 <span class="o">(</span>9<span class="o">)</span>  0x0028 <span class="o">(</span>parenleft<span class="o">)</span>  0x10006f9 <span class="o">(</span>Farsi_9<span class="o">)</span> 0x0029 <span class="o">(</span>parenright<span class="o">)</span> 0x100200e <span class="o">(</span>U200E<span class="o">)</span>   0x0039 <span class="o">(</span>9<span class="o">)</span>
+     19     0x0030 <span class="o">(</span>0<span class="o">)</span>  0x0029 <span class="o">(</span>parenright<span class="o">)</span> 0x10006f0 <span class="o">(</span>Farsi_0<span class="o">)</span> 0x0028 <span class="o">(</span>parenleft<span class="o">)</span>  0x100200f <span class="o">(</span>U200F<span class="o">)</span>   0x0030 <span class="o">(</span>0<span class="o">)</span>
+     20     0x002d <span class="o">(</span>minus<span class="o">)</span>  0x005f <span class="o">(</span>underscore<span class="o">)</span> 0x002d <span class="o">(</span>minus<span class="o">)</span>  0x05e0 <span class="o">(</span>Arabic_tatweel<span class="o">)</span> 0x005f <span class="o">(</span>underscore<span class="o">)</span>
+     21     0x003d <span class="o">(</span>equal<span class="o">)</span>  0x002b <span class="o">(</span>plus<span class="o">)</span>   0x003d <span class="o">(</span>equal<span class="o">)</span>  0x002b <span class="o">(</span>plus<span class="o">)</span>   0x1002212 <span class="o">(</span>U2212<span class="o">)</span>
+     22     0xff08 <span class="o">(</span>BackSpace<span class="o">)</span>  0xff08 <span class="o">(</span>BackSpace<span class="o">)</span>  0xff08 <span class="o">(</span>BackSpace<span class="o">)</span>  0xff08 <span class="o">(</span>BackSpace<span class="o">)</span>
+     23     0xff09 <span class="o">(</span>Tab<span class="o">)</span>    0xfe20 <span class="o">(</span>ISO_Left_Tab<span class="o">)</span>   0xff09 <span class="o">(</span>Tab<span class="o">)</span>    0xfe20 <span class="o">(</span>ISO_Left_Tab<span class="o">)</span>
+     24     0x0071 <span class="o">(</span>q<span class="o">)</span>  0x0051 <span class="o">(</span>Q<span class="o">)</span>  0x05d6 <span class="o">(</span>Arabic_dad<span class="o">)</span> 0x05f2 <span class="o">(</span>Arabic_sukun<span class="o">)</span>   0x00b0 <span class="o">(</span>degree<span class="o">)</span>
+     25     0x0077 <span class="o">(</span>w<span class="o">)</span>  0x0057 <span class="o">(</span>W<span class="o">)</span>  0x05d5 <span class="o">(</span>Arabic_sad<span class="o">)</span> 0x05ec <span class="o">(</span>Arabic_dammatan<span class="o">)</span>    0xffffff <span class="o">(</span>VoidSymbol<span class="o">)</span>
+     26     0x0065 <span class="o">(</span>e<span class="o">)</span>  0x0045 <span class="o">(</span>E<span class="o">)</span>  0x05cb <span class="o">(</span>Arabic_theh<span class="o">)</span>    0x05ed <span class="o">(</span>Arabic_kasratan<span class="o">)</span>    0x13a4 <span class="o">(</span>no name<span class="o">)</span>
+     27     0x0072 <span class="o">(</span>r<span class="o">)</span>  0x0052 <span class="o">(</span>R<span class="o">)</span>  0x05e2 <span class="o">(</span>Arabic_qaf<span class="o">)</span> 0x05eb <span class="o">(</span>Arabic_fathatan<span class="o">)</span>    0xffffff <span class="o">(</span>VoidSymbol<span class="o">)</span>
+     28     0x0074 <span class="o">(</span>t<span class="o">)</span>  0x0054 <span class="o">(</span>T<span class="o">)</span>  0x05e1 <span class="o">(</span>Arabic_feh<span class="o">)</span> 0x05ef <span class="o">(</span>Arabic_damma<span class="o">)</span>   0xffffff <span class="o">(</span>VoidSymbol<span class="o">)</span>
+     29     0x0079 <span class="o">(</span>y<span class="o">)</span>  0x0059 <span class="o">(</span>Y<span class="o">)</span>  0x05da <span class="o">(</span>Arabic_ghain<span class="o">)</span>   0x05f0 <span class="o">(</span>Arabic_kasra<span class="o">)</span>   0xffffff <span class="o">(</span>VoidSymbol<span class="o">)</span>
+     30     0x0075 <span class="o">(</span>u<span class="o">)</span>  0x0055 <span class="o">(</span>U<span class="o">)</span>  0x05d9 <span class="o">(</span>Arabic_ain<span class="o">)</span> 0x05ee <span class="o">(</span>Arabic_fatha<span class="o">)</span>   0xffffff <span class="o">(</span>VoidSymbol<span class="o">)</span>
+     31     0x0069 <span class="o">(</span>i<span class="o">)</span>  0x0049 <span class="o">(</span>I<span class="o">)</span>  0x05e7 <span class="o">(</span>Arabic_ha<span class="o">)</span>  0x05f1 <span class="o">(</span>Arabic_shadda<span class="o">)</span>  0x100202d <span class="o">(</span>U202D<span class="o">)</span>
+     32     0x006f <span class="o">(</span>o<span class="o">)</span>  0x004f <span class="o">(</span>O<span class="o">)</span>  0x05ce <span class="o">(</span>Arabic_khah<span class="o">)</span>    0x005d <span class="o">(</span>bracketright<span class="o">)</span>   0x100202e <span class="o">(</span>U202E<span class="o">)</span>
+     33     0x0070 <span class="o">(</span>p<span class="o">)</span>  0x0050 <span class="o">(</span>P<span class="o">)</span>  0x05cd <span class="o">(</span>Arabic_hah<span class="o">)</span> 0x005b <span class="o">(</span>bracketleft<span class="o">)</span>    0x100202c <span class="o">(</span>U202C<span class="o">)</span>
+     34     0x005b <span class="o">(</span>bracketleft<span class="o">)</span>    0x007b <span class="o">(</span>braceleft<span class="o">)</span>  0x05cc <span class="o">(</span>Arabic_jeem<span class="o">)</span>    0x007d <span class="o">(</span>braceright<span class="o">)</span> 0x100202a <span class="o">(</span>U202A<span class="o">)</span>
+     35     0x005d <span class="o">(</span>bracketright<span class="o">)</span>   0x007d <span class="o">(</span>braceright<span class="o">)</span> 0x1000686 <span class="o">(</span>Arabic_tcheh<span class="o">)</span>    0x007b <span class="o">(</span>braceleft<span class="o">)</span>  0x100202b <span class="o">(</span>U202B<span class="o">)</span>
+     36     0xff0d <span class="o">(</span>Return<span class="o">)</span> 0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0xff0d <span class="o">(</span>Return<span class="o">)</span>
+     37     0xffe3 <span class="o">(</span>Control_L<span class="o">)</span>  0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0xffe3 <span class="o">(</span>Control_L<span class="o">)</span>
+     38     0x0061 <span class="o">(</span>a<span class="o">)</span>  0x0041 <span class="o">(</span>A<span class="o">)</span>  0x05d4 <span class="o">(</span>Arabic_sheen<span class="o">)</span>   0x05c4 <span class="o">(</span>Arabic_hamzaonwaw<span class="o">)</span>  0xffffff <span class="o">(</span>VoidSymbol<span class="o">)</span>
+     39     0x0073 <span class="o">(</span>s<span class="o">)</span>  0x0053 <span class="o">(</span>S<span class="o">)</span>  0x05d3 <span class="o">(</span>Arabic_seen<span class="o">)</span>    0x05c6 <span class="o">(</span>Arabic_hamzaonyeh<span class="o">)</span>  0xffffff <span class="o">(</span>VoidSymbol<span class="o">)</span>
+     40     0x0064 <span class="o">(</span>d<span class="o">)</span>  0x0044 <span class="o">(</span>D<span class="o">)</span>  0x10006cc <span class="o">(</span>Farsi_yeh<span class="o">)</span>   0x05ea <span class="o">(</span>Arabic_yeh<span class="o">)</span> 0x05e9 <span class="o">(</span>Arabic_alefmaksura<span class="o">)</span>
+     41     0x0066 <span class="o">(</span>f<span class="o">)</span>  0x0046 <span class="o">(</span>F<span class="o">)</span>  0x05c8 <span class="o">(</span>Arabic_beh<span class="o">)</span> 0x05c5 <span class="o">(</span>Arabic_hamzaunderalef<span class="o">)</span>  0xffffff <span class="o">(</span>VoidSymbol<span class="o">)</span>
+     42     0x0067 <span class="o">(</span>g<span class="o">)</span>  0x0047 <span class="o">(</span>G<span class="o">)</span>  0x05e4 <span class="o">(</span>Arabic_lam<span class="o">)</span> 0x05c3 <span class="o">(</span>Arabic_hamzaonalef<span class="o">)</span> 0xffffff <span class="o">(</span>VoidSymbol<span class="o">)</span>
+     43     0x0068 <span class="o">(</span>h<span class="o">)</span>  0x0048 <span class="o">(</span>H<span class="o">)</span>  0x05c7 <span class="o">(</span>Arabic_alef<span class="o">)</span>    0x05c2 <span class="o">(</span>Arabic_maddaonalef<span class="o">)</span> 0x1000671 <span class="o">(</span>U0671<span class="o">)</span>
+     44     0x006a <span class="o">(</span>j<span class="o">)</span>  0x004a <span class="o">(</span>J<span class="o">)</span>  0x05ca <span class="o">(</span>Arabic_teh<span class="o">)</span> 0x05c9 <span class="o">(</span>Arabic_tehmarbuta<span class="o">)</span>  0xffffff <span class="o">(</span>VoidSymbol<span class="o">)</span>
+     45     0x006b <span class="o">(</span>k<span class="o">)</span>  0x004b <span class="o">(</span>K<span class="o">)</span>  0x05e6 <span class="o">(</span>Arabic_noon<span class="o">)</span>    0x00bb <span class="o">(</span>guillemotright<span class="o">)</span> 0x100fd3e <span class="o">(</span>UFD3E<span class="o">)</span>
+     46     0x006c <span class="o">(</span>l<span class="o">)</span>  0x004c <span class="o">(</span>L<span class="o">)</span>  0x05e5 <span class="o">(</span>Arabic_meem<span class="o">)</span>    0x00ab <span class="o">(</span>guillemotleft<span class="o">)</span>  0x100fd3f <span class="o">(</span>UFD3F<span class="o">)</span>
+     47     0x003b <span class="o">(</span>semicolon<span class="o">)</span>  0x003a <span class="o">(</span>colon<span class="o">)</span>  0x10006a9 <span class="o">(</span>Arabic_keheh<span class="o">)</span>    0x003a <span class="o">(</span>colon<span class="o">)</span>  0x003b <span class="o">(</span>semicolon<span class="o">)</span>
+     48     0x0027 <span class="o">(</span>apostrophe<span class="o">)</span> 0x0022 <span class="o">(</span>quotedbl<span class="o">)</span>   0x10006af <span class="o">(</span>Arabic_gaf<span class="o">)</span>  0x05bb <span class="o">(</span>Arabic_semicolon<span class="o">)</span>   0x0022 <span class="o">(</span>quotedbl<span class="o">)</span>
+     49     0x0060 <span class="o">(</span>grave<span class="o">)</span>  0x007e <span class="o">(</span>asciitilde<span class="o">)</span> 0x100200d <span class="o">(</span>U200D<span class="o">)</span>   0x00f7 <span class="o">(</span>division<span class="o">)</span>   0x007e <span class="o">(</span>asciitilde<span class="o">)</span>
+     50     0xffe1 <span class="o">(</span>Shift_L<span class="o">)</span>    0xfe0a <span class="o">(</span>ISO_Prev_Group<span class="o">)</span> 0xffe1 <span class="o">(</span>Shift_L<span class="o">)</span>    0xfe0a <span class="o">(</span>ISO_Prev_Group<span class="o">)</span>
+     51     0x005c <span class="o">(</span>backslash<span class="o">)</span>  0x007c <span class="o">(</span>bar<span class="o">)</span>    0x005c <span class="o">(</span>backslash<span class="o">)</span>  0x007c <span class="o">(</span>bar<span class="o">)</span>    0x1002010 <span class="o">(</span>U2010<span class="o">)</span>
+     52     0x007a <span class="o">(</span>z<span class="o">)</span>  0x005a <span class="o">(</span>Z<span class="o">)</span>  0x05d8 <span class="o">(</span>Arabic_zah<span class="o">)</span> 0x05e3 <span class="o">(</span>Arabic_kaf<span class="o">)</span> 0xffffff <span class="o">(</span>VoidSymbol<span class="o">)</span>
+     53     0x0078 <span class="o">(</span>x<span class="o">)</span>  0x0058 <span class="o">(</span>X<span class="o">)</span>  0x05d7 <span class="o">(</span>Arabic_tah<span class="o">)</span> 0x1000653 <span class="o">(</span>Arabic_madda_above<span class="o">)</span>  0xffffff <span class="o">(</span>VoidSymbol<span class="o">)</span>
+     54     0x0063 <span class="o">(</span>c<span class="o">)</span>  0x0043 <span class="o">(</span>C<span class="o">)</span>  0x05d2 <span class="o">(</span>Arabic_zain<span class="o">)</span>    0x1000698 <span class="o">(</span>Arabic_jeh<span class="o">)</span>  0xffffff <span class="o">(</span>VoidSymbol<span class="o">)</span>
+     55     0x0076 <span class="o">(</span>v<span class="o">)</span>  0x0056 <span class="o">(</span>V<span class="o">)</span>  0x05d1 <span class="o">(</span>Arabic_ra<span class="o">)</span>  0x1000670 <span class="o">(</span>Arabic_superscript_alef<span class="o">)</span> 0x1000656 <span class="o">(</span>U0656<span class="o">)</span>
+     56     0x0062 <span class="o">(</span>b<span class="o">)</span>  0x0042 <span class="o">(</span>B<span class="o">)</span>  0x05d0 <span class="o">(</span>Arabic_thal<span class="o">)</span>    0x100200c <span class="o">(</span>U200C<span class="o">)</span>   0x100200d <span class="o">(</span>U200D<span class="o">)</span>
+     57     0x006e <span class="o">(</span>n<span class="o">)</span>  0x004e <span class="o">(</span>N<span class="o">)</span>  0x05cf <span class="o">(</span>Arabic_dal<span class="o">)</span> 0x1000654 <span class="o">(</span>Arabic_hamza_above<span class="o">)</span>  0x1000655 <span class="o">(</span>Arabic_hamza_below<span class="o">)</span>
+     58     0x006d <span class="o">(</span>m<span class="o">)</span>  0x004d <span class="o">(</span>M<span class="o">)</span>  0x100067e <span class="o">(</span>Arabic_peh<span class="o">)</span>  0x05c1 <span class="o">(</span>Arabic_hamza<span class="o">)</span>   0x0aae <span class="o">(</span>ellipsis<span class="o">)</span>
+     59     0x002c <span class="o">(</span>comma<span class="o">)</span>  0x003c <span class="o">(</span>less<span class="o">)</span>   0x05e8 <span class="o">(</span>Arabic_waw<span class="o">)</span> 0x003e <span class="o">(</span>greater<span class="o">)</span>    0x002c <span class="o">(</span>comma<span class="o">)</span>
+     60     0x002e <span class="o">(</span>period<span class="o">)</span> 0x003e <span class="o">(</span>greater<span class="o">)</span>    0x002e <span class="o">(</span>period<span class="o">)</span> 0x003c <span class="o">(</span>less<span class="o">)</span>   0x0027 <span class="o">(</span>apostrophe<span class="o">)</span>
+     61     0x002f <span class="o">(</span>slash<span class="o">)</span>  0x003f <span class="o">(</span>question<span class="o">)</span>   0x002f <span class="o">(</span>slash<span class="o">)</span>  0x05bf <span class="o">(</span>Arabic_question_mark<span class="o">)</span>   0x003f <span class="o">(</span>question<span class="o">)</span>
+     62     0xffe2 <span class="o">(</span>Shift_R<span class="o">)</span>    0xfe08 <span class="o">(</span>ISO_Next_Group<span class="o">)</span> 0xffe2 <span class="o">(</span>Shift_R<span class="o">)</span>    0xfe08 <span class="o">(</span>ISO_Next_Group<span class="o">)</span>
+     63     0xffaa <span class="o">(</span>KP_Multiply<span class="o">)</span>    0xffaa <span class="o">(</span>KP_Multiply<span class="o">)</span>    0xffaa <span class="o">(</span>KP_Multiply<span class="o">)</span>    0xffaa <span class="o">(</span>KP_Multiply<span class="o">)</span>    0xffaa <span class="o">(</span>KP_Multiply<span class="o">)</span>    0xffaa <span class="o">(</span>KP_Multiply<span class="o">)</span>    0x1008fe21 <span class="o">(</span>XF86ClearGrab<span class="o">)</span>  0xffaa <span class="o">(</span>KP_Multiply<span class="o">)</span>    0xffaa <span class="o">(</span>KP_Multiply<span class="o">)</span>    0x1008fe21 <span class="o">(</span>XF86ClearGrab<span class="o">)</span>
+     64     0xffe9 <span class="o">(</span>Alt_L<span class="o">)</span>  0xffe7 <span class="o">(</span>Meta_L<span class="o">)</span> 0xffe9 <span class="o">(</span>Alt_L<span class="o">)</span>  0xffe7 <span class="o">(</span>Meta_L<span class="o">)</span>
+     65     0x0020 <span class="o">(</span>space<span class="o">)</span>  0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x0020 <span class="o">(</span>space<span class="o">)</span>  0x100200c <span class="o">(</span>U200C<span class="o">)</span>   0x00a0 <span class="o">(</span>nobreakspace<span class="o">)</span>   0x100202f <span class="o">(</span>U202F<span class="o">)</span>
+     66     0xff1b <span class="o">(</span>Escape<span class="o">)</span> 0xffe5 <span class="o">(</span>Caps_Lock<span class="o">)</span>  0xff1b <span class="o">(</span>Escape<span class="o">)</span> 0xffe5 <span class="o">(</span>Caps_Lock<span class="o">)</span>
+     67     0xffbe <span class="o">(</span>F1<span class="o">)</span> 0xffbe <span class="o">(</span>F1<span class="o">)</span> 0xffbe <span class="o">(</span>F1<span class="o">)</span> 0xffbe <span class="o">(</span>F1<span class="o">)</span> 0xffbe <span class="o">(</span>F1<span class="o">)</span> 0xffbe <span class="o">(</span>F1<span class="o">)</span> 0x1008fe01 <span class="o">(</span>XF86Switch_VT_1<span class="o">)</span>    0xffbe <span class="o">(</span>F1<span class="o">)</span> 0xffbe <span class="o">(</span>F1<span class="o">)</span> 0x1008fe01 <span class="o">(</span>XF86Switch_VT_1<span class="o">)</span>
+     68     0xffbf <span class="o">(</span>F2<span class="o">)</span> 0xffbf <span class="o">(</span>F2<span class="o">)</span> 0xffbf <span class="o">(</span>F2<span class="o">)</span> 0xffbf <span class="o">(</span>F2<span class="o">)</span> 0xffbf <span class="o">(</span>F2<span class="o">)</span> 0xffbf <span class="o">(</span>F2<span class="o">)</span> 0x1008fe02 <span class="o">(</span>XF86Switch_VT_2<span class="o">)</span>    0xffbf <span class="o">(</span>F2<span class="o">)</span> 0xffbf <span class="o">(</span>F2<span class="o">)</span> 0x1008fe02 <span class="o">(</span>XF86Switch_VT_2<span class="o">)</span>
+     69     0xffc0 <span class="o">(</span>F3<span class="o">)</span> 0xffc0 <span class="o">(</span>F3<span class="o">)</span> 0xffc0 <span class="o">(</span>F3<span class="o">)</span> 0xffc0 <span class="o">(</span>F3<span class="o">)</span> 0xffc0 <span class="o">(</span>F3<span class="o">)</span> 0xffc0 <span class="o">(</span>F3<span class="o">)</span> 0x1008fe03 <span class="o">(</span>XF86Switch_VT_3<span class="o">)</span>    0xffc0 <span class="o">(</span>F3<span class="o">)</span> 0xffc0 <span class="o">(</span>F3<span class="o">)</span> 0x1008fe03 <span class="o">(</span>XF86Switch_VT_3<span class="o">)</span>
+     70     0xffc1 <span class="o">(</span>F4<span class="o">)</span> 0xffc1 <span class="o">(</span>F4<span class="o">)</span> 0xffc1 <span class="o">(</span>F4<span class="o">)</span> 0xffc1 <span class="o">(</span>F4<span class="o">)</span> 0xffc1 <span class="o">(</span>F4<span class="o">)</span> 0xffc1 <span class="o">(</span>F4<span class="o">)</span> 0x1008fe04 <span class="o">(</span>XF86Switch_VT_4<span class="o">)</span>    0xffc1 <span class="o">(</span>F4<span class="o">)</span> 0xffc1 <span class="o">(</span>F4<span class="o">)</span> 0x1008fe04 <span class="o">(</span>XF86Switch_VT_4<span class="o">)</span>
+     71     0xffc2 <span class="o">(</span>F5<span class="o">)</span> 0xffc2 <span class="o">(</span>F5<span class="o">)</span> 0xffc2 <span class="o">(</span>F5<span class="o">)</span> 0xffc2 <span class="o">(</span>F5<span class="o">)</span> 0xffc2 <span class="o">(</span>F5<span class="o">)</span> 0xffc2 <span class="o">(</span>F5<span class="o">)</span> 0x1008fe05 <span class="o">(</span>XF86Switch_VT_5<span class="o">)</span>    0xffc2 <span class="o">(</span>F5<span class="o">)</span> 0xffc2 <span class="o">(</span>F5<span class="o">)</span> 0x1008fe05 <span class="o">(</span>XF86Switch_VT_5<span class="o">)</span>
+     72     0xffc3 <span class="o">(</span>F6<span class="o">)</span> 0xffc3 <span class="o">(</span>F6<span class="o">)</span> 0xffc3 <span class="o">(</span>F6<span class="o">)</span> 0xffc3 <span class="o">(</span>F6<span class="o">)</span> 0xffc3 <span class="o">(</span>F6<span class="o">)</span> 0xffc3 <span class="o">(</span>F6<span class="o">)</span> 0x1008fe06 <span class="o">(</span>XF86Switch_VT_6<span class="o">)</span>    0xffc3 <span class="o">(</span>F6<span class="o">)</span> 0xffc3 <span class="o">(</span>F6<span class="o">)</span> 0x1008fe06 <span class="o">(</span>XF86Switch_VT_6<span class="o">)</span>
+     73     0xffc4 <span class="o">(</span>F7<span class="o">)</span> 0xffc4 <span class="o">(</span>F7<span class="o">)</span> 0xffc4 <span class="o">(</span>F7<span class="o">)</span> 0xffc4 <span class="o">(</span>F7<span class="o">)</span> 0xffc4 <span class="o">(</span>F7<span class="o">)</span> 0xffc4 <span class="o">(</span>F7<span class="o">)</span> 0x1008fe07 <span class="o">(</span>XF86Switch_VT_7<span class="o">)</span>    0xffc4 <span class="o">(</span>F7<span class="o">)</span> 0xffc4 <span class="o">(</span>F7<span class="o">)</span> 0x1008fe07 <span class="o">(</span>XF86Switch_VT_7<span class="o">)</span>
+     74     0xffc5 <span class="o">(</span>F8<span class="o">)</span> 0xffc5 <span class="o">(</span>F8<span class="o">)</span> 0xffc5 <span class="o">(</span>F8<span class="o">)</span> 0xffc5 <span class="o">(</span>F8<span class="o">)</span> 0xffc5 <span class="o">(</span>F8<span class="o">)</span> 0xffc5 <span class="o">(</span>F8<span class="o">)</span> 0x1008fe08 <span class="o">(</span>XF86Switch_VT_8<span class="o">)</span>    0xffc5 <span class="o">(</span>F8<span class="o">)</span> 0xffc5 <span class="o">(</span>F8<span class="o">)</span> 0x1008fe08 <span class="o">(</span>XF86Switch_VT_8<span class="o">)</span>
+     75     0xffc6 <span class="o">(</span>F9<span class="o">)</span> 0xffc6 <span class="o">(</span>F9<span class="o">)</span> 0xffc6 <span class="o">(</span>F9<span class="o">)</span> 0xffc6 <span class="o">(</span>F9<span class="o">)</span> 0xffc6 <span class="o">(</span>F9<span class="o">)</span> 0xffc6 <span class="o">(</span>F9<span class="o">)</span> 0x1008fe09 <span class="o">(</span>XF86Switch_VT_9<span class="o">)</span>    0xffc6 <span class="o">(</span>F9<span class="o">)</span> 0xffc6 <span class="o">(</span>F9<span class="o">)</span> 0x1008fe09 <span class="o">(</span>XF86Switch_VT_9<span class="o">)</span>
+     76     0xffc7 <span class="o">(</span>F10<span class="o">)</span>    0xffc7 <span class="o">(</span>F10<span class="o">)</span>    0xffc7 <span class="o">(</span>F10<span class="o">)</span>    0xffc7 <span class="o">(</span>F10<span class="o">)</span>    0xffc7 <span class="o">(</span>F10<span class="o">)</span>    0xffc7 <span class="o">(</span>F10<span class="o">)</span>    0x1008fe0a <span class="o">(</span>XF86Switch_VT_10<span class="o">)</span>   0xffc7 <span class="o">(</span>F10<span class="o">)</span>    0xffc7 <span class="o">(</span>F10<span class="o">)</span>    0x1008fe0a <span class="o">(</span>XF86Switch_VT_10<span class="o">)</span>
+     77     0xff7f <span class="o">(</span>Num_Lock<span class="o">)</span>   0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0xff7f <span class="o">(</span>Num_Lock<span class="o">)</span>
+     78     0xff14 <span class="o">(</span>Scroll_Lock<span class="o">)</span>    0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0xff14 <span class="o">(</span>Scroll_Lock<span class="o">)</span>
+     79     0xff95 <span class="o">(</span>KP_Home<span class="o">)</span>    0xffb7 <span class="o">(</span>KP_7<span class="o">)</span>   0xff95 <span class="o">(</span>KP_Home<span class="o">)</span>    0xffb7 <span class="o">(</span>KP_7<span class="o">)</span>
+     80     0xff97 <span class="o">(</span>KP_Up<span class="o">)</span>  0xffb8 <span class="o">(</span>KP_8<span class="o">)</span>   0xff97 <span class="o">(</span>KP_Up<span class="o">)</span>  0xffb8 <span class="o">(</span>KP_8<span class="o">)</span>
+     81     0xff9a <span class="o">(</span>KP_Prior<span class="o">)</span>   0xffb9 <span class="o">(</span>KP_9<span class="o">)</span>   0xff9a <span class="o">(</span>KP_Prior<span class="o">)</span>   0xffb9 <span class="o">(</span>KP_9<span class="o">)</span>
+     82     0xffad <span class="o">(</span>KP_Subtract<span class="o">)</span>    0xffad <span class="o">(</span>KP_Subtract<span class="o">)</span>    0xffad <span class="o">(</span>KP_Subtract<span class="o">)</span>    0xffad <span class="o">(</span>KP_Subtract<span class="o">)</span>    0xffad <span class="o">(</span>KP_Subtract<span class="o">)</span>    0xffad <span class="o">(</span>KP_Subtract<span class="o">)</span>    0x1008fe23 <span class="o">(</span>XF86Prev_VMode<span class="o">)</span> 0xffad <span class="o">(</span>KP_Subtract<span class="o">)</span>    0xffad <span class="o">(</span>KP_Subtract<span class="o">)</span>    0x1008fe23 <span class="o">(</span>XF86Prev_VMode<span class="o">)</span>
+     83     0xff96 <span class="o">(</span>KP_Left<span class="o">)</span>    0xffb4 <span class="o">(</span>KP_4<span class="o">)</span>   0xff96 <span class="o">(</span>KP_Left<span class="o">)</span>    0xffb4 <span class="o">(</span>KP_4<span class="o">)</span>
+     84     0xff9d <span class="o">(</span>KP_Begin<span class="o">)</span>   0xffb5 <span class="o">(</span>KP_5<span class="o">)</span>   0xff9d <span class="o">(</span>KP_Begin<span class="o">)</span>   0xffb5 <span class="o">(</span>KP_5<span class="o">)</span>
+     85     0xff98 <span class="o">(</span>KP_Right<span class="o">)</span>   0xffb6 <span class="o">(</span>KP_6<span class="o">)</span>   0xff98 <span class="o">(</span>KP_Right<span class="o">)</span>   0xffb6 <span class="o">(</span>KP_6<span class="o">)</span>
+     86     0xffab <span class="o">(</span>KP_Add<span class="o">)</span> 0xffab <span class="o">(</span>KP_Add<span class="o">)</span> 0xffab <span class="o">(</span>KP_Add<span class="o">)</span> 0xffab <span class="o">(</span>KP_Add<span class="o">)</span> 0xffab <span class="o">(</span>KP_Add<span class="o">)</span> 0xffab <span class="o">(</span>KP_Add<span class="o">)</span> 0x1008fe22 <span class="o">(</span>XF86Next_VMode<span class="o">)</span> 0xffab <span class="o">(</span>KP_Add<span class="o">)</span> 0xffab <span class="o">(</span>KP_Add<span class="o">)</span> 0x1008fe22 <span class="o">(</span>XF86Next_VMode<span class="o">)</span>
+     87     0xff9c <span class="o">(</span>KP_End<span class="o">)</span> 0xffb1 <span class="o">(</span>KP_1<span class="o">)</span>   0xff9c <span class="o">(</span>KP_End<span class="o">)</span> 0xffb1 <span class="o">(</span>KP_1<span class="o">)</span>
+     88     0xff99 <span class="o">(</span>KP_Down<span class="o">)</span>    0xffb2 <span class="o">(</span>KP_2<span class="o">)</span>   0xff99 <span class="o">(</span>KP_Down<span class="o">)</span>    0xffb2 <span class="o">(</span>KP_2<span class="o">)</span>
+     89     0xff9b <span class="o">(</span>KP_Next<span class="o">)</span>    0xffb3 <span class="o">(</span>KP_3<span class="o">)</span>   0xff9b <span class="o">(</span>KP_Next<span class="o">)</span>    0xffb3 <span class="o">(</span>KP_3<span class="o">)</span>
+     90     0xff9e <span class="o">(</span>KP_Insert<span class="o">)</span>  0xffb0 <span class="o">(</span>KP_0<span class="o">)</span>   0xff9e <span class="o">(</span>KP_Insert<span class="o">)</span>  0xffb0 <span class="o">(</span>KP_0<span class="o">)</span>
+     91     0xff9f <span class="o">(</span>KP_Delete<span class="o">)</span>  0xffae <span class="o">(</span>KP_Decimal<span class="o">)</span> 0xff9f <span class="o">(</span>KP_Delete<span class="o">)</span>  0xffae <span class="o">(</span>KP_Decimal<span class="o">)</span>
+     92     0xfe03 <span class="o">(</span>ISO_Level3_Shift<span class="o">)</span>   0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0xfe03 <span class="o">(</span>ISO_Level3_Shift<span class="o">)</span>
+     93
+     94     0x003c <span class="o">(</span>less<span class="o">)</span>   0x003e <span class="o">(</span>greater<span class="o">)</span>    0x003c <span class="o">(</span>less<span class="o">)</span>   0x003e <span class="o">(</span>greater<span class="o">)</span>    0x007c <span class="o">(</span>bar<span class="o">)</span>    0x00a6 <span class="o">(</span>brokenbar<span class="o">)</span>  0x007c <span class="o">(</span>bar<span class="o">)</span>    0x00a6 <span class="o">(</span>brokenbar<span class="o">)</span>
+     95     0xffc8 <span class="o">(</span>F11<span class="o">)</span>    0xffc8 <span class="o">(</span>F11<span class="o">)</span>    0xffc8 <span class="o">(</span>F11<span class="o">)</span>    0xffc8 <span class="o">(</span>F11<span class="o">)</span>    0xffc8 <span class="o">(</span>F11<span class="o">)</span>    0xffc8 <span class="o">(</span>F11<span class="o">)</span>    0x1008fe0b <span class="o">(</span>XF86Switch_VT_11<span class="o">)</span>   0xffc8 <span class="o">(</span>F11<span class="o">)</span>    0xffc8 <span class="o">(</span>F11<span class="o">)</span>    0x1008fe0b <span class="o">(</span>XF86Switch_VT_11<span class="o">)</span>
+     96     0xffc9 <span class="o">(</span>F12<span class="o">)</span>    0xffc9 <span class="o">(</span>F12<span class="o">)</span>    0xffc9 <span class="o">(</span>F12<span class="o">)</span>    0xffc9 <span class="o">(</span>F12<span class="o">)</span>    0xffc9 <span class="o">(</span>F12<span class="o">)</span>    0xffc9 <span class="o">(</span>F12<span class="o">)</span>    0x1008fe0c <span class="o">(</span>XF86Switch_VT_12<span class="o">)</span>   0xffc9 <span class="o">(</span>F12<span class="o">)</span>    0xffc9 <span class="o">(</span>F12<span class="o">)</span>    0x1008fe0c <span class="o">(</span>XF86Switch_VT_12<span class="o">)</span>
+     97
+     98     0xff26 <span class="o">(</span>Katakana<span class="o">)</span>   0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0xff26 <span class="o">(</span>Katakana<span class="o">)</span>
+     99     0xff25 <span class="o">(</span>Hiragana<span class="o">)</span>   0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0xff25 <span class="o">(</span>Hiragana<span class="o">)</span>
+    100     0xff23 <span class="o">(</span>Henkan_Mode<span class="o">)</span>    0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0xff23 <span class="o">(</span>Henkan_Mode<span class="o">)</span>
+    101     0xff27 <span class="o">(</span>Hiragana_Katakana<span class="o">)</span>  0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0xff27 <span class="o">(</span>Hiragana_Katakana<span class="o">)</span>
+    102     0xff22 <span class="o">(</span>Muhenkan<span class="o">)</span>   0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0xff22 <span class="o">(</span>Muhenkan<span class="o">)</span>
+    103
+    104     0xff8d <span class="o">(</span>KP_Enter<span class="o">)</span>   0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0xff8d <span class="o">(</span>KP_Enter<span class="o">)</span>
+    105     0xffe4 <span class="o">(</span>Control_R<span class="o">)</span>  0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0xffe4 <span class="o">(</span>Control_R<span class="o">)</span>
+    106     0xffaf <span class="o">(</span>KP_Divide<span class="o">)</span>  0xffaf <span class="o">(</span>KP_Divide<span class="o">)</span>  0xffaf <span class="o">(</span>KP_Divide<span class="o">)</span>  0xffaf <span class="o">(</span>KP_Divide<span class="o">)</span>  0xffaf <span class="o">(</span>KP_Divide<span class="o">)</span>  0xffaf <span class="o">(</span>KP_Divide<span class="o">)</span>  0x1008fe20 <span class="o">(</span>XF86Ungrab<span class="o">)</span> 0xffaf <span class="o">(</span>KP_Divide<span class="o">)</span>  0xffaf <span class="o">(</span>KP_Divide<span class="o">)</span>  0x1008fe20 <span class="o">(</span>XF86Ungrab<span class="o">)</span>
+    107     0xffec <span class="o">(</span>Super_R<span class="o">)</span>    0xffec <span class="o">(</span>Super_R<span class="o">)</span>    0xffec <span class="o">(</span>Super_R<span class="o">)</span>    0xffec <span class="o">(</span>Super_R<span class="o">)</span>
+    108     0xfe03 <span class="o">(</span>ISO_Level3_Shift<span class="o">)</span>   0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0xfe03 <span class="o">(</span>ISO_Level3_Shift<span class="o">)</span>
+    109     0xff0a <span class="o">(</span>Linefeed<span class="o">)</span>   0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0xff0a <span class="o">(</span>Linefeed<span class="o">)</span>
+    110     0xff50 <span class="o">(</span>Home<span class="o">)</span>   0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0xff50 <span class="o">(</span>Home<span class="o">)</span>
+    111     0xff52 <span class="o">(</span>Up<span class="o">)</span> 0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0xff52 <span class="o">(</span>Up<span class="o">)</span>
+    112     0xff55 <span class="o">(</span>Prior<span class="o">)</span>  0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0xff55 <span class="o">(</span>Prior<span class="o">)</span>
+    113     0xff51 <span class="o">(</span>Left<span class="o">)</span>   0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0xff51 <span class="o">(</span>Left<span class="o">)</span>
+    114     0xff53 <span class="o">(</span>Right<span class="o">)</span>  0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0xff53 <span class="o">(</span>Right<span class="o">)</span>
+    115     0xff57 <span class="o">(</span>End<span class="o">)</span>    0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0xff57 <span class="o">(</span>End<span class="o">)</span>
+    116     0xff54 <span class="o">(</span>Down<span class="o">)</span>   0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0xff54 <span class="o">(</span>Down<span class="o">)</span>
+    117     0xff56 <span class="o">(</span>Next<span class="o">)</span>   0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0xff56 <span class="o">(</span>Next<span class="o">)</span>
+    118     0xff63 <span class="o">(</span>Insert<span class="o">)</span> 0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0xff63 <span class="o">(</span>Insert<span class="o">)</span>
+    119     0xffff <span class="o">(</span>Delete<span class="o">)</span> 0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0xffff <span class="o">(</span>Delete<span class="o">)</span>
+    120
+    121     0x1008ff12 <span class="o">(</span>XF86AudioMute<span class="o">)</span>  0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff12 <span class="o">(</span>XF86AudioMute<span class="o">)</span>
+    122     0x1008ff11 <span class="o">(</span>XF86AudioLowerVolume<span class="o">)</span>   0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff11 <span class="o">(</span>XF86AudioLowerVolume<span class="o">)</span>
+    123     0x1008ff13 <span class="o">(</span>XF86AudioRaiseVolume<span class="o">)</span>   0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff13 <span class="o">(</span>XF86AudioRaiseVolume<span class="o">)</span>
+    124     0x1008ff2a <span class="o">(</span>XF86PowerOff<span class="o">)</span>   0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff2a <span class="o">(</span>XF86PowerOff<span class="o">)</span>
+    125     0xffbd <span class="o">(</span>KP_Equal<span class="o">)</span>   0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0xffbd <span class="o">(</span>KP_Equal<span class="o">)</span>
+    126     0x00b1 <span class="o">(</span>plusminus<span class="o">)</span>  0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x00b1 <span class="o">(</span>plusminus<span class="o">)</span>
+    127     0xff13 <span class="o">(</span>Pause<span class="o">)</span>  0xff6b <span class="o">(</span>Break<span class="o">)</span>  0xff13 <span class="o">(</span>Pause<span class="o">)</span>  0xff6b <span class="o">(</span>Break<span class="o">)</span>
+    128     0x1008ff4a <span class="o">(</span>XF86LaunchA<span class="o">)</span>    0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff4a <span class="o">(</span>XF86LaunchA<span class="o">)</span>
+    129     0xffae <span class="o">(</span>KP_Decimal<span class="o">)</span> 0xffae <span class="o">(</span>KP_Decimal<span class="o">)</span> 0xffae <span class="o">(</span>KP_Decimal<span class="o">)</span> 0xffae <span class="o">(</span>KP_Decimal<span class="o">)</span>
+    130     0xff31 <span class="o">(</span>Hangul<span class="o">)</span> 0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0xff31 <span class="o">(</span>Hangul<span class="o">)</span>
+    131     0xff34 <span class="o">(</span>Hangul_Hanja<span class="o">)</span>   0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0xff34 <span class="o">(</span>Hangul_Hanja<span class="o">)</span>
+    132
+    133     0xffeb <span class="o">(</span>Super_L<span class="o">)</span>    0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0xffeb <span class="o">(</span>Super_L<span class="o">)</span>
+    134     0xffec <span class="o">(</span>Super_R<span class="o">)</span>    0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0xffec <span class="o">(</span>Super_R<span class="o">)</span>
+    135     0xff67 <span class="o">(</span>Menu<span class="o">)</span>   0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0xff67 <span class="o">(</span>Menu<span class="o">)</span>
+    136     0xff69 <span class="o">(</span>Cancel<span class="o">)</span> 0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0xff69 <span class="o">(</span>Cancel<span class="o">)</span>
+    137     0xff66 <span class="o">(</span>Redo<span class="o">)</span>   0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0xff66 <span class="o">(</span>Redo<span class="o">)</span>
+    138     0x1005ff70 <span class="o">(</span>SunProps<span class="o">)</span>   0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1005ff70 <span class="o">(</span>SunProps<span class="o">)</span>
+    139     0xff65 <span class="o">(</span>Undo<span class="o">)</span>   0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0xff65 <span class="o">(</span>Undo<span class="o">)</span>
+    140     0x1005ff71 <span class="o">(</span>SunFront<span class="o">)</span>   0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1005ff71 <span class="o">(</span>SunFront<span class="o">)</span>
+    141     0x1008ff57 <span class="o">(</span>XF86Copy<span class="o">)</span>   0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff57 <span class="o">(</span>XF86Copy<span class="o">)</span>
+    142     0x1008ff6b <span class="o">(</span>XF86Open<span class="o">)</span>   0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff6b <span class="o">(</span>XF86Open<span class="o">)</span>
+    143     0x1008ff6d <span class="o">(</span>XF86Paste<span class="o">)</span>  0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff6d <span class="o">(</span>XF86Paste<span class="o">)</span>
+    144     0xff68 <span class="o">(</span>Find<span class="o">)</span>   0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0xff68 <span class="o">(</span>Find<span class="o">)</span>
+    145     0x1008ff58 <span class="o">(</span>XF86Cut<span class="o">)</span>    0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff58 <span class="o">(</span>XF86Cut<span class="o">)</span>
+    146     0xff6a <span class="o">(</span>Help<span class="o">)</span>   0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0xff6a <span class="o">(</span>Help<span class="o">)</span>
+    147     0x1008ff65 <span class="o">(</span>XF86MenuKB<span class="o">)</span> 0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff65 <span class="o">(</span>XF86MenuKB<span class="o">)</span>
+    148     0x1008ff1d <span class="o">(</span>XF86Calculator<span class="o">)</span> 0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff1d <span class="o">(</span>XF86Calculator<span class="o">)</span>
+    149
+    150     0x1008ff2f <span class="o">(</span>XF86Sleep<span class="o">)</span>  0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff2f <span class="o">(</span>XF86Sleep<span class="o">)</span>
+    151     0x1008ff2b <span class="o">(</span>XF86WakeUp<span class="o">)</span> 0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff2b <span class="o">(</span>XF86WakeUp<span class="o">)</span>
+    152     0x1008ff5d <span class="o">(</span>XF86Explorer<span class="o">)</span>   0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff5d <span class="o">(</span>XF86Explorer<span class="o">)</span>
+    153     0x1008ff7b <span class="o">(</span>XF86Send<span class="o">)</span>   0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff7b <span class="o">(</span>XF86Send<span class="o">)</span>
+    154
+    155     0x1008ff8a <span class="o">(</span>XF86Xfer<span class="o">)</span>   0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff8a <span class="o">(</span>XF86Xfer<span class="o">)</span>
+    156     0x1008ff41 <span class="o">(</span>XF86Launch1<span class="o">)</span>    0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff41 <span class="o">(</span>XF86Launch1<span class="o">)</span>
+    157     0x1008ff42 <span class="o">(</span>XF86Launch2<span class="o">)</span>    0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff42 <span class="o">(</span>XF86Launch2<span class="o">)</span>
+    158     0x1008ff2e <span class="o">(</span>XF86WWW<span class="o">)</span>    0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff2e <span class="o">(</span>XF86WWW<span class="o">)</span>
+    159     0x1008ff5a <span class="o">(</span>XF86DOS<span class="o">)</span>    0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff5a <span class="o">(</span>XF86DOS<span class="o">)</span>
+    160     0x1008ff2d <span class="o">(</span>XF86ScreenSaver<span class="o">)</span>    0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff2d <span class="o">(</span>XF86ScreenSaver<span class="o">)</span>
+    161     0x1008ff74 <span class="o">(</span>XF86RotateWindows<span class="o">)</span>  0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff74 <span class="o">(</span>XF86RotateWindows<span class="o">)</span>
+    162     0x1008ff7f <span class="o">(</span>XF86TaskPane<span class="o">)</span>   0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff7f <span class="o">(</span>XF86TaskPane<span class="o">)</span>
+    163     0x1008ff19 <span class="o">(</span>XF86Mail<span class="o">)</span>   0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff19 <span class="o">(</span>XF86Mail<span class="o">)</span>
+    164     0x1008ff30 <span class="o">(</span>XF86Favorites<span class="o">)</span>  0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff30 <span class="o">(</span>XF86Favorites<span class="o">)</span>
+    165     0x1008ff33 <span class="o">(</span>XF86MyComputer<span class="o">)</span> 0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff33 <span class="o">(</span>XF86MyComputer<span class="o">)</span>
+    166     0x1008ff26 <span class="o">(</span>XF86Back<span class="o">)</span>   0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff26 <span class="o">(</span>XF86Back<span class="o">)</span>
+    167     0x1008ff27 <span class="o">(</span>XF86Forward<span class="o">)</span>    0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff27 <span class="o">(</span>XF86Forward<span class="o">)</span>
+    168
+    169     0x1008ff2c <span class="o">(</span>XF86Eject<span class="o">)</span>  0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff2c <span class="o">(</span>XF86Eject<span class="o">)</span>
+    170     0x1008ff2c <span class="o">(</span>XF86Eject<span class="o">)</span>  0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff2c <span class="o">(</span>XF86Eject<span class="o">)</span>
+    171     0x1008ff17 <span class="o">(</span>XF86AudioNext<span class="o">)</span>  0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff17 <span class="o">(</span>XF86AudioNext<span class="o">)</span>
+    172     0x1008ff14 <span class="o">(</span>XF86AudioPlay<span class="o">)</span>  0x1008ff31 <span class="o">(</span>XF86AudioPause<span class="o">)</span> 0x1008ff14 <span class="o">(</span>XF86AudioPlay<span class="o">)</span>  0x1008ff31 <span class="o">(</span>XF86AudioPause<span class="o">)</span>
+    173     0x1008ff16 <span class="o">(</span>XF86AudioPrev<span class="o">)</span>  0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff16 <span class="o">(</span>XF86AudioPrev<span class="o">)</span>
+    174     0x1008ff15 <span class="o">(</span>XF86AudioStop<span class="o">)</span>  0x1008ff2c <span class="o">(</span>XF86Eject<span class="o">)</span>  0x1008ff15 <span class="o">(</span>XF86AudioStop<span class="o">)</span>  0x1008ff2c <span class="o">(</span>XF86Eject<span class="o">)</span>
+    175     0x1008ff1c <span class="o">(</span>XF86AudioRecord<span class="o">)</span>    0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff1c <span class="o">(</span>XF86AudioRecord<span class="o">)</span>
+    176     0x1008ff3e <span class="o">(</span>XF86AudioRewind<span class="o">)</span>    0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff3e <span class="o">(</span>XF86AudioRewind<span class="o">)</span>
+    177     0x1008ff6e <span class="o">(</span>XF86Phone<span class="o">)</span>  0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff6e <span class="o">(</span>XF86Phone<span class="o">)</span>
+    178
+    179     0x1008ff81 <span class="o">(</span>XF86Tools<span class="o">)</span>  0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff81 <span class="o">(</span>XF86Tools<span class="o">)</span>
+    180     0x1008ff18 <span class="o">(</span>XF86HomePage<span class="o">)</span>   0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff18 <span class="o">(</span>XF86HomePage<span class="o">)</span>
+    181     0x1008ff73 <span class="o">(</span>XF86Reload<span class="o">)</span> 0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff73 <span class="o">(</span>XF86Reload<span class="o">)</span>
+    182     0x1008ff56 <span class="o">(</span>XF86Close<span class="o">)</span>  0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff56 <span class="o">(</span>XF86Close<span class="o">)</span>
+    183
+    184
+    185     0x1008ff78 <span class="o">(</span>XF86ScrollUp<span class="o">)</span>   0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff78 <span class="o">(</span>XF86ScrollUp<span class="o">)</span>
+    186     0x1008ff79 <span class="o">(</span>XF86ScrollDown<span class="o">)</span> 0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff79 <span class="o">(</span>XF86ScrollDown<span class="o">)</span>
+    187     0x0028 <span class="o">(</span>parenleft<span class="o">)</span>  0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x0028 <span class="o">(</span>parenleft<span class="o">)</span>
+    188     0x0029 <span class="o">(</span>parenright<span class="o">)</span> 0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x0029 <span class="o">(</span>parenright<span class="o">)</span>
+    189     0x1008ff68 <span class="o">(</span>XF86New<span class="o">)</span>    0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff68 <span class="o">(</span>XF86New<span class="o">)</span>
+    190     0xff66 <span class="o">(</span>Redo<span class="o">)</span>   0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0xff66 <span class="o">(</span>Redo<span class="o">)</span>
+    191     0x1008ff81 <span class="o">(</span>XF86Tools<span class="o">)</span>  0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff81 <span class="o">(</span>XF86Tools<span class="o">)</span>
+    192     0x1008ff45 <span class="o">(</span>XF86Launch5<span class="o">)</span>    0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff45 <span class="o">(</span>XF86Launch5<span class="o">)</span>
+    193     0x1008ff46 <span class="o">(</span>XF86Launch6<span class="o">)</span>    0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff46 <span class="o">(</span>XF86Launch6<span class="o">)</span>
+    194     0x1008ff47 <span class="o">(</span>XF86Launch7<span class="o">)</span>    0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff47 <span class="o">(</span>XF86Launch7<span class="o">)</span>
+    195     0x1008ff48 <span class="o">(</span>XF86Launch8<span class="o">)</span>    0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff48 <span class="o">(</span>XF86Launch8<span class="o">)</span>
+    196     0x1008ff49 <span class="o">(</span>XF86Launch9<span class="o">)</span>    0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff49 <span class="o">(</span>XF86Launch9<span class="o">)</span>
+    197
+    198     0x1008ffb2 <span class="o">(</span>XF86AudioMicMute<span class="o">)</span>   0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ffb2 <span class="o">(</span>XF86AudioMicMute<span class="o">)</span>
+    199     0x1008ffa9 <span class="o">(</span>XF86TouchpadToggle<span class="o">)</span> 0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ffa9 <span class="o">(</span>XF86TouchpadToggle<span class="o">)</span>
+    200     0x1008ffb0 <span class="o">(</span>XF86TouchpadOn<span class="o">)</span> 0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ffb0 <span class="o">(</span>XF86TouchpadOn<span class="o">)</span>
+    201     0x1008ffb1 <span class="o">(</span>XF86TouchpadOff<span class="o">)</span>    0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ffb1 <span class="o">(</span>XF86TouchpadOff<span class="o">)</span>
+    202
+    203     0xff7e <span class="o">(</span>Mode_switch<span class="o">)</span>    0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0xff7e <span class="o">(</span>Mode_switch<span class="o">)</span>
+    204     0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0xffe9 <span class="o">(</span>Alt_L<span class="o">)</span>  0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0xffe9 <span class="o">(</span>Alt_L<span class="o">)</span>
+    205     0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0xffe7 <span class="o">(</span>Meta_L<span class="o">)</span> 0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0xffe7 <span class="o">(</span>Meta_L<span class="o">)</span>
+    206     0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0xffeb <span class="o">(</span>Super_L<span class="o">)</span>    0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0xffeb <span class="o">(</span>Super_L<span class="o">)</span>
+    207     0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0xffed <span class="o">(</span>Hyper_L<span class="o">)</span>    0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0xffed <span class="o">(</span>Hyper_L<span class="o">)</span>
+    208     0x1008ff14 <span class="o">(</span>XF86AudioPlay<span class="o">)</span>  0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff14 <span class="o">(</span>XF86AudioPlay<span class="o">)</span>
+    209     0x1008ff31 <span class="o">(</span>XF86AudioPause<span class="o">)</span> 0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff31 <span class="o">(</span>XF86AudioPause<span class="o">)</span>
+    210     0x1008ff43 <span class="o">(</span>XF86Launch3<span class="o">)</span>    0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff43 <span class="o">(</span>XF86Launch3<span class="o">)</span>
+    211     0x1008ff44 <span class="o">(</span>XF86Launch4<span class="o">)</span>    0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff44 <span class="o">(</span>XF86Launch4<span class="o">)</span>
+    212     0x1008ff4b <span class="o">(</span>XF86LaunchB<span class="o">)</span>    0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff4b <span class="o">(</span>XF86LaunchB<span class="o">)</span>
+    213     0x1008ffa7 <span class="o">(</span>XF86Suspend<span class="o">)</span>    0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ffa7 <span class="o">(</span>XF86Suspend<span class="o">)</span>
+    214     0x1008ff56 <span class="o">(</span>XF86Close<span class="o">)</span>  0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff56 <span class="o">(</span>XF86Close<span class="o">)</span>
+    215     0x1008ff14 <span class="o">(</span>XF86AudioPlay<span class="o">)</span>  0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff14 <span class="o">(</span>XF86AudioPlay<span class="o">)</span>
+    216     0x1008ff97 <span class="o">(</span>XF86AudioForward<span class="o">)</span>   0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff97 <span class="o">(</span>XF86AudioForward<span class="o">)</span>
+    217
+    218     0xff61 <span class="o">(</span>Print<span class="o">)</span>  0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0xff61 <span class="o">(</span>Print<span class="o">)</span>
+    219
+    220     0x1008ff8f <span class="o">(</span>XF86WebCam<span class="o">)</span> 0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff8f <span class="o">(</span>XF86WebCam<span class="o">)</span>
+    221     0x1008ffb6 <span class="o">(</span>XF86AudioPreset<span class="o">)</span>    0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ffb6 <span class="o">(</span>XF86AudioPreset<span class="o">)</span>
+    222
+    223     0x1008ff19 <span class="o">(</span>XF86Mail<span class="o">)</span>   0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff19 <span class="o">(</span>XF86Mail<span class="o">)</span>
+    224     0x1008ff8e <span class="o">(</span>XF86Messenger<span class="o">)</span>  0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff8e <span class="o">(</span>XF86Messenger<span class="o">)</span>
+    225     0x1008ff1b <span class="o">(</span>XF86Search<span class="o">)</span> 0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff1b <span class="o">(</span>XF86Search<span class="o">)</span>
+    226     0x1008ff5f <span class="o">(</span>XF86Go<span class="o">)</span> 0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff5f <span class="o">(</span>XF86Go<span class="o">)</span>
+    227     0x1008ff3c <span class="o">(</span>XF86Finance<span class="o">)</span>    0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff3c <span class="o">(</span>XF86Finance<span class="o">)</span>
+    228     0x1008ff5e <span class="o">(</span>XF86Game<span class="o">)</span>   0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff5e <span class="o">(</span>XF86Game<span class="o">)</span>
+    229     0x1008ff36 <span class="o">(</span>XF86Shop<span class="o">)</span>   0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff36 <span class="o">(</span>XF86Shop<span class="o">)</span>
+    230
+    231     0xff69 <span class="o">(</span>Cancel<span class="o">)</span> 0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0xff69 <span class="o">(</span>Cancel<span class="o">)</span>
+    232     0x1008ff03 <span class="o">(</span>XF86MonBrightnessDown<span class="o">)</span>  0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff03 <span class="o">(</span>XF86MonBrightnessDown<span class="o">)</span>
+    233     0x1008ff02 <span class="o">(</span>XF86MonBrightnessUp<span class="o">)</span>    0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff02 <span class="o">(</span>XF86MonBrightnessUp<span class="o">)</span>
+    234     0x1008ff32 <span class="o">(</span>XF86AudioMedia<span class="o">)</span> 0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff32 <span class="o">(</span>XF86AudioMedia<span class="o">)</span>
+    235     0x1008ff59 <span class="o">(</span>XF86Display<span class="o">)</span>    0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff59 <span class="o">(</span>XF86Display<span class="o">)</span>
+    236     0x1008ff04 <span class="o">(</span>XF86KbdLightOnOff<span class="o">)</span>  0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff04 <span class="o">(</span>XF86KbdLightOnOff<span class="o">)</span>
+    237     0x1008ff06 <span class="o">(</span>XF86KbdBrightnessDown<span class="o">)</span>  0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff06 <span class="o">(</span>XF86KbdBrightnessDown<span class="o">)</span>
+    238     0x1008ff05 <span class="o">(</span>XF86KbdBrightnessUp<span class="o">)</span>    0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff05 <span class="o">(</span>XF86KbdBrightnessUp<span class="o">)</span>
+    239     0x1008ff7b <span class="o">(</span>XF86Send<span class="o">)</span>   0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff7b <span class="o">(</span>XF86Send<span class="o">)</span>
+    240     0x1008ff72 <span class="o">(</span>XF86Reply<span class="o">)</span>  0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff72 <span class="o">(</span>XF86Reply<span class="o">)</span>
+    241     0x1008ff90 <span class="o">(</span>XF86MailForward<span class="o">)</span>    0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff90 <span class="o">(</span>XF86MailForward<span class="o">)</span>
+    242     0x1008ff77 <span class="o">(</span>XF86Save<span class="o">)</span>   0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff77 <span class="o">(</span>XF86Save<span class="o">)</span>
+    243     0x1008ff5b <span class="o">(</span>XF86Documents<span class="o">)</span>  0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff5b <span class="o">(</span>XF86Documents<span class="o">)</span>
+    244     0x1008ff93 <span class="o">(</span>XF86Battery<span class="o">)</span>    0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff93 <span class="o">(</span>XF86Battery<span class="o">)</span>
+    245     0x1008ff94 <span class="o">(</span>XF86Bluetooth<span class="o">)</span>  0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff94 <span class="o">(</span>XF86Bluetooth<span class="o">)</span>
+    246     0x1008ff95 <span class="o">(</span>XF86WLAN<span class="o">)</span>   0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff95 <span class="o">(</span>XF86WLAN<span class="o">)</span>
+    247     0x1008ff96 <span class="o">(</span>XF86UWB<span class="o">)</span>    0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff96 <span class="o">(</span>XF86UWB<span class="o">)</span>
+    248
+    249     0x1008fe22 <span class="o">(</span>XF86Next_VMode<span class="o">)</span> 0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008fe22 <span class="o">(</span>XF86Next_VMode<span class="o">)</span>
+    250     0x1008fe23 <span class="o">(</span>XF86Prev_VMode<span class="o">)</span> 0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008fe23 <span class="o">(</span>XF86Prev_VMode<span class="o">)</span>
+    251     0x1008ff07 <span class="o">(</span>XF86MonBrightnessCycle<span class="o">)</span> 0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ff07 <span class="o">(</span>XF86MonBrightnessCycle<span class="o">)</span>
+    252     0x100810f4 <span class="o">(</span>XF86BrightnessAuto<span class="o">)</span> 0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x100810f4 <span class="o">(</span>XF86BrightnessAuto<span class="o">)</span>
+    253     0x100810f5 <span class="o">(</span>XF86DisplayOff<span class="o">)</span> 0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x100810f5 <span class="o">(</span>XF86DisplayOff<span class="o">)</span>
+    254     0x1008ffb4 <span class="o">(</span>XF86WWAN<span class="o">)</span>   0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ffb4 <span class="o">(</span>XF86WWAN<span class="o">)</span>
+    255     0x1008ffb5 <span class="o">(</span>XF86RFKill<span class="o">)</span> 0x0000 <span class="o">(</span>NoSymbol<span class="o">)</span>   0x1008ffb5 <span class="o">(</span>XF86RFKill<span class="o">)</span></code></pre></figure> </div> <p>فرمان <code class="language-plaintext highlighter-rouge">xmodmap -pke</code> این لیست را به صورتی که برای <code class="language-plaintext highlighter-rouge">xmodmap</code> قابل استفاده باشد در اختیار شما قرار می‌دهد.</p> <div class="code-block"> <figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>xmodmap <span class="nt">-pke</span>
+keycode   8 <span class="o">=</span>
+keycode   9 <span class="o">=</span> Escape NoSymbol Escape
+keycode  10 <span class="o">=</span> 1 exclam Farsi_1 exclam grave 1
+keycode  11 <span class="o">=</span> 2 at Farsi_2 U066C at 2
+keycode  12 <span class="o">=</span> 3 numbersign Farsi_3 U066B numbersign 3
+keycode  13 <span class="o">=</span> 4 dollar Farsi_4 UFDFC dollar 4
+keycode  14 <span class="o">=</span> 5 percent Farsi_5 Arabic_percent percent 5
+keycode  15 <span class="o">=</span> 6 asciicircum Farsi_6 multiply asciicircum 6
+keycode  16 <span class="o">=</span> 7 ampersand Farsi_7 Arabic_comma ampersand 7
+keycode  17 <span class="o">=</span> 8 asterisk Farsi_8 asterisk enfilledcircbullet 8
+keycode  18 <span class="o">=</span> 9 parenleft Farsi_9 parenright U200E 9
+keycode  19 <span class="o">=</span> 0 parenright Farsi_0 parenleft U200F 0
+keycode  20 <span class="o">=</span> minus underscore minus Arabic_tatweel underscore
+keycode  21 <span class="o">=</span> equal plus equal plus U2212
+keycode  22 <span class="o">=</span> BackSpace BackSpace BackSpace BackSpace
+keycode  23 <span class="o">=</span> Tab ISO_Left_Tab Tab ISO_Left_Tab
+keycode  24 <span class="o">=</span> q Q Arabic_dad Arabic_sukun degree
+keycode  25 <span class="o">=</span> w W Arabic_sad Arabic_dammatan VoidSymbol
+keycode  26 <span class="o">=</span> e E Arabic_theh Arabic_kasratan 0x13a4
+keycode  27 <span class="o">=</span> r R Arabic_qaf Arabic_fathatan VoidSymbol
+keycode  28 <span class="o">=</span> t T Arabic_feh Arabic_damma VoidSymbol
+keycode  29 <span class="o">=</span> y Y Arabic_ghain Arabic_kasra VoidSymbol
+keycode  30 <span class="o">=</span> u U Arabic_ain Arabic_fatha VoidSymbol
+keycode  31 <span class="o">=</span> i I Arabic_ha Arabic_shadda U202D
+keycode  32 <span class="o">=</span> o O Arabic_khah bracketright U202E
+keycode  33 <span class="o">=</span> p P Arabic_hah bracketleft U202C
+keycode  34 <span class="o">=</span> bracketleft braceleft Arabic_jeem braceright U202A
+keycode  35 <span class="o">=</span> bracketright braceright Arabic_tcheh braceleft U202B
+keycode  36 <span class="o">=</span> Return NoSymbol Return
+keycode  37 <span class="o">=</span> Control_L NoSymbol Control_L
+keycode  38 <span class="o">=</span> a A Arabic_sheen Arabic_hamzaonwaw VoidSymbol
+keycode  39 <span class="o">=</span> s S Arabic_seen Arabic_hamzaonyeh VoidSymbol
+keycode  40 <span class="o">=</span> d D Farsi_yeh Arabic_yeh Arabic_alefmaksura
+keycode  41 <span class="o">=</span> f F Arabic_beh Arabic_hamzaunderalef VoidSymbol
+keycode  42 <span class="o">=</span> g G Arabic_lam Arabic_hamzaonalef VoidSymbol
+keycode  43 <span class="o">=</span> h H Arabic_alef Arabic_maddaonalef U0671
+keycode  44 <span class="o">=</span> j J Arabic_teh Arabic_tehmarbuta VoidSymbol
+keycode  45 <span class="o">=</span> k K Arabic_noon guillemotright UFD3E
+keycode  46 <span class="o">=</span> l L Arabic_meem guillemotleft UFD3F
+keycode  47 <span class="o">=</span> semicolon colon Arabic_keheh colon semicolon
+keycode  48 <span class="o">=</span> apostrophe quotedbl Arabic_gaf Arabic_semicolon quotedbl
+keycode  49 <span class="o">=</span> grave asciitilde U200D division asciitilde
+keycode  50 <span class="o">=</span> Shift_L ISO_Prev_Group Shift_L ISO_Prev_Group
+keycode  51 <span class="o">=</span> backslash bar backslash bar U2010
+keycode  52 <span class="o">=</span> z Z Arabic_zah Arabic_kaf VoidSymbol
+keycode  53 <span class="o">=</span> x X Arabic_tah Arabic_madda_above VoidSymbol
+keycode  54 <span class="o">=</span> c C Arabic_zain Arabic_jeh VoidSymbol
+keycode  55 <span class="o">=</span> v V Arabic_ra Arabic_superscript_alef U0656
+keycode  56 <span class="o">=</span> b B Arabic_thal U200C U200D
+keycode  57 <span class="o">=</span> n N Arabic_dal Arabic_hamza_above Arabic_hamza_below
+keycode  58 <span class="o">=</span> m M Arabic_peh Arabic_hamza ellipsis
+keycode  59 <span class="o">=</span> comma less Arabic_waw greater comma
+keycode  60 <span class="o">=</span> period greater period less apostrophe
+keycode  61 <span class="o">=</span> slash question slash Arabic_question_mark question
+keycode  62 <span class="o">=</span> Shift_R ISO_Next_Group Shift_R ISO_Next_Group
+keycode  63 <span class="o">=</span> KP_Multiply KP_Multiply KP_Multiply KP_Multiply KP_Multiply KP_Multiply XF86ClearGrab KP_Multiply KP_Multiply XF86ClearGrab
+keycode  64 <span class="o">=</span> Alt_L Meta_L Alt_L Meta_L
+keycode  65 <span class="o">=</span> space NoSymbol space U200C nobreakspace U202F
+keycode  66 <span class="o">=</span> Escape Caps_Lock Escape Caps_Lock
+keycode  67 <span class="o">=</span> F1 F1 F1 F1 F1 F1 XF86Switch_VT_1 F1 F1 XF86Switch_VT_1
+keycode  68 <span class="o">=</span> F2 F2 F2 F2 F2 F2 XF86Switch_VT_2 F2 F2 XF86Switch_VT_2
+keycode  69 <span class="o">=</span> F3 F3 F3 F3 F3 F3 XF86Switch_VT_3 F3 F3 XF86Switch_VT_3
+keycode  70 <span class="o">=</span> F4 F4 F4 F4 F4 F4 XF86Switch_VT_4 F4 F4 XF86Switch_VT_4
+keycode  71 <span class="o">=</span> F5 F5 F5 F5 F5 F5 XF86Switch_VT_5 F5 F5 XF86Switch_VT_5
+keycode  72 <span class="o">=</span> F6 F6 F6 F6 F6 F6 XF86Switch_VT_6 F6 F6 XF86Switch_VT_6
+keycode  73 <span class="o">=</span> F7 F7 F7 F7 F7 F7 XF86Switch_VT_7 F7 F7 XF86Switch_VT_7
+keycode  74 <span class="o">=</span> F8 F8 F8 F8 F8 F8 XF86Switch_VT_8 F8 F8 XF86Switch_VT_8
+keycode  75 <span class="o">=</span> F9 F9 F9 F9 F9 F9 XF86Switch_VT_9 F9 F9 XF86Switch_VT_9
+keycode  76 <span class="o">=</span> F10 F10 F10 F10 F10 F10 XF86Switch_VT_10 F10 F10 XF86Switch_VT_10
+keycode  77 <span class="o">=</span> Num_Lock NoSymbol Num_Lock
+keycode  78 <span class="o">=</span> Scroll_Lock NoSymbol Scroll_Lock
+keycode  79 <span class="o">=</span> KP_Home KP_7 KP_Home KP_7
+keycode  80 <span class="o">=</span> KP_Up KP_8 KP_Up KP_8
+keycode  81 <span class="o">=</span> KP_Prior KP_9 KP_Prior KP_9
+keycode  82 <span class="o">=</span> KP_Subtract KP_Subtract KP_Subtract KP_Subtract KP_Subtract KP_Subtract XF86Prev_VMode KP_Subtract KP_Subtract XF86Prev_VMode
+keycode  83 <span class="o">=</span> KP_Left KP_4 KP_Left KP_4
+keycode  84 <span class="o">=</span> KP_Begin KP_5 KP_Begin KP_5
+keycode  85 <span class="o">=</span> KP_Right KP_6 KP_Right KP_6
+keycode  86 <span class="o">=</span> KP_Add KP_Add KP_Add KP_Add KP_Add KP_Add XF86Next_VMode KP_Add KP_Add XF86Next_VMode
+keycode  87 <span class="o">=</span> KP_End KP_1 KP_End KP_1
+keycode  88 <span class="o">=</span> KP_Down KP_2 KP_Down KP_2
+keycode  89 <span class="o">=</span> KP_Next KP_3 KP_Next KP_3
+keycode  90 <span class="o">=</span> KP_Insert KP_0 KP_Insert KP_0
+keycode  91 <span class="o">=</span> KP_Delete KP_Decimal KP_Delete KP_Decimal
+keycode  92 <span class="o">=</span> ISO_Level3_Shift NoSymbol ISO_Level3_Shift
+keycode  93 <span class="o">=</span>
+keycode  94 <span class="o">=</span> less greater less greater bar brokenbar bar brokenbar
+keycode  95 <span class="o">=</span> F11 F11 F11 F11 F11 F11 XF86Switch_VT_11 F11 F11 XF86Switch_VT_11
+keycode  96 <span class="o">=</span> F12 F12 F12 F12 F12 F12 XF86Switch_VT_12 F12 F12 XF86Switch_VT_12
+keycode  97 <span class="o">=</span>
+keycode  98 <span class="o">=</span> Katakana NoSymbol Katakana
+keycode  99 <span class="o">=</span> Hiragana NoSymbol Hiragana
+keycode 100 <span class="o">=</span> Henkan_Mode NoSymbol Henkan_Mode
+keycode 101 <span class="o">=</span> Hiragana_Katakana NoSymbol Hiragana_Katakana
+keycode 102 <span class="o">=</span> Muhenkan NoSymbol Muhenkan
+keycode 103 <span class="o">=</span>
+keycode 104 <span class="o">=</span> KP_Enter NoSymbol KP_Enter
+keycode 105 <span class="o">=</span> Control_R NoSymbol Control_R
+keycode 106 <span class="o">=</span> KP_Divide KP_Divide KP_Divide KP_Divide KP_Divide KP_Divide XF86Ungrab KP_Divide KP_Divide XF86Ungrab
+keycode 107 <span class="o">=</span> Super_R Super_R Super_R Super_R
+keycode 108 <span class="o">=</span> ISO_Level3_Shift NoSymbol ISO_Level3_Shift
+keycode 109 <span class="o">=</span> Linefeed NoSymbol Linefeed
+keycode 110 <span class="o">=</span> Home NoSymbol Home
+keycode 111 <span class="o">=</span> Up NoSymbol Up
+keycode 112 <span class="o">=</span> Prior NoSymbol Prior
+keycode 113 <span class="o">=</span> Left NoSymbol Left
+keycode 114 <span class="o">=</span> Right NoSymbol Right
+keycode 115 <span class="o">=</span> End NoSymbol End
+keycode 116 <span class="o">=</span> Down NoSymbol Down
+keycode 117 <span class="o">=</span> Next NoSymbol Next
+keycode 118 <span class="o">=</span> Insert NoSymbol Insert
+keycode 119 <span class="o">=</span> Delete NoSymbol Delete
+keycode 120 <span class="o">=</span>
+keycode 121 <span class="o">=</span> XF86AudioMute NoSymbol XF86AudioMute
+keycode 122 <span class="o">=</span> XF86AudioLowerVolume NoSymbol XF86AudioLowerVolume
+keycode 123 <span class="o">=</span> XF86AudioRaiseVolume NoSymbol XF86AudioRaiseVolume
+keycode 124 <span class="o">=</span> XF86PowerOff NoSymbol XF86PowerOff
+keycode 125 <span class="o">=</span> KP_Equal NoSymbol KP_Equal
+keycode 126 <span class="o">=</span> plusminus NoSymbol plusminus
+keycode 127 <span class="o">=</span> Pause Break Pause Break
+keycode 128 <span class="o">=</span> XF86LaunchA NoSymbol XF86LaunchA
+keycode 129 <span class="o">=</span> KP_Decimal KP_Decimal KP_Decimal KP_Decimal
+keycode 130 <span class="o">=</span> Hangul NoSymbol Hangul
+keycode 131 <span class="o">=</span> Hangul_Hanja NoSymbol Hangul_Hanja
+keycode 132 <span class="o">=</span>
+keycode 133 <span class="o">=</span> Super_L NoSymbol Super_L
+keycode 134 <span class="o">=</span> Super_R NoSymbol Super_R
+keycode 135 <span class="o">=</span> Menu NoSymbol Menu
+keycode 136 <span class="o">=</span> Cancel NoSymbol Cancel
+keycode 137 <span class="o">=</span> Redo NoSymbol Redo
+keycode 138 <span class="o">=</span> SunProps NoSymbol SunProps
+keycode 139 <span class="o">=</span> Undo NoSymbol Undo
+keycode 140 <span class="o">=</span> SunFront NoSymbol SunFront
+keycode 141 <span class="o">=</span> XF86Copy NoSymbol XF86Copy
+keycode 142 <span class="o">=</span> XF86Open NoSymbol XF86Open
+keycode 143 <span class="o">=</span> XF86Paste NoSymbol XF86Paste
+keycode 144 <span class="o">=</span> Find NoSymbol Find
+keycode 145 <span class="o">=</span> XF86Cut NoSymbol XF86Cut
+keycode 146 <span class="o">=</span> Help NoSymbol Help
+keycode 147 <span class="o">=</span> XF86MenuKB NoSymbol XF86MenuKB
+keycode 148 <span class="o">=</span> XF86Calculator NoSymbol XF86Calculator
+keycode 149 <span class="o">=</span>
+keycode 150 <span class="o">=</span> XF86Sleep NoSymbol XF86Sleep
+keycode 151 <span class="o">=</span> XF86WakeUp NoSymbol XF86WakeUp
+keycode 152 <span class="o">=</span> XF86Explorer NoSymbol XF86Explorer
+keycode 153 <span class="o">=</span> XF86Send NoSymbol XF86Send
+keycode 154 <span class="o">=</span>
+keycode 155 <span class="o">=</span> XF86Xfer NoSymbol XF86Xfer
+keycode 156 <span class="o">=</span> XF86Launch1 NoSymbol XF86Launch1
+keycode 157 <span class="o">=</span> XF86Launch2 NoSymbol XF86Launch2
+keycode 158 <span class="o">=</span> XF86WWW NoSymbol XF86WWW
+keycode 159 <span class="o">=</span> XF86DOS NoSymbol XF86DOS
+keycode 160 <span class="o">=</span> XF86ScreenSaver NoSymbol XF86ScreenSaver
+keycode 161 <span class="o">=</span> XF86RotateWindows NoSymbol XF86RotateWindows
+keycode 162 <span class="o">=</span> XF86TaskPane NoSymbol XF86TaskPane
+keycode 163 <span class="o">=</span> XF86Mail NoSymbol XF86Mail
+keycode 164 <span class="o">=</span> XF86Favorites NoSymbol XF86Favorites
+keycode 165 <span class="o">=</span> XF86MyComputer NoSymbol XF86MyComputer
+keycode 166 <span class="o">=</span> XF86Back NoSymbol XF86Back
+keycode 167 <span class="o">=</span> XF86Forward NoSymbol XF86Forward
+keycode 168 <span class="o">=</span>
+keycode 169 <span class="o">=</span> XF86Eject NoSymbol XF86Eject
+keycode 170 <span class="o">=</span> XF86Eject NoSymbol XF86Eject
+keycode 171 <span class="o">=</span> XF86AudioNext NoSymbol XF86AudioNext
+keycode 172 <span class="o">=</span> XF86AudioPlay XF86AudioPause XF86AudioPlay XF86AudioPause
+keycode 173 <span class="o">=</span> XF86AudioPrev NoSymbol XF86AudioPrev
+keycode 174 <span class="o">=</span> XF86AudioStop XF86Eject XF86AudioStop XF86Eject
+keycode 175 <span class="o">=</span> XF86AudioRecord NoSymbol XF86AudioRecord
+keycode 176 <span class="o">=</span> XF86AudioRewind NoSymbol XF86AudioRewind
+keycode 177 <span class="o">=</span> XF86Phone NoSymbol XF86Phone
+keycode 178 <span class="o">=</span>
+keycode 179 <span class="o">=</span> XF86Tools NoSymbol XF86Tools
+keycode 180 <span class="o">=</span> XF86HomePage NoSymbol XF86HomePage
+keycode 181 <span class="o">=</span> XF86Reload NoSymbol XF86Reload
+keycode 182 <span class="o">=</span> XF86Close NoSymbol XF86Close
+keycode 183 <span class="o">=</span>
+keycode 184 <span class="o">=</span>
+keycode 185 <span class="o">=</span> XF86ScrollUp NoSymbol XF86ScrollUp
+keycode 186 <span class="o">=</span> XF86ScrollDown NoSymbol XF86ScrollDown
+keycode 187 <span class="o">=</span> parenleft NoSymbol parenleft
+keycode 188 <span class="o">=</span> parenright NoSymbol parenright
+keycode 189 <span class="o">=</span> XF86New NoSymbol XF86New
+keycode 190 <span class="o">=</span> Redo NoSymbol Redo
+keycode 191 <span class="o">=</span> XF86Tools NoSymbol XF86Tools
+keycode 192 <span class="o">=</span> XF86Launch5 NoSymbol XF86Launch5
+keycode 193 <span class="o">=</span> XF86Launch6 NoSymbol XF86Launch6
+keycode 194 <span class="o">=</span> XF86Launch7 NoSymbol XF86Launch7
+keycode 195 <span class="o">=</span> XF86Launch8 NoSymbol XF86Launch8
+keycode 196 <span class="o">=</span> XF86Launch9 NoSymbol XF86Launch9
+keycode 197 <span class="o">=</span>
+keycode 198 <span class="o">=</span> XF86AudioMicMute NoSymbol XF86AudioMicMute
+keycode 199 <span class="o">=</span> XF86TouchpadToggle NoSymbol XF86TouchpadToggle
+keycode 200 <span class="o">=</span> XF86TouchpadOn NoSymbol XF86TouchpadOn
+keycode 201 <span class="o">=</span> XF86TouchpadOff NoSymbol XF86TouchpadOff
+keycode 202 <span class="o">=</span>
+keycode 203 <span class="o">=</span> Mode_switch NoSymbol Mode_switch
+keycode 204 <span class="o">=</span> NoSymbol Alt_L NoSymbol Alt_L
+keycode 205 <span class="o">=</span> NoSymbol Meta_L NoSymbol Meta_L
+keycode 206 <span class="o">=</span> NoSymbol Super_L NoSymbol Super_L
+keycode 207 <span class="o">=</span> NoSymbol Hyper_L NoSymbol Hyper_L
+keycode 208 <span class="o">=</span> XF86AudioPlay NoSymbol XF86AudioPlay
+keycode 209 <span class="o">=</span> XF86AudioPause NoSymbol XF86AudioPause
+keycode 210 <span class="o">=</span> XF86Launch3 NoSymbol XF86Launch3
+keycode 211 <span class="o">=</span> XF86Launch4 NoSymbol XF86Launch4
+keycode 212 <span class="o">=</span> XF86LaunchB NoSymbol XF86LaunchB
+keycode 213 <span class="o">=</span> XF86Suspend NoSymbol XF86Suspend
+keycode 214 <span class="o">=</span> XF86Close NoSymbol XF86Close
+keycode 215 <span class="o">=</span> XF86AudioPlay NoSymbol XF86AudioPlay
+keycode 216 <span class="o">=</span> XF86AudioForward NoSymbol XF86AudioForward
+keycode 217 <span class="o">=</span>
+keycode 218 <span class="o">=</span> Print NoSymbol Print
+keycode 219 <span class="o">=</span>
+keycode 220 <span class="o">=</span> XF86WebCam NoSymbol XF86WebCam
+keycode 221 <span class="o">=</span> XF86AudioPreset NoSymbol XF86AudioPreset
+keycode 222 <span class="o">=</span>
+keycode 223 <span class="o">=</span> XF86Mail NoSymbol XF86Mail
+keycode 224 <span class="o">=</span> XF86Messenger NoSymbol XF86Messenger
+keycode 225 <span class="o">=</span> XF86Search NoSymbol XF86Search
+keycode 226 <span class="o">=</span> XF86Go NoSymbol XF86Go
+keycode 227 <span class="o">=</span> XF86Finance NoSymbol XF86Finance
+keycode 228 <span class="o">=</span> XF86Game NoSymbol XF86Game
+keycode 229 <span class="o">=</span> XF86Shop NoSymbol XF86Shop
+keycode 230 <span class="o">=</span>
+keycode 231 <span class="o">=</span> Cancel NoSymbol Cancel
+keycode 232 <span class="o">=</span> XF86MonBrightnessDown NoSymbol XF86MonBrightnessDown
+keycode 233 <span class="o">=</span> XF86MonBrightnessUp NoSymbol XF86MonBrightnessUp
+keycode 234 <span class="o">=</span> XF86AudioMedia NoSymbol XF86AudioMedia
+keycode 235 <span class="o">=</span> XF86Display NoSymbol XF86Display
+keycode 236 <span class="o">=</span> XF86KbdLightOnOff NoSymbol XF86KbdLightOnOff
+keycode 237 <span class="o">=</span> XF86KbdBrightnessDown NoSymbol XF86KbdBrightnessDown
+keycode 238 <span class="o">=</span> XF86KbdBrightnessUp NoSymbol XF86KbdBrightnessUp
+keycode 239 <span class="o">=</span> XF86Send NoSymbol XF86Send
+keycode 240 <span class="o">=</span> XF86Reply NoSymbol XF86Reply
+keycode 241 <span class="o">=</span> XF86MailForward NoSymbol XF86MailForward
+keycode 242 <span class="o">=</span> XF86Save NoSymbol XF86Save
+keycode 243 <span class="o">=</span> XF86Documents NoSymbol XF86Documents
+keycode 244 <span class="o">=</span> XF86Battery NoSymbol XF86Battery
+keycode 245 <span class="o">=</span> XF86Bluetooth NoSymbol XF86Bluetooth
+keycode 246 <span class="o">=</span> XF86WLAN NoSymbol XF86WLAN
+keycode 247 <span class="o">=</span> XF86UWB NoSymbol XF86UWB
+keycode 248 <span class="o">=</span>
+keycode 249 <span class="o">=</span> XF86Next_VMode NoSymbol XF86Next_VMode
+keycode 250 <span class="o">=</span> XF86Prev_VMode NoSymbol XF86Prev_VMode
+keycode 251 <span class="o">=</span> XF86MonBrightnessCycle NoSymbol XF86MonBrightnessCycle
+keycode 252 <span class="o">=</span> XF86BrightnessAuto NoSymbol XF86BrightnessAuto
+keycode 253 <span class="o">=</span> XF86DisplayOff NoSymbol XF86DisplayOff
+keycode 254 <span class="o">=</span> XF86WWAN NoSymbol XF86WWAN
+keycode 255 <span class="o">=</span> XF86RFKill NoSymbol XF86RFKill</code></pre></figure> </div> <p>لیستی از نام کلیدها که برای <code class="language-plaintext highlighter-rouge">xmodmap</code> قابل استفاده است را می‌توانید در <a href="https://wiki.linuxquestions.org/wiki/List_of_Keysyms_Recognised_by_Xmodmap" target="_blank" rel="noopener noreferrer">این صفحه</a> ببینید.</p> <p>برای یافتن کد یک کلید خاص می‌توانید از <code class="language-plaintext highlighter-rouge">xev</code> استفاده کنید. کافیست <code class="language-plaintext highlighter-rouge">xev</code> را در ترمینال اجرا کنید و کلید مورد نظر را فشار دهید و داده‌های مربوط به آن را ببینید.</p> <p>این داده‌ها برای کلیدهای <code class="language-plaintext highlighter-rouge">j</code>، <code class="language-plaintext highlighter-rouge">k</code> و کلید لوگوی روی صفحه کلید من به این صورت هستند:</p> <div class="code-block"> <figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>xev
+
+KeyPress event, serial 34, synthetic NO, window 0x400001,
+    root 0x496, subw 0x0, <span class="nb">time </span>23841206, <span class="o">(</span>995,155<span class="o">)</span>, root:<span class="o">(</span>999,715<span class="o">)</span>,
+    state 0x0, keycode 44 <span class="o">(</span>keysym 0x6a, j<span class="o">)</span>, same_screen YES,
+    XLookupString gives 1 bytes: <span class="o">(</span>6a<span class="o">)</span> <span class="s2">"j"</span>
+    XmbLookupString gives 1 bytes: <span class="o">(</span>6a<span class="o">)</span> <span class="s2">"j"</span>
+    XFilterEvent returns: False
+
+KeyRelease event, serial 34, synthetic NO, window 0x400001,
+    root 0x496, subw 0x0, <span class="nb">time </span>23841286, <span class="o">(</span>995,155<span class="o">)</span>, root:<span class="o">(</span>999,715<span class="o">)</span>,
+    state 0x0, keycode 44 <span class="o">(</span>keysym 0x6a, j<span class="o">)</span>, same_screen YES,
+    XLookupString gives 1 bytes: <span class="o">(</span>6a<span class="o">)</span> <span class="s2">"j"</span>
+    XFilterEvent returns: False
+
+KeyPress event, serial 34, synthetic NO, window 0x400001,
+    root 0x496, subw 0x0, <span class="nb">time </span>23853546, <span class="o">(</span>995,155<span class="o">)</span>, root:<span class="o">(</span>999,715<span class="o">)</span>,
+    state 0x0, keycode 45 <span class="o">(</span>keysym 0x6b, k<span class="o">)</span>, same_screen YES,
+    XLookupString gives 1 bytes: <span class="o">(</span>6b<span class="o">)</span> <span class="s2">"k"</span>
+    XmbLookupString gives 1 bytes: <span class="o">(</span>6b<span class="o">)</span> <span class="s2">"k"</span>
+    XFilterEvent returns: False
+
+KeyRelease event, serial 34, synthetic NO, window 0x400001,
+    root 0x496, subw 0x0, <span class="nb">time </span>23853633, <span class="o">(</span>995,155<span class="o">)</span>, root:<span class="o">(</span>999,715<span class="o">)</span>,
+    state 0x0, keycode 45 <span class="o">(</span>keysym 0x6b, k<span class="o">)</span>, same_screen YES,
+    XLookupString gives 1 bytes: <span class="o">(</span>6b<span class="o">)</span> <span class="s2">"k"</span>
+    XFilterEvent returns: False
+
+KeyPress event, serial 34, synthetic NO, window 0x400001,
+    root 0x496, subw 0x0, <span class="nb">time </span>23859678, <span class="o">(</span>995,155<span class="o">)</span>, root:<span class="o">(</span>999,715<span class="o">)</span>,
+    state 0x0, keycode 133 <span class="o">(</span>keysym 0xffeb, Super_L<span class="o">)</span>, same_screen YES,
+    XLookupString gives 0 bytes:
+    XmbLookupString gives 0 bytes:
+    XFilterEvent returns: False
+
+KeyRelease event, serial 34, synthetic NO, window 0x400001,
+    root 0x496, subw 0x0, <span class="nb">time </span>23859789, <span class="o">(</span>995,155<span class="o">)</span>, root:<span class="o">(</span>999,715<span class="o">)</span>,
+    state 0x40, keycode 133 <span class="o">(</span>keysym 0xffeb, Super_L<span class="o">)</span>, same_screen YES,
+    XLookupString gives 0 bytes:
+    XFilterEvent returns: False</code></pre></figure> </div> <p>همانطور که مشاهده می‌کنید حجم داده‌های خروجی <code class="language-plaintext highlighter-rouge">xev</code> زیاد است. این برنامه تمام <code class="language-plaintext highlighter-rouge">event</code>های مربوط به ماوس را هم نمایش می‌دهد که ممکن است کار یافتن کد را دشوار کند. چنانچه فقط کد عددی کلید را می‌خواهید، می‌توانید آن را به این صورت استفاده کنید:</p> <div class="code-block"> <figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>xev | <span class="nb">awk</span> <span class="nt">-F</span><span class="s1">'[ )]+'</span> <span class="s1">'/^KeyPress/ { a[NR+2] } NR in a { printf "%-3s %s\n", $5, $8 }'</span>
+44  j
+45  k
+133 Super_L
+
+<span class="nv">$ </span>xev | <span class="nb">awk</span> <span class="nt">-F</span><span class="s1">'[ )]+'</span> <span class="s1">'/^KeyPress/ {n=NR+2} NR==n { printf "%-3s %s\n", $5, $8}'</span>
+44  j
+45  k
+133 Super_L</code></pre></figure> </div> <p>همانطور که می‌بینید خروجی را فیلتر کرده‌ایم که تنها داده‌های مورد نیاز ما را نمایش دهد.</p> <p>ابزارهای زیادی برای کار با صفحه کلید در <code class="language-plaintext highlighter-rouge">X11</code> سرور وجود دارد به عنوان نمونه <code class="language-plaintext highlighter-rouge">xset -q</code> اطلاعاتی از وضعیت موجود تنطیمات به شما می‌دهد:</p> <div class="code-block"> <figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>xset <span class="nt">-q</span>
+Keyboard Control:
+  auto repeat:  on    key click percent:  0    LED mask:  00000000
+  XKB indicators:
+    00: Caps Lock:   off    01: Num Lock:    off    02: Scroll Lock: off
+    03: Compose:     off    04: Kana:        off    05: Sleep:       off
+    06: Suspend:     off    07: Mute:        off    08: Misc:        off
+    09: Mail:        off    10: Charging:    off    11: Shift Lock:  off
+    12: Group 2:     off    13: Mouse Keys:  off
+  auto repeat delay:  300    repeat rate:  50
+  auto repeating keys:  00ffffffdffffbbf
+                        fadfffefffedffff
+                        9fffffffffffffff
+                        fff7ffffffffffff
+  bell percent:  50    bell pitch:  400    bell duration:  100
+Pointer Control:
+  acceleration:  2/1    threshold:  4
+Screen Saver:
+  prefer blanking:  <span class="nb">yes    </span>allow exposures:  <span class="nb">yes
+  timeout</span>:  600    cycle:  600
+Colors:
+  default colormap:  0x20    BlackPixel:  0x0    WhitePixel:  0xffffff
+Font Path:
+  /usr/share/fonts/misc,/usr/share/fonts/TTF,built-ins
+DPMS <span class="o">(</span>Energy Star<span class="o">)</span>:
+  Standby: 600    Suspend: 600    Off: 600
+  DPMS is Enabled
+  Monitor is On</code></pre></figure> </div> <p>و بعد از فعال کردن <code class="language-plaintext highlighter-rouge">CapsLock</code>:</p> <div class="code-block"> <figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>xset <span class="nt">-q</span>
+Keyboard Control:
+  auto repeat:  on    key click percent:  0    LED mask:  00000001
+  XKB indicators:
+    00: Caps Lock:   on     01: Num Lock:    off    02: Scroll Lock: off
+    03: Compose:     off    04: Kana:        off    05: Sleep:       off
+    06: Suspend:     off    07: Mute:        off    08: Misc:        off
+    09: Mail:        off    10: Charging:    off    11: Shift Lock:  off
+    12: Group 2:     off    13: Mouse Keys:  off
+  auto repeat delay:  300    repeat rate:  50
+  auto repeating keys:  00ffffffdffffbbf
+                        fadfffefffedffff
+                        9fffffffffffffff
+                        fff7ffffffffffff
+  bell percent:  50    bell pitch:  400    bell duration:  100
+Pointer Control:
+  acceleration:  2/1    threshold:  4
+Screen Saver:
+  prefer blanking:  <span class="nb">yes    </span>allow exposures:  <span class="nb">yes
+  timeout</span>:  600    cycle:  600
+Colors:
+  default colormap:  0x20    BlackPixel:  0x0    WhitePixel:  0xffffff
+Font Path:
+  /usr/share/fonts/misc,/usr/share/fonts/TTF,built-ins
+DPMS <span class="o">(</span>Energy Star<span class="o">)</span>:
+  Standby: 600    Suspend: 600    Off: 600
+  DPMS is Enabled
+  Monitor is On</code></pre></figure> </div> <p>می‌توان از آن برای بررسی کردن وضعیت کلید‌ها در اسکریپت‌ها و تنظیمات استفاده کرد. همچنین می‌توان با استفاده از <code class="language-plaintext highlighter-rouge">xdotool</code> وضعیت کلیدهای صفحه کلید و ماوس و محل نشانگر ماوس را تنظیم کرد. <code class="language-plaintext highlighter-rouge">xdotool</code> ابزاری برای شبیه‌سازی <code class="language-plaintext highlighter-rouge">event</code>های ورودی‌ها در محیط <code class="language-plaintext highlighter-rouge">X11</code> سرور است.</p> <div class="code-block"> <figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>xset <span class="nt">-q</span> | <span class="nb">grep</span> <span class="s2">"Caps Lock:</span><span class="se">\s</span><span class="s2">*on"</span> <span class="o">&amp;&amp;</span> xdotool key Caps_Lock</code></pre></figure> </div> <p>فرمان بالا وضعیت کلید <code class="language-plaintext highlighter-rouge">CapsLock</code> را بررسی کرده و در صورت فعال بودن آن را غیرفعال می‌کند.</p> <h1 id="swaywm-روی-wayland"> <a href="#swaywm-روی-wayland" class="anchor-head"></a> <code class="language-plaintext highlighter-rouge">Swaywm</code> روی <code class="language-plaintext highlighter-rouge">Wayland</code> </h1> <p>تنظیمات صفحه کلید در محیط ویلند بر عهده کامپوزیتور است و ابزار یکتایی و روش یکسانی برای انجام ان وجود ندارد. کامپوزیتوزها روی ویلند برای دریافت ورودی‌ها بدون واسط و از واسطی استفاده نمی‌کنند و داده‌ها را در لایه پایین‌تری از <code class="language-plaintext highlighter-rouge">API</code>های کرنل دریافت می‌کنند.</p> <p>تنظیمات صفحه کلید در <code class="language-plaintext highlighter-rouge">Swaywm</code> در فایل تنظیمات این مدیر پنجره انجام می‌شود. این فایل در حالت پیش گزیده در مسیر ‪<code class="language-plaintext highlighter-rouge">/etc/sway/config</code>‬ قرار دارد. چنانچه فایل تنظیمات در مسیر ‪<code class="language-plaintext highlighter-rouge">~/.config/sway/config</code>‬ وجود داشته باشد این فایل اولویت بالاتری خواهد داشت.</p> <p>تنظیمات صفحه کلید من برای <code class="language-plaintext highlighter-rouge">Swaywm</code> در این فایل و به این صورت است:</p> <div class="code-block"> <figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext"># Use `man xkeyboard-config` to view the options and `setxkbmap -query|print` to check the model
+input {
+    type:keyboard {
+        xkb_layout "us,ir"
+        xkb_model "thinkpad"
+        xkb_options "caps:escape_shifted_capslock,grp:shifts_toggle,altwin:prtsc_rwin,lv3:ralt_switch"
+    }
+
+    type:touchpad {
+        # no click needed
+        tap enabled
+        # disable touchpad while typing
+        dwt enabled
+        # natural_scroll enabled
+        middle_emulation enabled
+    }
+}</code></pre></figure> </div> <p>که همان تنظیماتی است که برای <code class="language-plaintext highlighter-rouge">X11</code> سرور داشتم.</p> <p>ابزارهایی مثل <code class="language-plaintext highlighter-rouge">xmodmap</code>، <code class="language-plaintext highlighter-rouge">setxkbmap</code>، <code class="language-plaintext highlighter-rouge">xset</code>، <code class="language-plaintext highlighter-rouge">xev</code> و <code class="language-plaintext highlighter-rouge">xdotool</code> روی ویلند قابل استفاده نیستند. در <a href="https://github.com/swaywm/sway/wiki/i3-Migration-Guide">ویکی <code class="language-plaintext highlighter-rouge">Swaywm</code></a> صفحه‌ای مربوط به معرفی جایگزین برای ابزارهای معمول مورد استفاده و در <code class="language-plaintext highlighter-rouge">X11</code> وجود دارد که راهنمای مناسبی است. همچنین می‌توانید به <a href="https://github.com/natpen/awesome-wayland">این صفحه در گیتهاب</a> برای یافتن ابزارهای بیشتر روی ویلند سر بزنید.</p> <p>به جای <code class="language-plaintext highlighter-rouge">xev</code> می‌توانید از <code class="language-plaintext highlighter-rouge">wev</code> و به جای <code class="language-plaintext highlighter-rouge">xdotool</code> از <code class="language-plaintext highlighter-rouge">wtype</code>، <code class="language-plaintext highlighter-rouge">wlrctl</code>، <code class="language-plaintext highlighter-rouge">swaymsg seat &lt;seat&gt; cursor …</code> یا <code class="language-plaintext highlighter-rouge">ydotool</code> استفاده کنید. اما ابزاری برای جایگزینی <code class="language-plaintext highlighter-rouge">xmodmap</code> معرفی نشده است که به جای آن یک <code class="language-plaintext highlighter-rouge">layout</code> شخصی سازی شده را می‌شود استفاده کرد.</p> <h1 id="ساخت-keymap-شخصی"> <a href="#ساخت-keymap-شخصی" class="anchor-head"></a> ساخت <code class="language-plaintext highlighter-rouge">keymap</code> شخصی </h1> <p>اعمال تنظیمات صفحه کلید حتی در محیط <code class="language-plaintext highlighter-rouge">x11</code> به صورت دایمی با استفاده از ابزارهایی که معرفی کردیم هم ممکن است تمامی نیازهای شما را برآورده نکند. ساختن یک <code class="language-plaintext highlighter-rouge">keymap</code> با توجه به نیاز شخصی شما امکان هر گونه تغییری در چیدمان حروف را برای شما فراهم می‌کند.</p> <p>پیش از توضیح بیشتر بگذارید مساله‌ای که شروع شکل گرفتن این نوشته شد را شرح دهم. یکی از دوستان در ماستودون دنبال راهی برای جایگزینی <code class="language-plaintext highlighter-rouge">/</code> با نویسه <code class="language-plaintext highlighter-rouge">ۀ</code> روی <code class="language-plaintext highlighter-rouge">layout</code> فارسی بود. این نویسه روی صفحه کلید فارسی استاندارد وجود ندارد و یک نویسه عربی است. شکل درست آن در فارسی با ترکیب دو نویسهٔ <code class="language-plaintext highlighter-rouge">ه</code> و نویسهٔ <code class="language-plaintext highlighter-rouge">_ٔ</code> نوشته می‌شود. اما با توجه به محدودیت‌هایی که برای چاپ وجود داشت، مجبور بودند از این نویسه استفاده کنند.</p> <p>بهترین راه برای ساخت <code class="language-plaintext highlighter-rouge">keymap</code> شخصی استفاده از یکی از فایل‌های موجود در مسیر ‪<code class="language-plaintext highlighter-rouge">/usr/share/X11/xkb/symbols</code>‬ و ویرایش آن است.</p> <p>به عنوان نمونه فایل مربوط به <code class="language-plaintext highlighter-rouge">keymap</code> فارسی چنین الگویی دارد:</p> <div class="code-block"> <figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">$ cat /usr/share/X11/xkb/symbols/ir
+// Iranian keyboard layout
+
+////////////////////////////////////////
+// Persian layout,
+// based on
+// Information Technology – Layout of Persian Letters and Symbols on Computer Keyboards
+// ISIRI 9147 – 1st Edition
+// Institute of Standards and Industrial Research of Iran
+// http://www.isiri.org/UserStd/DownloadStd.aspx?id=9147
+// http://behnam.esfahbod.info/standards/isiri-keyboard-9147.pdf
+//
+// Author: Behnam Esfahbod &lt;behnam@esfahbod.info&gt;
+//
+
+default partial alphanumeric_keys
+xkb_symbols "pes" {
+    name[Group1]= "Persian";
+
+    include "ir(pes_part_basic)"
+    include "ir(pes_part_ext)"
+
+    include "nbsp(zwnj2nb3nnb4)"
+    include "level3(ralt_switch)"
+};
+
+
+partial alphanumeric_keys
+xkb_symbols "pes_keypad" {
+    name[Group1]= "Persian (with Persian keypad)";
+
+    include "ir(pes_part_basic)"
+    include "ir(pes_part_ext)"
+    include "ir(pes_part_keypad)"
+
+    include "nbsp(zwnj2nb3nnb4)"
+    include "level3(ralt_switch)"
+};
+
+hidden partial alphanumeric_keys
+xkb_symbols "pes_part_basic" {
+
+    // Persian digits
+    key &lt;AE01&gt; { [ Farsi_1, exclam,     grave           ] };
+    key &lt;AE02&gt; { [ Farsi_2, 0x100066c,  at          ] };
+    key &lt;AE03&gt; { [ Farsi_3, 0x100066b,  numbersign      ] };
+    key &lt;AE04&gt; { [ Farsi_4, 0x100fdfc,  dollar          ] };
+    key &lt;AE05&gt; { [ Farsi_5, 0x100066a,  percent         ] };
+    key &lt;AE06&gt; { [ Farsi_6, multiply,   asciicircum     ] };
+    key &lt;AE07&gt; { [ Farsi_7, Arabic_comma,   ampersand       ] };
+    key &lt;AE08&gt; { [ Farsi_8, asterisk,   enfilledcircbullet  ] };
+    key &lt;AE09&gt; { [ Farsi_9, parenright, 0x100200e       ] };
+    key &lt;AE10&gt; { [ Farsi_0, parenleft,  0x100200f       ] };
+
+    // Persian letters and symbols
+    key &lt;AD01&gt; { [ Arabic_dad,      Arabic_sukun,       degree      ] };
+    key &lt;AD02&gt; { [ Arabic_sad,      Arabic_dammatan,    VoidSymbol  ] };
+    key &lt;AD03&gt; { [ Arabic_theh,     Arabic_kasratan,    0x13a4      ] };
+    key &lt;AD04&gt; { [ Arabic_qaf,      Arabic_fathatan,    VoidSymbol  ] };
+    key &lt;AD05&gt; { [ Arabic_feh,      Arabic_damma,       VoidSymbol  ] };
+    key &lt;AD06&gt; { [ Arabic_ghain,    Arabic_kasra,       VoidSymbol  ] };
+    key &lt;AD07&gt; { [ Arabic_ain,      Arabic_fatha,       VoidSymbol  ] };
+    key &lt;AD08&gt; { [ Arabic_heh,      Arabic_shadda,      0x100202d   ] };
+    key &lt;AD09&gt; { [ Arabic_khah,     bracketright,       0x100202e   ] };
+    key &lt;AD10&gt; { [ Arabic_hah,      bracketleft,        0x100202c   ] };
+    key &lt;AD11&gt; { [ Arabic_jeem,     braceright,     0x100202a   ] };
+    key &lt;AD12&gt; { [ Arabic_tcheh,    braceleft,      0x100202b   ] };
+
+    key &lt;AC01&gt; { [ Arabic_sheen,    Arabic_hamzaonwaw,  VoidSymbol  ] };
+    key &lt;AC02&gt; { [ Arabic_seen,     Arabic_hamzaonyeh,  VoidSymbol  ] };
+    key &lt;AC03&gt; { [ Farsi_yeh,       Arabic_yeh,     Arabic_alefmaksura ] };
+    key &lt;AC04&gt; { [ Arabic_beh,      Arabic_hamzaunderalef,  VoidSymbol  ] };
+    key &lt;AC05&gt; { [ Arabic_lam,      Arabic_hamzaonalef, VoidSymbol  ] };
+    key &lt;AC06&gt; { [ Arabic_alef,     Arabic_maddaonalef, 0x1000671   ] };
+    key &lt;AC07&gt; { [ Arabic_teh,      Arabic_tehmarbuta,  VoidSymbol  ] };
+    key &lt;AC08&gt; { [ Arabic_noon,     guillemotright,     0x100fd3e   ] };
+    key &lt;AC09&gt; { [ Arabic_meem,     guillemotleft,      0x100fd3f   ] };
+    key &lt;AC10&gt; { [ Arabic_keheh,    colon,          semicolon   ] };
+    key &lt;AC11&gt; { [ Arabic_gaf,      Arabic_semicolon,   quotedbl    ] };
+
+    key &lt;AB01&gt; { [ Arabic_zah,      Arabic_kaf,     VoidSymbol  ] };
+    key &lt;AB02&gt; { [ Arabic_tah,      0x1000653,      VoidSymbol  ] };
+    key &lt;AB03&gt; { [ Arabic_zain,     Arabic_jeh,     VoidSymbol  ] };
+    key &lt;AB04&gt; { [ Arabic_ra,       Arabic_superscript_alef,0x1000656   ] };
+    key &lt;AB05&gt; { [ Arabic_thal,     0x100200c,      0x100200d   ] };
+    key &lt;AB06&gt; { [ Arabic_dal,      Arabic_hamza_above, Arabic_hamza_below  ] };
+    key &lt;AB07&gt; { [ Arabic_peh,      Arabic_hamza,       ellipsis    ] };
+    key &lt;AB08&gt; { [ Arabic_waw,      greater,        comma       ] };
+    key &lt;AB09&gt; { [ period,      less,           apostrophe  ] };
+    key &lt;AB10&gt; { [ slash,       Arabic_question_mark,   question    ] };
+
+    key &lt;TLDE&gt; { [ 0x100200d,       division,       asciitilde  ] };
+    key &lt;AE11&gt; { [ minus,       Arabic_tatweel,     underscore  ] };
+    key &lt;AE12&gt; { [ equal,       plus,           0x1002212   ] };
+    key &lt;BKSL&gt; { [ backslash,       bar,            0x1002010   ] };
+};
+
+hidden partial alphanumeric_keys
+xkb_symbols "pes_part_ext" {
+
+    // Persian and ASCII digits
+    key &lt;AE01&gt; { [ Farsi_1, exclam,     grave,          1   ] };
+    key &lt;AE02&gt; { [ Farsi_2, 0x100066c,  at,         2   ] };
+    key &lt;AE03&gt; { [ Farsi_3, 0x100066b,  numbersign,     3   ] };
+    key &lt;AE04&gt; { [ Farsi_4, 0x100fdfc,  dollar,         4   ] };
+    key &lt;AE05&gt; { [ Farsi_5, 0x100066a,  percent,        5   ] };
+    key &lt;AE06&gt; { [ Farsi_6, multiply,   asciicircum,        6   ] };
+    key &lt;AE07&gt; { [ Farsi_7, Arabic_comma,   ampersand,      7   ] };
+    key &lt;AE08&gt; { [ Farsi_8, asterisk,   enfilledcircbullet, 8   ] };
+    key &lt;AE09&gt; { [ Farsi_9, parenright, 0x100200e,      9   ] };
+    key &lt;AE10&gt; { [ Farsi_0, parenleft,  0x100200f,      0   ] };
+};
+
+hidden partial alphanumeric_keys
+xkb_symbols "pes_part_keypad" {
+
+    // Persian digits and Mathematical operators
+    key &lt;KPDV&gt; { [ division,    XF86_Ungrab ] };
+    key &lt;KPMU&gt; { [ multiply,    XF86_ClearGrab  ] };
+    key &lt;KPSU&gt; { [ 0x1002212,   XF86_Prev_VMode ] };
+    key &lt;KPAD&gt; { [ plus,    XF86_Next_VMode ] };
+
+    key &lt;KPEN&gt; { [ KP_Enter ] };
+    key &lt;KPEQ&gt; { [ equal    ] };
+
+    key &lt;KP7&gt;  { [ KP_Home, Farsi_7 ] };
+    key &lt;KP8&gt;  { [ KP_Up,   Farsi_8 ] };
+    key &lt;KP9&gt;  { [ KP_Prior,    Farsi_9 ] };
+
+    key &lt;KP4&gt;  { [ KP_Left, Farsi_4 ] };
+    key &lt;KP5&gt;  { [ KP_Begin,    Farsi_5 ] };
+    key &lt;KP6&gt;  { [ KP_Right,    Farsi_6 ] };
+
+    key &lt;KP1&gt;  { [ KP_End,  Farsi_1 ] };
+    key &lt;KP2&gt;  { [ KP_Down, Farsi_2 ] };
+    key &lt;KP3&gt;  { [ KP_Next, Farsi_3 ] };
+
+    key &lt;KP0&gt;  { [ KP_Insert,   Farsi_0 ] };
+    key &lt;KPDL&gt; { [ KP_Delete,   0x100066b   ] };
+};
+
+
+////////////////////////////////////////
+// Kurdish Layout
+
+partial alphanumeric_keys
+xkb_symbols "ku" {
+    include "tr(ku)"
+    name[Group1]= "Kurdish (Iran, Latin Q)";
+};
+
+partial alphanumeric_keys
+xkb_symbols "ku_f" {
+    include "tr(ku_f)"
+    name[Group1]= "Kurdish (Iran, F)";
+};
+
+partial alphanumeric_keys
+xkb_symbols "ku_alt" {
+    include "tr(ku_alt)"
+    name[Group1]= "Kurdish (Iran, Latin Alt-Q)";
+};
+
+////////////////////////////////////////
+// Kurdish Soranî Bahdînî (Arabic) keyboard layout,
+// based on the Kurdî Soranî Bahdînî keyboard from KurdITGroup
+// which is based on National Iranian Keyboard Standard (ISIRI 2901:1994),
+// with additions.
+//
+// Copyright (C) 2006 Erdal Ronahî, published under the GPL v2
+//
+// Special copyright note: author explicitly permitted to license this
+// layout under MIT/X11 license, for details see
+// https://bugs.freedesktop.org/show_bug.cgi?id=9541
+//
+// Author: Erdal Ronahî  &lt;erdal.ronahi@gmail.com&gt;
+//
+// Kurdish Arabic-Latin Layout for Soranî
+
+partial alphanumeric_keys
+xkb_symbols "ku_ara" {
+    name[Group1]= "Kurdish (Iran, Arabic-Latin)";
+
+    // Other 3-Level symbols
+    key &lt;TLDE&gt; { [ 0x100200d,       division,       asciitilde  ] };
+    key &lt;BKSL&gt; { [ backslash,       bar,            ccedilla, Ccedilla  ] };
+
+    // Digits
+    key &lt;AE01&gt; { [ 0x1000661,   exclam,     1,  grave       ] };
+    key &lt;AE02&gt; { [ 0x1000662,   at,         2,  at      ] };
+    key &lt;AE03&gt; { [ 0x1000663,   numbersign, 3,  0x100066b   ] };
+    key &lt;AE04&gt; { [ 0x1000664,   dollar,     4,  0x100fdfc   ] };
+    key &lt;AE05&gt; { [ 0x1000665,   percent,    5,  0x100066a   ] };
+    key &lt;AE06&gt; { [ 0x1000666,   asciicircum,    6,  multiply    ] };
+    key &lt;AE07&gt; { [ 0x1000667,   ampersand,  7,  Arabic_comma    ] };
+    key &lt;AE08&gt; { [ 0x1000668,   asterisk,   8,  enfilledcircbullet  ] };
+    key &lt;AE09&gt; { [ 0x1000669,   parenright, 9,  0x100200e   ] };
+    key &lt;AE10&gt; { [ 0x1000660,   parenleft,  0,  0x100200f   ] };
+    key &lt;AE11&gt; { [ minus,       Arabic_tatweel,     underscore  ] };
+    key &lt;AE12&gt; { [ equal,       plus,           0x1002212   ] };
+
+    key &lt;AD01&gt; { [         Arabic_qaf,            X,  q,  Q ] };
+    key &lt;AD02&gt; { [         Arabic_waw,            X,  w,  W ] };
+    key &lt;AD03&gt; { [          0x10006d5,   Arabic_heh,  e,  E ] };
+    key &lt;AD04&gt; { [         Arabic_ra ,    0x1000695,  r,  R ] };
+    key &lt;AD05&gt; { [         Arabic_teh,   Arabic_tah,  t,  T ] };
+    key &lt;AD06&gt; { [          0x10006cc,    0x10006ce,  y,  Y ] };
+    key &lt;AD07&gt; { [  Arabic_hamzaonyeh, Arabic_hamza,  u,  U ] };
+    key &lt;AD08&gt; { [         Arabic_hah,   Arabic_ain,  i,  I ] };
+    key &lt;AD09&gt; { [          0x10006c6, Arabic_hamzaonwaw,  o,  O ] };
+    key &lt;AD10&gt; { [          0x100067e,  Arabic_theh,  p,  P ] };
+    key &lt;AD11&gt; { [ bracketright,    braceright, ucircumflex, Ucircumflex    ] };
+    key &lt;AD12&gt; { [ bracketleft,     braceleft,  scedilla, Scedilla  ] };
+
+    key &lt;AC01&gt; { [ Arabic_alef, Arabic_maddaonalef, a, A    ] };
+    key &lt;AC02&gt; { [ Arabic_seen,     Arabic_sheen,   s, S    ] };
+    key &lt;AC03&gt; { [  Arabic_dal,     Arabic_thal,    d, D    ] };
+    key &lt;AC04&gt; { [  Arabic_feh, Arabic_hamzaunderalef,  f, F    ] };
+    key &lt;AC05&gt; { [   0x10006af,     Arabic_ghain,   g, G    ] };
+    key &lt;AC06&gt; { [  Arabic_heh,     0x100200c,  h, H    ] };
+    key &lt;AC07&gt; { [   0x1000698, Arabic_hamzaonalef, j, J    ] };
+    key &lt;AC08&gt; { [   0x10006a9,     Arabic_kaf, k, K    ] };
+    key &lt;AC09&gt; { [  Arabic_lam,     0x10006b5,  l, L    ] };
+    key &lt;AC10&gt; { [  Arabic_semicolon,   colon,      ecircumflex, Ecircumflex    ] };
+    key &lt;AC11&gt; { [  apostrophe,     quotedbl,   icircumflex, Icircumflex    ] };
+
+    key &lt;AB01&gt; { [ Arabic_zain,     Arabic_dad, z, Z    ] };
+    key &lt;AB02&gt; { [ Arabic_khah,     Arabic_sad, x, X    ] };
+    key &lt;AB03&gt; { [ Arabic_jeem,     0x1000686,  c, C    ] };
+    key &lt;AB04&gt; { [   0x10006a4,     Arabic_zah, v, V    ] };
+    key &lt;AB05&gt; { [ Arabic_beh,      0x1000649,  b, B    ] };
+    key &lt;AB06&gt; { [ Arabic_noon, Arabic_tehmarbuta,  n, N    ] };
+    key &lt;AB07&gt; { [ Arabic_meem, Arabic_tatweel,     m, M    ] };
+    key &lt;AB08&gt; { [ Arabic_comma,    greater,    comma       ] };
+    key &lt;AB09&gt; { [ period,      less,       apostrophe  ] };
+    key &lt;AB10&gt; { [ slash,       Arabic_question_mark,   question    ] };
+
+    include "nbsp(zwnj2nb3)"
+    include "level3(ralt_switch)"
+};
+
+// EXTRAS:
+
+/////////////////////////////////////////////////////////////////////////////////
+//
+// Generated keyboard layout file with the Keyboard Layout Editor.
+// For more about the software, see http://code.google.com/p/keyboardlayouteditor
+//
+// Version 0.2, fixed AD09.
+//
+// Layout by Ernst Tremel, http://ubuntuforums.org/showpost.php?p=9365469&amp;postcount=32
+// Creation of this file by Simos Xenitellis.
+
+partial alphanumeric_keys
+xkb_symbols "ave"
+{
+    name[Group1] = "Avestan";
+
+    key &lt;AB01&gt; { [ U10B30,         U10B32 ] }; // 𐬰 𐬲
+    key &lt;AB02&gt; { [ U10B11,         U10B12 ] }; // 𐬑 𐬒
+    key &lt;AB03&gt; { [ U10B17,          UE102 ] }; // 𐬗 
+    key &lt;AB04&gt; { [ U10B2C,         U10B13 ] }; // 𐬬 𐬓
+    key &lt;AB05&gt; { [ U10B20,         U10B21 ] }; // 𐬠 𐬡
+    key &lt;AB06&gt; { [ U10B25,         U10B27 ] }; // 𐬥 𐬧
+    key &lt;AB07&gt; { [ U10B28,         U10B29 ] }; // 𐬨 𐬩
+    key &lt;AB08&gt; { [ U10B3C,         U10B39 ] }; // 𐬼 𐬹
+    key &lt;AB09&gt; { [ U10B3E,         U10B3D ] }; // 𐬾 𐬽
+    key &lt;AB10&gt; { [ U10B3F, periodcentered ] }; // 𐬿 ·
+
+    key &lt;AC01&gt; { [ U10B00,         U10B01 ] }; // 𐬀 𐬁
+    key &lt;AC02&gt; { [ U10B2F,         U10B31 ] }; // 𐬯 𐬱
+    key &lt;AC03&gt; { [ U10B1B,         U10B1C ] }; // 𐬛 𐬜
+    key &lt;AC04&gt; { [ U10B1F,         U10B16 ] }; // 𐬟 𐬖
+    key &lt;AC05&gt; { [ U10B14,         U10B15 ] }; // 𐬔 𐬕
+    key &lt;AC06&gt; { [ U10B35,          UE100 ] }; // 𐬵 
+    key &lt;AC07&gt; { [ U10B18,         U10B24 ] }; // 𐬘 𐬤
+    key &lt;AC08&gt; { [ U10B10,          UE101 ] }; // 𐬐 
+    key &lt;AC09&gt; { [ U10B2E,          UE103 ] }; // 𐬮 
+    key &lt;AC10&gt; { [ U10B3B,         U10B3A ] }; // 𐬻 𐬺
+    key &lt;AC11&gt; { [ U10B1D                 ] }; // 𐬝
+
+    key &lt;AD01&gt; { [ U10B22,         U10B23 ] }; // 𐬢 𐬣
+    key &lt;AD02&gt; { [ U10B33,         U10B34 ] }; // 𐬳 𐬴
+    key &lt;AD03&gt; { [ U10B08,         U10B09 ] }; // 𐬈 𐬉
+    key &lt;AD04&gt; { [ U10B2D,         U10B26 ] }; // 𐬭 𐬦
+    key &lt;AD05&gt; { [ U10B19,         U10B1A ] }; // 𐬙 𐬚
+    key &lt;AD06&gt; { [ U10B2B,         U10B2A ] }; // 𐬫 𐬪
+    key &lt;AD07&gt; { [ U10B0E,         U10B0F ] }; // 𐬎 𐬏
+    key &lt;AD08&gt; { [ U10B0C,         U10B0D ] }; // 𐬌 𐬍
+    key &lt;AD09&gt; { [ U10B0A,         U10B0B ] }; // 𐬊 𐬋
+    key &lt;AD10&gt; { [ U10B1E                 ] }; // 𐬞
+    key &lt;AD11&gt; { [ U10B06,         U10B07 ] }; // 𐬆 𐬇
+    key &lt;AD12&gt; { [ U10B02,         U10B03 ] }; // 𐬂 𐬃
+
+    key &lt;AE01&gt; { [ U10B78                 ] }; // 𐭸
+    key &lt;AE02&gt; { [ U10B79                 ] }; // 𐭹
+    key &lt;AE03&gt; { [ U10B7A                 ] }; // 𐭺
+    key &lt;AE04&gt; { [ U10B7B                 ] }; // 𐭻
+    key &lt;AE05&gt; { [ U10B7C                 ] }; // 𐭼
+    key &lt;AE06&gt; { [ U10B7D                 ] }; // 𐭽
+    key &lt;AE07&gt; { [ U10B7E                 ] }; // 𐭾
+    key &lt;AE08&gt; { [ U10B7F                 ] }; // 𐭿
+
+    key &lt;BKSL&gt; { [ U10B04,         U10B05 ] }; // 𐬄 𐬅
+    key &lt;LSGT&gt; { [ U10B04,         U10B05 ] }; // 𐬄 𐬅
+};</code></pre></figure> </div> <p>در این فایل کاراکترهای مربوط به هر کلید در یک آرایه مشخص شده‌اند که مربوط به لایه‌های مختلف آن کلید هستند. ردیف مورد نظر ما ` key <AB10> { [ slash, Arabic_question_mark, question ] };` است. که ابتدا در آن نام کلید و بعد از آن به ترتیب `/`، `؟` و `?` در سه لایه مختلف این کلید قرار داده شده‌اند. به این معنی که با فشار دادن کلید `AB10` یا همان `/` روی صفحه کلید نویسه `/` تایپ خواهد شد. در صورتی که این کلید به همراه `Shift` فشار داده شود نویسه `؟` و در لایه سوم (روی صفحه کلید من با تنظیماتی که انجام دادیم به همراه کلید `Alt` سمت راست صفحه کلید.) نویسه `?` تایپ خواهد شد.</AB10></p> <p>برای اعمال تغییر و ساخت <code class="language-plaintext highlighter-rouge">keymap</code> شخصی خودمان یک کپی از این فایل تهیه می‌کنیم و تغییرات را روی آن اعمال می‌کنیم. پس از آن می‌توانیم از این <code class="language-plaintext highlighter-rouge">layout</code> استفاده کنیم.</p> <p>کد یونیکد مربوط به نویسه <code class="language-plaintext highlighter-rouge">ۀ</code> برابر با ‪<code class="language-plaintext highlighter-rouge">U+06C0</code>‬ است، که در این فایل باید مشابه سایر کاراکترهای یونیکد به صورت ‪<code class="language-plaintext highlighter-rouge">0x10006c0</code>‬ نوشته شود:</p> <div class="code-block"> <figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">sudo cp</span> /usr/share/X11/xkb/symbols/<span class="o">{</span>ir,ir.bak<span class="o">}</span>
+
+<span class="nv">$ </span><span class="nb">cat</span> /usr/share/X11/xkb/symbols/ir | <span class="nb">grep</span> <span class="nt">-n</span> slash
+89:    key &lt;AB10&gt; <span class="o">{</span> <span class="o">[</span> slash,        Arabic_question_mark,   question    <span class="o">]</span> <span class="o">}</span><span class="p">;</span>
+94:    key &lt;BKSL&gt; <span class="o">{</span> <span class="o">[</span> backslash,        bar,            0x1002010   <span class="o">]</span> <span class="o">}</span><span class="p">;</span>
+185:    key &lt;BKSL&gt; <span class="o">{</span> <span class="o">[</span> backslash,       bar,            ccedilla, Ccedilla  <span class="o">]</span> <span class="o">}</span><span class="p">;</span>
+235:    key &lt;AB10&gt; <span class="o">{</span> <span class="o">[</span> slash,       Arabic_question_mark,   question    <span class="o">]</span> <span class="o">}</span><span class="p">;</span>
+
+<span class="nv">$ </span><span class="nb">sudo sed</span> <span class="nt">-i</span> <span class="s1">'s/\[ slash,/\[ 0x10006c0,/'</span> /usr/share/X11/xkb/symbols/my-ir
+
+<span class="nv">$ </span><span class="nb">cat</span> /usr/share/X11/xkb/symbols/ir | <span class="nb">grep</span> <span class="nt">-n</span> slash
+94:    key &lt;BKSL&gt; <span class="o">{</span> <span class="o">[</span> backslash,        bar,            0x1002010   <span class="o">]</span> <span class="o">}</span><span class="p">;</span>
+185:    key &lt;BKSL&gt; <span class="o">{</span> <span class="o">[</span> backslash,       bar,            ccedilla, Ccedilla  <span class="o">]</span> <span class="o">}</span><span class="p">;</span>
+
+<span class="nv">$ </span><span class="nb">cat</span> /usr/share/X11/xkb/symbols/ir | <span class="nb">grep</span> <span class="nt">-n</span> 0x10006c0
+89:    key &lt;AB10&gt; <span class="o">{</span> <span class="o">[</span> 0x10006c0,        Arabic_question_mark,   question    <span class="o">]</span> <span class="o">}</span><span class="p">;</span>
+235:    key &lt;AB10&gt; <span class="o">{</span> <span class="o">[</span> 0x10006c0,       Arabic_question_mark,   question    <span class="o">]</span> <span class="o">}</span><span class="p">;</span></code></pre></figure> </div> <p>برای یافتن نام یا کد کاراکترهای یونیکد می‌توانید به <a href="https://unicode-table.com/en/" target="_blank" rel="noopener noreferrer">این وبسایت</a> مراجعه کنید.</p> <p>گر چه ویرایش فایل‌ها در مسیر ‪<code class="language-plaintext highlighter-rouge">/usr/share/X11/xkb/symbols</code>‬ امکان شخصی سازی <code class="language-plaintext highlighter-rouge">keymap</code> را به شما می‌دهد اما از نسخه <code class="language-plaintext highlighter-rouge">libxkbcommon 0.10.0</code> امکان ایجاد فایل‌های تنظیمات شخصی در ‪‪<code class="language-plaintext highlighter-rouge">$XDG_CONFIG_HOME/xkb</code>‬‬ و در پوشه‌های ‪‪<code class="language-plaintext highlighter-rouge">$XDG_CONFIG_HOME/xkb/rules/</code>‬‬ و ‪‪<code class="language-plaintext highlighter-rouge">$XDG_CONFIG_HOME/xkb/symbols</code>‬‬ فراهم شده است و فایل‌های موجود در این مسیر پیش از فایل‌های پیش‌گزیده‌اش فراخوانی می‌شوند.</p> <p>به عنوان نمونه برای افزودن یک آپشن برای جایگزینی کلید <code class="language-plaintext highlighter-rouge">PtrSc</code> با کلید <code class="language-plaintext highlighter-rouge">Menu</code> فایل‌های ‪‪<code class="language-plaintext highlighter-rouge">$XDG_CONFIG_HOME/xkb/rules/envdev</code>‬‬ و ‪‪<code class="language-plaintext highlighter-rouge">$XDG_CONFIG_HOME/xkb/symbols/custom</code>‬‬ را به صورت زیر ایجاد و تنظیم می‌کنیم:</p> <div class="code-block"> <figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">mkdir</span> <span class="nt">-p</span> ~/.config/xkb/<span class="o">{</span>symbols,rules<span class="o">}</span>
+<span class="nv">$ </span><span class="nb">cd</span> ~/.config/xkb
+<span class="nv">$ </span><span class="nb">cat</span> <span class="o">&gt;</span> rules/evdev <span class="o">&lt;&lt;</span> <span class="no">EOF</span><span class="sh">
+! option = symbols
+  custom:prtscmenu = +custom(prtscmenu)
+
+! include %S/evdev
+</span><span class="no">EOF
+</span><span class="nv">$ </span><span class="nb">cat</span> <span class="o">&gt;</span> symbols/custom <span class="o">&lt;&lt;</span> <span class="no">EOF</span><span class="sh">
+partial modifier_keys
+xkb_symbols "prtscmenu" {
+  key &lt;PRSC&gt; { [ Menu ] };
+};
+EOF</span></code></pre></figure> </div> <p>و بعد باید این گزینه را فعال/غیرفعال کنیم. برای محیط گنوم:</p> <div class="code-block"> <figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># apply custom layout:</span>
+<span class="nv">$ </span>gsettings <span class="nb">set </span>org.gnome.desktop.input-sources xkb-options <span class="s2">"['custom:prtscmenu']"</span>
+<span class="c"># disable custom layout:</span>
+<span class="nv">$ </span>gsettings <span class="nb">set </span>org.gnome.desktop.input-sources xkb-options <span class="s2">"[]"</span></code></pre></figure> </div> <p>یا برای ایجاد <code class="language-plaintext highlighter-rouge">layout</code> شخصی که پیش از این ایجاد کردیم:</p> <div class="code-block"> <figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">cat</span> <span class="o">&gt;</span> ~/.config/xkb/symbols/ir-mz <span class="o">&lt;&lt;</span> <span class="no">EOF</span><span class="sh">
+default partial alphanumeric_keys
+xkb_symbols "basic" {
+    include "ir(pes)"
+    include "level3(caps_switch)"
+    name[Group1] = "Persian (IR, my custom)";
+    key &lt;AB10&gt; { [ 0x10006c0, Arabic_question_mark, question ] };
+};
+EOF</span></code></pre></figure> </div> <p>من از فایل زیر برای جابجایی حرف <code class="language-plaintext highlighter-rouge">چ</code> در کیبورد استاندارد فارسی با <code class="language-plaintext highlighter-rouge">/</code> که کاربرد کمتری دارد استفاده می‌کنم:</p> <div class="code-block"> <figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">cat</span> ~/.config/xkb/symbols/ir-mz
+default partial alphanumeric_keys
+xkb_symbols <span class="s2">"basic"</span> <span class="o">{</span>
+    include <span class="s2">"ir(pes)"</span>
+    name[Group1]<span class="o">=</span> <span class="s2">"Persian (IR, my custom layout)"</span><span class="p">;</span>
+    key &lt;AB10&gt; <span class="o">{</span> <span class="o">[</span> Arabic_tcheh,		Arabic_question_mark,	question	<span class="o">]</span> <span class="o">}</span><span class="p">;</span>
+    key &lt;AD12&gt; <span class="o">{</span> <span class="o">[</span> slash,	braceleft,		0x100202b	<span class="o">]</span> <span class="o">}</span><span class="p">;</span>
+<span class="o">}</span><span class="p">;</span></code></pre></figure> </div> <p>برای استفاده از این <code class="language-plaintext highlighter-rouge">layout</code> در محیط <code class="language-plaintext highlighter-rouge">Swaywm</code> در فایل تنظیمات مربوط به آن <code class="language-plaintext highlighter-rouge">input type:keyboard xkb_layout ir-mz</code> را می‌افزاییم یا از این دستور استفاده می‌کنیم:</p> <div class="code-block"> <figure class="highlight"><pre><code class="language-bash" data-lang="bash">swaymsg input <span class="s2">"</span><span class="si">$(</span>swaymsg <span class="nt">-t</span> get_inputs | <span class="nb">grep</span> <span class="s1">'identifier.*keyboard'</span> | <span class="nb">cut</span> <span class="nt">-d</span><span class="s1">'"'</span> <span class="nt">-f4</span><span class="si">)</span><span class="s2">"</span> xkb_layout ir-mz</code></pre></figure> </div> <p>همانطور که گفتم این تنظیمات پیش از مسیرهای پیش‌گزیده فراخوانی و اعمال می‌شوند. برای اطلاعات بیشتر می‌توانید <a href="https://who-t.blogspot.com/2020/02/user-specific-xkb-configuration-part-1.html?m=1" target="_blank" rel="noopener noreferrer">این صفحه</a> را بخوانید.</p> </div> </article> <div class="page-content"> <h2>دیدگاه‌ها</h2> <p>می‌توانید دیدگاه‌های این پست را در ماستودون و<a class="link" href="https://mas.to/@mz/108179049233718761" target="_blank" rel="noopener noreferrer"> اینجا </a>ببینید. برای نوشتن دیدگاه خود روی لینک زیر کلیک کنید.</p> <p><a class="button" href="https://mas.to/interact/108179049233718761?type=reply" target="_blank" rel="noopener noreferrer">نوشتن دیدگاه‌</a></p> <p id="mastodon-comments-list"><button id="load-comment">دیدن دیدگاه‌ها</button></p> <noscript><p>برای این بخش می‌باید جاوا اسکریپت را فعال کنید.</p></noscript> <script src="/assets/js/purify.min.js"></script> <script type="text/javascript"> function escapeHtml(unsafe) { return unsafe .replace(/&/g, "&amp;") .replace(/</g, "&lt;") .replace(/>/g, "&gt;") .replace(/"/g, "&quot;") .replace(/'/g, "&#039;"); } document.getElementById("load-comment").addEventListener("click", function() { document.getElementById("load-comment").innerHTML = "دریافت دیدگاه‌ها"; fetch('https://mas.to/api/v1/statuses/108179049233718761/context') .then(function(response) { return response.json(); }) .then(function(data) { if(data['descendants'] && Array.isArray(data['descendants']) && data['descendants'].length > 0) { document.getElementById('mastodon-comments-list').innerHTML = ""; data['descendants'].forEach(function(reply) { reply.account.display_name = escapeHtml(reply.account.display_name); reply.account.emojis.forEach(emoji => { reply.account.display_name = reply.account.display_name.replace(`:${emoji.shortcode}:`, `<img src="${escapeHtml(emoji.static_url)}" alt="Emoji ${emoji.shortcode}" height="20" width="20" />`); }); mastodonComment = `<div class="mastodon-comment"> <div class="avatar"> <img src="${escapeHtml(reply.account.avatar_static)}" height=60 width=60 alt=""> </div> <div class="content"> <div class="author"> <a href="${reply.account.url}" rel="nofollow"> <span>${reply.account.display_name}</span> <span class="disabled">${escapeHtml(reply.account.acct)}</span> </a> <a class="date" href="${reply.uri}" rel="nofollow"> ${reply.created_at.substr(0, 10)} </a> </div> <div class="mastodon-comment-content">${reply.content}</div> </div> </div>`; document.getElementById('mastodon-comments-list').appendChild(DOMPurify.sanitize(mastodonComment, {'RETURN_DOM_FRAGMENT': true})); }); } else { document.getElementById('mastodon-comments-list').innerHTML = "<p>بدون دیدگاه</p>"; } }); }); </script> </div> </main> <nav class="post-nav"> <a class="post-nav-item post-nav-prev" href="/Adding-terminfo-entries-to-a-remote-machine/" > <div class="nav-arrow">کهنه‌تر</div> <span class="post-title">افزودن terminfo به سرور</span> </a> <a class="post-nav-item post-nav-next" href="/How-to-manage-dotfiles-with-git-bare-repo/"> <div class="nav-arrow">نوتر</div> <span class="post-title">مدیریت فایل‌های تنظیمات با استفاده از Git bare</span> </a> </nav> <footer class="footer"> <!-- <a class="footer_item" href="/thanks">سپاس</a> --> <a class="footer item" href="https://github.com/mhdzli" target="_blank" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer"> <i class="fab fa-github"></i> گیت‌هاب </a> <a class="footer item" href="https://fosstodon.org/@mzeinali" target="_blank" rel="noopener noreferrer"> <i class="fab fa-mastodon"></i> mastodon </a> <a class="footer item" href="https://mas.to/@mz" target="_blank" rel="noopener noreferrer"> <i class="fab fa-mastodon"></i> ماستودون </a> <a class="footer item" href="https://odysee.com/@mzeinali:c" target="_blank" rel="noopener noreferrer"> <i class="fa fa-video"></i> لایبرری </a> <a class="footer item" href="https://pixelfed.de/mzeinali" target="_blank" rel="noopener noreferrer"> <i class="fa fa-camera"></i> پیکسلفد </a> <a class="footer item" href="/feed.xml"> <i class="fa fa-rss"></i> خوراک </a> <a class="footer item" href="mailto:m@zmim.ir"> <i class="fa fa-envelope-open"></i> تماس </a> <!-- <a class="footer_item" href="javascript::void(0)">رزومه</a> <span class="footer_item">&copy; 2023</span> --> <small class="footer_copyright"> <small id="license"> <i class="fab fa-creative-commons"></i> نوشته‌های این وبلاگ با پروانه <a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.fa" target="_blank" rel="noopener noreferrer"> کریتیو کامنز اتریبیوشن ۴.۰ اینترنشنال </a>منتشر شده‌اند. </small> <!-- simorq Theme: https://github.com/mhdzli/simorq تم <a href="https://github.com/mhdzli/simorq" target="_blank" rel="noreferrer noopener" > سیمرغ </a> نیرو گرفته از <a href="https://jekyllrb.com" target="_blank" rel="noreferrer noopener"> jekyll </a> --> </small> </footer> <script src="/assets/js/jquery-3.3.1.min.js"></script> <script src="/assets/js/persianumber.js"></script> <script> $(document).ready(function(){ $('.post-item-date').persiaNumber(); $('.archive-date').persiaNumber(); $('.recent-date').persiaNumber(); $('.post-updated-at').persiaNumber(); $('.date-modify').persiaNumber(); $('.header-date').persiaNumber(); }); </script> <script src="/assets/js/main.js" defer="defer"></script> </div> </body> </html>

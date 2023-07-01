@@ -1,0 +1,263 @@
+<!DOCTYPE html> <html lang="fa"> <head prefix="og: http://ogp.me/ns#"> <meta charset="UTF-8" /> <meta http-equiv="X-UA-Compatible" content="ie=edge" /> <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <meta name="mobile-web-app-capable" content="yes" /> <meta name="apple-mobile-web-app-capable" content="yes" /> <meta name="application-name" content="محمد زینلی" /> <meta name="apple-mobile-web-app-status-bar-style" content="#fff" /> <meta name="apple-mobile-web-app-title" content="محمد زینلی" /> <title> FFmpeg and SOX - محمد زینلی </title> <link rel="alternate" href="http://localhost:4000/wiki/ffmpeg-sox/" hreflang="fa" /> <link rel="canonical" href="http://localhost:4000/wiki/ffmpeg-sox/" /> <meta name="description" content="ffmpeg and sox scripts." /> <meta name="referrer" content="no-referrer-when-downgrade" /> <meta property="fb:app_id" content="" /> <meta property="og:site_name" content="FFmpeg and SOX | " /> <meta property="og:title" content="FFmpeg and SOX | " /> <meta property="og:type" content="website" /> <meta property="og:url" content="http://localhost:4000/wiki/ffmpeg-sox/" /> <meta property="og:description" content="ffmpeg and sox scripts." /> <meta property="og:image" content="http://localhost:4000/assets/img/ogp.png" /> <meta property="og:image:width" content="640" /> <meta property="og:image:height" content="640" /> <meta name="twitter:card" content="summary" /> <meta name="twitter:title" content="FFmpeg and SOX | " /> <meta name="twitter:url" content="http://localhost:4000/wiki/ffmpeg-sox/" /> <meta name="twitter:site" content="@" /> <meta name="twitter:creator" content="@" /> <meta name="twitter:description" content="ffmpeg and sox scripts." /> <meta name="twitter:image" content="http://localhost:4000/assets/img/ogp.png" /> <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="محمد زینلی" /> <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" /> <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png" /> <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png" /> <link rel="manifest" href="/assets/favicons/site.webmanifest" /> <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#5bbad5" /> <meta name="apple-mobile-web-app-title" content="Jekyll Klise" /> <meta name="application-name" content="Jekyll Klise" /> <meta name="msapplication-TileColor" content="#da532c" /> <meta name="theme-color" content="#2c2c2c" /> <link rel="stylesheet" href="/assets/css/style.css" /> </head> <body data-theme="dark" class="notransition"> <script> const body = document.body; const data = body.getAttribute("data-theme"); const initTheme = (state) => { if (state === "dark") { body.setAttribute("data-theme", "dark"); } else if (state === "light") { body.removeAttribute("data-theme"); } else { localStorage.setItem("theme", data); } }; initTheme(localStorage.getItem("theme")); setTimeout(() => body.classList.remove("notransition"), 75); </script> <div class="navbar" role="navigation"> <nav class="menu"> <input type="checkbox" id="menu-trigger" class="menu-trigger" /> <label for="menu-trigger"> <span class="menu-icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512" > <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" /> </svg> </span> </label> <a id="mode"> <svg class="mode-sunny" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512" > <title>LIGHT</title> <line x1="256" y1="48" x2="256" y2="96" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="256" y1="416" x2="256" y2="464" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="403.08" y1="108.92" x2="369.14" y2="142.86" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="142.86" y1="369.14" x2="108.92" y2="403.08" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="464" y1="256" x2="416" y2="256" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="96" y1="256" x2="48" y2="256" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="403.08" y1="403.08" x2="369.14" y2="369.14" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="142.86" y1="142.86" x2="108.92" y2="108.92" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <circle cx="256" cy="256" r="80" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> </svg> <svg class="mode-moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512" > <title>DARK</title> <line x1="256" y1="48" x2="256" y2="96" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="256" y1="416" x2="256" y2="464" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="403.08" y1="108.92" x2="369.14" y2="142.86" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="142.86" y1="369.14" x2="108.92" y2="403.08" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="464" y1="256" x2="416" y2="256" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="96" y1="256" x2="48" y2="256" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="403.08" y1="403.08" x2="369.14" y2="369.14" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="142.86" y1="142.86" x2="108.92" y2="108.92" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <circle cx="256" cy="256" r="80" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> </svg> </a> <div class="trigger"> <div class="trigger-container"><a class="menu-link" href="/"> <b><i class="fa fa-home"> خانه</i></b> </a><a class="menu-link" href="/archive/"> <b><i class="fa fa-archive"> بایگانی</i></b> </a><a class="menu-link" href="/tags/"> <b><i class="fa fa-tag"> برچسب‌ها</i></b> </a><a class="menu-link" href="/wiki/"> <b><i class="fab fa-wikipedia-w"> ویکی</i></b> </a><a class="menu-link" href="/about/"> <b><i class="fa fa-address-card"> درباره</i></b> </a><a class="menu-link rss" href="/feed.xml"> <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 512 512" fill="#ED812E" > <title>خوراک</title> <path d="M108.56,342.78a60.34,60.34,0,1,0,60.56,60.44A60.63,60.63,0,0,0,108.56,342.78Z" /> <path d="M48,186.67v86.55c52,0,101.94,15.39,138.67,52.11s52,86.56,52,138.67h86.66C325.33,312.44,199.67,186.67,48,186.67Z" /> <path d="M48,48v86.56c185.25,0,329.22,144.08,329.22,329.44H464C464,234.66,277.67,48,48,48Z" /> </svg> </a> </div> </div> </nav> </div> <div class="wrapper post"> <main class="page-content" aria-label="Content"> <article itemscope itemtype="https://schema.org/BlogPosting"> <header class="header"> <div class="tags"> <span itemprop="keywords"> <a class="tag" href="/tags/#unix-linux">UNIX/LINUX</a>, <a class="tag" href="/tags/#foss">FOSS</a>, <a class="tag" href="/tags/#ffmpeg">FFMPEG</a>, <a class="tag" href="/tags/#sox">SOX</a>, <a class="tag" href="/tags/#media">MEDIA</a> </span> </div> <h1 class="header-title" itemprop="headline">FFmpeg and SOX</h1> <div class="post-meta"> <time class="header-date" datetime="2022-03-15T08:10:47+03:30" itemprop="datePublished"> 24 اسفند، 1400 </time> <span itemprop="author" itemscope itemtype="https://schema.org/Person"> <span itemprop="name">محمد زینلی</span> </span> <time hidden class="date-modify" datetime="" itemprop="dateModified"> 24 اسفند، 1400 </time> <span hidden itemprop="publisher" itemtype="Person">محمد زینلی</span> <span hidden itemprop="image"></span> <span hidden itemprop="mainEntityOfPage"><h1 id="common-usage">common usage</h1> </span> </div> </header> <div class="page-content" itemprop="articleBody" dir="ltr" align="left"> <h1 id="common-usage"> <a href="#common-usage" class="anchor-head"></a> common usage </h1> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ffmpeg -i input.mp4 -hide_banner # getting input file information 
+
+ffmpeg -i input.webm -qscale 0 output.mp4 # convert video preserving the quality of source video file
+
+ffmpeg -formats # list all supported formats
+
+ffmpeg -i input.mp4 -vn -ar 44100 -ac 2 -ab 320k -f mp3 output.mp3 # split audio vn: disable video. -ar audio frequency (common values 22050, 44100, 48000 Hz). -ac: number of audio channels. -ab: audio bitrate. -f: format. 
+
+ffmpeg -i input.mp3 -af 'volume=0.5' output.mp3 # decrease volume by half (use numbers greater than 1 to increase volume)
+
+ffmpeg -i input.mp4 -vf "setpts=0.5*PTS" output.mp4 # increase/decrease(0.5 double, 2 half) the video playback speed
+
+ffmpeg -i input.mp4 -filter:a "atempo=2.0" -vn output.mp4 # Increase/decrease Audio playback speed (available value 0.5-2.0)
+
+ffmpeg -i input.mp4 -filter:v scale=1280:720 -c:a copy output.mp4
+ffmpeg -i input.mp4 -s 1280x720 -c:a copy output.mp4 # set a particular resolution
+
+ffmpeg -i input.mp4 -vf scale=1280:-1 -c:v libx264 -preset veryslow -crf 24 -ac 2 -c:a aac -strict -2 -b:a 128k output.mp4 # reduce size and quality of output file
+
+ffmpeg -i input.mp3 -ab 128 output.mp3 # reduce audio bitrate (available bitrates: 96, 112, 128, 160, 192, 256, 320kbps)
+
+ffmpeg -i input.mp4 -an output.mp4 # remove audio
+
+ffmpeg -i input.mp4 -vn output.mp3 # remove video
+
+ffmpeg -i input.mp4 -r 1 -f image2 image-%2d.png # extract images -r: frame rate (image per second). -f: format. %2d name outputs image-01.png - image-99.png
+
+ffmpeg -i input.mp4 -filter:v "crop=w:h:x:y" output.mp4 # crop video
+
+ffmpeg -i input.mp4 -aspect 16:9 output.mp4 # set the aspect ratio (common ratios: 16:9, 4:3, 16:10, 5:4, 2:21:1, 2:35:1, 2:39:1)
+
+ffmpeg -loop 1 -i inputimage.jpg -i inputaudio.mp3 -c:v libx264 -c:a aac -strict experimental -b:a 192k -shortest output.mp4 # add poster image to audio
+
+ffmpeg -i input.mp4 -codec:v h264 -codec:a copy -ss 00:00:10.70 -t 01:10:52.26 output.mp4 # split a video from starting from 00:00:10.70 and end in 01:10:52.26
+
+ffmeg -i vinput.mp4 -codec:v h264 -an -sn -dn -ss 00:05:00 -t 00:10:00 -i ainput.mp4 -codec:a mp3 -vn -ss 00:12:00 -t 00:17:00 output.mp4 # create output.mp4 using vinput.mp4 from 00:05:00 to 00:10:00 as video source and ainput.mp4 from 00:12:00 -t 00:17:00 as audio source
+
+ffmpeg -f concat -safe 0 -i &lt;PATH-TO-LIST&gt; -c copy ouput
+ffmpeg -i "concat:input1.mp4|input2.mp4|input3.mp4" -c copy output.mp4 # concatinating the files in list
+
+fmpeg -i input.mp4 -i subtitle.srt -map 0 -map 1 -c copy -c:v libx264 -crf 23 -preset veryfast output.mp4
+ffmpeg -i infile.mp4 -i infile.srt -c copy -c:s mov_text outfile.mp4 # add subtitle
+
+ffmpeg -i input.mp4 -vf "transpose=1" output.mp4
+ffmpeg -i input.mp4 -vf "transpose=clock" output.mp4 # rotate the given video by 90 degrees clockwise.
+
+# 0. Rotate by 90 degrees counter-clockwise and flip vertically. This is the default.
+# 1. Rotate by 90 degrees clockwise.
+# 2. Rotate by 90 degrees counter-clockwise.
+# 3. Rotate by 90 degrees clockwise and flip vertically.
+</code></pre></div></div> <h1 id="metadata"> <a href="#metadata" class="anchor-head"></a> metadata </h1> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ffmpeg -i in.mp4 -f ffmetadata in.txt # Save the global metadata to a text file
+ffmpeg -i in.mp4 -c copy -map_metadata 0 -map_metadata:s:v 0:s:v -map_metadata:s:a 0:s:a -f ffmetadata in.txt # Save metadata from the video and audio streams
+ffprobe -show_streams -show_format input.mkv # Use ffprob for information
+ffprobe -show_frames input.mkv # Use ffprobe or information about each single frame in a video file 
+ffmpeg -i source.mp4 -metadata album_artist='VAR' -c copy output.mp4 # Set metadata
+find /home/user/videos-to-process/ -type f -iname '*.mp4' -exec ffmpeg -i "{}" -codec copy -metadata artist="John Smith" -metadata album="Foo Bar" "{}.new.mp4" \; -exec mv "{}.new.mp4" "{}" \; # set metadata
+</code></pre></div></div> <h1 id="lbry-preferred-format"> <a href="#lbry-preferred-format" class="anchor-head"></a> lbry preferred format </h1> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ffmpeg -i input.avi -c:v libx264 -crf 21 -preset faster -pix_fmt yuv420p -maxrate 5000K -bufsize 5000K -vf 'scale=if(gte(iw\,ih)\,min(1920\,iw)\,-2):if(lt(iw\,ih)\,min(1920\,ih)\,-2)' -movflags +faststart -c:a aac -b:a 160k output.mp4
+</code></pre></div></div> <h1 id="convert-a-pdf-to-video"> <a href="#convert-a-pdf-to-video" class="anchor-head"></a> convert a PDF to video </h1> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>convert -density 400 input.pdf picture.png # convert PDF to picture-1.png, ...
+
+ffmpeg -r 1/10 -i picture-%01d.png -c:v libx264 -r 30 -pix_fmt yuv420p video.mp4 # -r 1/10: Display each image for 10 seconds.
+</code></pre></div></div> <h1 id="noise-reduction-using-sox"> <a href="#noise-reduction-using-sox" class="anchor-head"></a> noise reduction using sox </h1> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/usr/bin/env bash</span>
+
+usage <span class="o">()</span>
+<span class="o">{</span>
+    <span class="nb">echo</span> <span class="s1">'Usage : noiseclean.sh &lt;input video file&gt; &lt;output video file&gt;'</span>
+    <span class="nb">exit</span>
+<span class="o">}</span>
+
+<span class="c"># Tests for requirements</span>
+ffmpeg <span class="nt">-version</span> <span class="o">&gt;</span>/dev/null <span class="o">||</span> <span class="o">{</span> <span class="nb">echo</span> <span class="o">&gt;</span>&amp;2 <span class="s2">"We require 'ffmpeg' but it's not installed. Install it by 'sudo apt-get install ffmpeg' Aborting."</span><span class="p">;</span> <span class="nb">exit </span>1<span class="p">;</span> <span class="o">}</span>
+sox <span class="nt">--version</span> <span class="o">&gt;</span>/dev/null <span class="o">||</span> <span class="o">{</span> <span class="nb">echo</span> <span class="o">&gt;</span>&amp;2 <span class="s2">"We require 'sox' but it's not installed. Install it by 'sudo apt-get install sox' Aborting."</span><span class="p">;</span> <span class="nb">exit </span>1<span class="p">;</span> <span class="o">}</span>
+
+<span class="k">if</span> <span class="o">[</span> <span class="s2">"$#"</span> <span class="nt">-ne</span> 2 <span class="o">]</span>
+<span class="k">then
+  </span>usage
+<span class="k">fi
+
+if</span> <span class="o">[</span> <span class="o">!</span> <span class="nt">-e</span> <span class="s2">"</span><span class="nv">$1</span><span class="s2">"</span> <span class="o">]</span>
+<span class="k">then
+    </span><span class="nb">echo</span> <span class="s2">"File not found: '</span><span class="nv">$1</span><span class="s2">'"</span>
+    <span class="nb">exit
+</span><span class="k">fi
+
+if</span> <span class="o">[</span> <span class="nt">-e</span> <span class="s2">"</span><span class="nv">$2</span><span class="s2">"</span> <span class="o">]</span>
+<span class="k">then
+    </span><span class="nb">read</span> <span class="nt">-p</span> <span class="s2">"File '</span><span class="nv">$2</span><span class="s2">' already exists, overwrite? [y/N]: "</span> yn
+    <span class="k">case</span> <span class="nv">$yn</span> <span class="k">in</span>
+        <span class="o">[</span>Yy]<span class="k">*</span> <span class="p">)</span> <span class="nb">break</span><span class="p">;;</span>
+        <span class="k">*</span> <span class="p">)</span> <span class="nb">exit</span><span class="p">;;</span>
+    <span class="k">esac</span>
+<span class="k">fi
+
+</span><span class="nv">inBasename</span><span class="o">=</span><span class="si">$(</span><span class="nb">basename</span> <span class="s2">"</span><span class="nv">$1</span><span class="s2">"</span><span class="si">)</span>
+<span class="nv">inExt</span><span class="o">=</span><span class="s2">"</span><span class="k">${</span><span class="nv">inBasename</span><span class="p">##*.</span><span class="k">}</span><span class="s2">"</span>
+
+<span class="nv">isVideoStr</span><span class="o">=</span><span class="sb">`</span>ffprobe <span class="nt">-v</span> warning <span class="nt">-show_streams</span> <span class="s2">"</span><span class="nv">$1</span><span class="s2">"</span> | <span class="nb">grep </span><span class="nv">codec_type</span><span class="o">=</span>video<span class="sb">`</span>
+<span class="k">if</span> <span class="o">[[</span> <span class="o">!</span> <span class="nt">-z</span> <span class="nv">$isVideoStr</span> <span class="o">]]</span>
+<span class="k">then
+    </span><span class="nv">isVideo</span><span class="o">=</span>1
+    <span class="nb">echo</span> <span class="s2">"Detected '</span><span class="nv">$inBasename</span><span class="s2">' as a video file"</span>
+<span class="k">else
+    </span><span class="nv">isVideo</span><span class="o">=</span>0
+    <span class="nb">echo</span> <span class="s2">"Detected '</span><span class="nv">$inBasename</span><span class="s2">' as an audio file"</span>
+<span class="k">fi
+
+</span><span class="nb">read</span> <span class="nt">-p</span> <span class="s2">"Sample noise start time [00:00:00]: "</span> sampleStart
+<span class="k">if</span> <span class="o">[[</span> <span class="nt">-z</span> <span class="nv">$sampleStart</span> <span class="o">]]</span> <span class="p">;</span> <span class="k">then </span><span class="nv">sampleStart</span><span class="o">=</span><span class="s2">"00:00:00"</span><span class="p">;</span> <span class="k">fi
+</span><span class="nb">read</span> <span class="nt">-p</span> <span class="s2">"Sample noise end time [00:00:00.500]: "</span> sampleEnd
+<span class="k">if</span> <span class="o">[[</span> <span class="nt">-z</span> <span class="nv">$sampleEnd</span> <span class="o">]]</span> <span class="p">;</span> <span class="k">then </span><span class="nv">sampleEnd</span><span class="o">=</span><span class="s2">"00:00:00.500"</span><span class="p">;</span> <span class="k">fi
+</span><span class="nb">read</span> <span class="nt">-p</span> <span class="s2">"Noise reduction amount [0.21]: "</span> sensitivity
+<span class="k">if</span> <span class="o">[[</span> <span class="nt">-z</span> <span class="nv">$sensitivity</span> <span class="o">]]</span> <span class="p">;</span> <span class="k">then </span><span class="nv">sensitivity</span><span class="o">=</span><span class="s2">"0.21"</span><span class="p">;</span> <span class="k">fi
+
+
+</span><span class="nv">tmpVidFile</span><span class="o">=</span><span class="s2">"/tmp/noiseclean_tmpvid.</span><span class="nv">$inExt</span><span class="s2">"</span>
+<span class="nv">tmpAudFile</span><span class="o">=</span><span class="s2">"/tmp/noiseclean_tmpaud.wav"</span>
+<span class="nv">noiseAudFile</span><span class="o">=</span><span class="s2">"/tmp/noiseclean_noiseaud.wav"</span>
+<span class="nv">noiseProfFile</span><span class="o">=</span><span class="s2">"/tmp/noiseclean_noise.prof"</span>
+<span class="nv">tmpAudCleanFile</span><span class="o">=</span><span class="s2">"/tmp/noiseclean_tmpaud-clean.wav"</span>
+
+<span class="nb">echo</span> <span class="s2">"Cleaning noise on '</span><span class="nv">$1</span><span class="s2">'..."</span>
+
+<span class="k">if</span> <span class="o">[</span> <span class="nv">$isVideo</span> <span class="nt">-eq</span> <span class="s2">"1"</span> <span class="o">]</span><span class="p">;</span> <span class="k">then
+    </span>ffmpeg <span class="nt">-v</span> warning <span class="nt">-y</span> <span class="nt">-i</span> <span class="s2">"</span><span class="nv">$1</span><span class="s2">"</span> <span class="nt">-qscale</span>:v 0 <span class="nt">-vcodec</span> copy <span class="nt">-an</span> <span class="s2">"</span><span class="nv">$tmpVidFile</span><span class="s2">"</span>
+    ffmpeg <span class="nt">-v</span> warning <span class="nt">-y</span> <span class="nt">-i</span> <span class="s2">"</span><span class="nv">$1</span><span class="s2">"</span> <span class="nt">-qscale</span>:a 0 <span class="s2">"</span><span class="nv">$tmpAudFile</span><span class="s2">"</span>
+<span class="k">else
+    </span><span class="nb">cp</span> <span class="s2">"</span><span class="nv">$1</span><span class="s2">"</span> <span class="s2">"</span><span class="nv">$tmpAudFile</span><span class="s2">"</span>
+<span class="k">fi
+</span>ffmpeg <span class="nt">-v</span> warning <span class="nt">-y</span> <span class="nt">-i</span> <span class="s2">"</span><span class="nv">$1</span><span class="s2">"</span> <span class="nt">-vn</span> <span class="nt">-ss</span> <span class="s2">"</span><span class="nv">$sampleStart</span><span class="s2">"</span> <span class="nt">-t</span> <span class="s2">"</span><span class="nv">$sampleEnd</span><span class="s2">"</span> <span class="s2">"</span><span class="nv">$noiseAudFile</span><span class="s2">"</span>
+sox <span class="s2">"</span><span class="nv">$noiseAudFile</span><span class="s2">"</span> <span class="nt">-n</span> noiseprof <span class="s2">"</span><span class="nv">$noiseProfFile</span><span class="s2">"</span>
+sox <span class="s2">"</span><span class="nv">$tmpAudFile</span><span class="s2">"</span> <span class="s2">"</span><span class="nv">$tmpAudCleanFile</span><span class="s2">"</span> noisered <span class="s2">"</span><span class="nv">$noiseProfFile</span><span class="s2">"</span> <span class="s2">"</span><span class="nv">$sensitivity</span><span class="s2">"</span>
+<span class="k">if</span> <span class="o">[</span> <span class="nv">$isVideo</span> <span class="nt">-eq</span> <span class="s2">"1"</span> <span class="o">]</span><span class="p">;</span> <span class="k">then
+    </span>ffmpeg <span class="nt">-v</span> warning <span class="nt">-y</span> <span class="nt">-i</span> <span class="s2">"</span><span class="nv">$tmpAudCleanFile</span><span class="s2">"</span> <span class="nt">-i</span> <span class="s2">"</span><span class="nv">$tmpVidFile</span><span class="s2">"</span> <span class="nt">-vcodec</span> copy <span class="nt">-qscale</span>:v 0 <span class="nt">-qscale</span>:a 0 <span class="s2">"</span><span class="nv">$2</span><span class="s2">"</span>
+<span class="k">else
+    </span><span class="nb">cp</span> <span class="s2">"</span><span class="nv">$tmpAudCleanFile</span><span class="s2">"</span> <span class="s2">"</span><span class="nv">$2</span><span class="s2">"</span>
+<span class="k">fi
+
+</span><span class="nb">echo</span> <span class="s2">"Done"</span>
+</code></pre></div></div> <h1 id="booksplit"> <a href="#booksplit" class="anchor-head"></a> booksplit </h1> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/sh</span>
+
+<span class="c"># Requires ffmpeg (audio splitting) and my `tag` wrapper script.</span>
+
+<span class="o">[</span> <span class="o">!</span> <span class="nt">-f</span> <span class="s2">"</span><span class="nv">$2</span><span class="s2">"</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="nb">printf</span> <span class="s2">"The first file should be the audio, the second should be the timecodes.</span><span class="se">\</span><span class="s2">
+"</span> <span class="o">&amp;&amp;</span> <span class="nb">exit
+
+echo</span> <span class="s2">"Enter the album/book title:"</span><span class="p">;</span> <span class="nb">read</span> <span class="nt">-r</span> booktitle
+
+<span class="nb">echo</span> <span class="s2">"Enter the artist/author:"</span><span class="p">;</span> <span class="nb">read</span> <span class="nt">-r</span> author
+
+<span class="nb">echo</span> <span class="s2">"Enter the publication year:"</span><span class="p">;</span> <span class="nb">read</span> <span class="nt">-r</span> year
+
+<span class="nv">inputaudio</span><span class="o">=</span><span class="s2">"</span><span class="nv">$1</span><span class="s2">"</span>
+
+<span class="c"># Get a safe file name from the book.</span>
+<span class="nv">escbook</span><span class="o">=</span><span class="s2">"</span><span class="si">$(</span><span class="nb">echo</span> <span class="s2">"</span><span class="nv">$booktitle</span><span class="s2">"</span> | iconv <span class="nt">-cf</span> UTF-8 <span class="nt">-t</span> ASCII//TRANSLIT | <span class="nb">tr</span> <span class="nt">-d</span> <span class="s1">'[:punct:]'</span> | <span class="nb">tr</span> <span class="s1">'[:upper:]'</span> <span class="s1">'[:lower:]'</span> | <span class="nb">tr</span> <span class="s1">' '</span> <span class="s1">'-'</span> | <span class="nb">sed</span> <span class="s2">"s/-</span><span class="se">\+</span><span class="s2">/-/g;s/</span><span class="se">\(</span><span class="s2">^-</span><span class="se">\|</span><span class="s2">-</span><span class="se">\$\)</span><span class="s2">//g"</span><span class="si">)</span><span class="s2">"</span>
+
+<span class="o">!</span> <span class="nb">mkdir</span> <span class="nt">-p</span> <span class="s2">"</span><span class="nv">$escbook</span><span class="s2">"</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s2">"Do you have write access in this directory?"</span> <span class="o">&amp;&amp;</span> <span class="nb">exit </span>1
+
+<span class="c"># As long as the extension is in the tag script, it'll work.</span>
+<span class="nv">ext</span><span class="o">=</span><span class="s2">"opus"</span>
+<span class="c">#ext="${1#*.}"</span>
+
+<span class="c"># Get the total number of tracks from the number of lines.</span>
+<span class="nv">total</span><span class="o">=</span><span class="s2">"</span><span class="si">$(</span><span class="nb">wc</span> <span class="nt">-l</span> &lt; <span class="s2">"</span><span class="nv">$2</span><span class="s2">"</span><span class="si">)</span><span class="s2">"</span>
+
+<span class="k">while </span><span class="nb">read</span> <span class="nt">-r</span> x<span class="p">;</span>
+<span class="k">do
+	</span><span class="nv">end</span><span class="o">=</span><span class="s2">"</span><span class="si">$(</span><span class="nb">echo</span> <span class="s2">"</span><span class="nv">$x</span><span class="s2">"</span> | <span class="nb">cut</span> <span class="nt">-d</span><span class="s1">' '</span> <span class="nt">-f1</span><span class="si">)</span><span class="s2">"</span>
+
+	<span class="o">[</span> <span class="nt">-n</span> <span class="s2">"</span><span class="nv">$start</span><span class="s2">"</span> <span class="o">]</span> <span class="o">&amp;&amp;</span>
+	<span class="nb">echo</span> <span class="s2">"From </span><span class="nv">$start</span><span class="s2"> to </span><span class="nv">$end</span><span class="s2">; </span><span class="nv">$track</span><span class="s2"> </span><span class="nv">$title</span><span class="s2">"</span>
+	<span class="nv">file</span><span class="o">=</span><span class="s2">"</span><span class="nv">$escbook</span><span class="s2">/</span><span class="si">$(</span><span class="nb">printf</span> <span class="s2">"%.2d"</span> <span class="s2">"</span><span class="nv">$track</span><span class="s2">"</span><span class="si">)</span><span class="s2">-</span><span class="nv">$esctitle</span><span class="s2">.</span><span class="nv">$ext</span><span class="s2">"</span>
+	<span class="o">[</span> <span class="nt">-n</span> <span class="s2">"</span><span class="nv">$start</span><span class="s2">"</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s2">"Splitting </span><span class="se">\"</span><span class="nv">$title</span><span class="se">\"</span><span class="s2">..."</span> <span class="o">&amp;&amp;</span>
+   	ffmpeg <span class="nt">-nostdin</span> <span class="nt">-y</span> <span class="nt">-loglevel</span> <span class="nt">-8</span> <span class="nt">-i</span> <span class="s2">"</span><span class="nv">$inputaudio</span><span class="s2">"</span> <span class="nt">-ss</span> <span class="s2">"</span><span class="nv">$start</span><span class="s2">"</span> <span class="nt">-to</span> <span class="s2">"</span><span class="nv">$end</span><span class="s2">"</span> <span class="nt">-vn</span> <span class="nt">-c</span> copy <span class="s2">"</span><span class="nv">$file</span><span class="s2">"</span> <span class="o">&amp;&amp;</span>
+	<span class="nb">echo</span> <span class="s2">"Tagging </span><span class="se">\"</span><span class="nv">$title</span><span class="se">\"</span><span class="s2">..."</span> <span class="o">&amp;&amp;</span> tag <span class="nt">-a</span> <span class="s2">"</span><span class="nv">$author</span><span class="s2">"</span> <span class="nt">-A</span> <span class="s2">"</span><span class="nv">$booktitle</span><span class="s2">"</span> <span class="nt">-t</span> <span class="s2">"</span><span class="nv">$title</span><span class="s2">"</span> <span class="nt">-n</span> <span class="s2">"</span><span class="nv">$track</span><span class="s2">"</span> <span class="nt">-N</span> <span class="s2">"</span><span class="nv">$total</span><span class="s2">"</span> <span class="nt">-d</span> <span class="s2">"</span><span class="nv">$year</span><span class="s2">"</span> <span class="s2">"</span><span class="nv">$file</span><span class="s2">"</span>
+	<span class="nv">title</span><span class="o">=</span><span class="s2">"</span><span class="si">$(</span><span class="nb">echo</span> <span class="s2">"</span><span class="nv">$x</span><span class="s2">"</span> | <span class="nb">cut</span> <span class="nt">-d</span><span class="s1">' '</span> <span class="nt">-f</span> 2-<span class="si">)</span><span class="s2">"</span>
+	<span class="nv">esctitle</span><span class="o">=</span><span class="s2">"</span><span class="si">$(</span><span class="nb">echo</span> <span class="s2">"</span><span class="nv">$title</span><span class="s2">"</span> | iconv <span class="nt">-cf</span> UTF-8 <span class="nt">-t</span> ASCII//TRANSLIT | <span class="nb">tr</span> <span class="nt">-d</span> <span class="s1">'[:punct:]'</span> | <span class="nb">tr</span> <span class="s1">'[:upper:]'</span> <span class="s1">'[:lower:]'</span> | <span class="nb">tr</span> <span class="s1">' '</span> <span class="s1">'-'</span> | <span class="nb">sed</span> <span class="s2">"s/-</span><span class="se">\+</span><span class="s2">/-/g;s/</span><span class="se">\(</span><span class="s2">^-</span><span class="se">\|</span><span class="s2">-</span><span class="se">\$\)</span><span class="s2">//g"</span><span class="si">)</span><span class="s2">"</span>
+	<span class="nv">track</span><span class="o">=</span><span class="s2">"</span><span class="k">$((</span>track+1<span class="k">))</span><span class="s2">"</span>
+	<span class="nv">start</span><span class="o">=</span><span class="s2">"</span><span class="nv">$end</span><span class="s2">"</span>
+<span class="k">done</span> &lt; <span class="s2">"</span><span class="nv">$2</span><span class="s2">"</span>
+<span class="c"># The last track must be done outside the loop.</span>
+<span class="nb">echo</span> <span class="s2">"From </span><span class="nv">$start</span><span class="s2"> to the end: </span><span class="nv">$title</span><span class="s2">"</span>
+<span class="nv">file</span><span class="o">=</span><span class="s2">"</span><span class="nv">$escbook</span><span class="s2">/</span><span class="si">$(</span><span class="nb">printf</span> <span class="s2">"%.2d"</span> <span class="s2">"</span><span class="nv">$track</span><span class="s2">"</span><span class="si">)</span><span class="s2">-</span><span class="nv">$esctitle</span><span class="s2">.</span><span class="nv">$ext</span><span class="s2">"</span>
+<span class="nb">echo</span> <span class="s2">"Splitting </span><span class="se">\"</span><span class="nv">$title</span><span class="se">\"</span><span class="s2">..."</span> <span class="o">&amp;&amp;</span> ffmpeg <span class="nt">-nostdin</span> <span class="nt">-y</span> <span class="nt">-loglevel</span> <span class="nt">-8</span> <span class="nt">-i</span> <span class="s2">"</span><span class="nv">$inputaudio</span><span class="s2">"</span> <span class="nt">-ss</span> <span class="s2">"</span><span class="nv">$start</span><span class="s2">"</span> <span class="nt">-vn</span> <span class="nt">-c</span> copy <span class="s2">"</span><span class="nv">$file</span><span class="s2">"</span> <span class="o">&amp;&amp;</span>
+		<span class="nb">echo</span> <span class="s2">"Tagging </span><span class="se">\"</span><span class="nv">$title</span><span class="se">\"</span><span class="s2">..."</span> <span class="o">&amp;&amp;</span> tag <span class="nt">-a</span> <span class="s2">"</span><span class="nv">$author</span><span class="s2">"</span> <span class="nt">-A</span> <span class="s2">"</span><span class="nv">$booktitle</span><span class="s2">"</span> <span class="nt">-t</span> <span class="s2">"</span><span class="nv">$title</span><span class="s2">"</span> <span class="nt">-n</span> <span class="s2">"</span><span class="nv">$track</span><span class="s2">"</span> <span class="nt">-N</span> <span class="s2">"</span><span class="nv">$total</span><span class="s2">"</span> <span class="nt">-d</span> <span class="s2">"</span><span class="nv">$year</span><span class="s2">"</span> <span class="s2">"</span><span class="nv">$file</span><span class="s2">"</span>
+</code></pre></div></div> <h2 id="tag-script"> <a href="#tag-script" class="anchor-head"></a> tag script </h2> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="c">#!/bin/sh</span>
+
+err<span class="o">()</span> <span class="o">{</span> <span class="nb">echo</span> <span class="s2">"Usage:
+	tag [OPTIONS] file
+Options:
+	-a: artist/author
+	-t: song/chapter title
+	-A: album/book title
+	-n: track/chapter number
+	-N: total number of tracks/chapters
+	-d: year of publication
+	-g: genre
+	-c: comment
+You will be prompted for title, artist, album and track if not given."</span> <span class="o">&amp;&amp;</span> <span class="nb">exit </span>1 <span class="p">;</span><span class="o">}</span>
+
+<span class="k">while </span><span class="nb">getopts</span> <span class="s2">"a:t:A:n:N:d:g:c:f:"</span> o<span class="p">;</span> <span class="k">do case</span> <span class="s2">"</span><span class="k">${</span><span class="nv">o</span><span class="k">}</span><span class="s2">"</span> <span class="k">in
+	</span>a<span class="p">)</span> <span class="nv">artist</span><span class="o">=</span><span class="s2">"</span><span class="k">${</span><span class="nv">OPTARG</span><span class="k">}</span><span class="s2">"</span> <span class="p">;;</span>
+	t<span class="p">)</span> <span class="nv">title</span><span class="o">=</span><span class="s2">"</span><span class="k">${</span><span class="nv">OPTARG</span><span class="k">}</span><span class="s2">"</span> <span class="p">;;</span>
+	A<span class="p">)</span> <span class="nv">album</span><span class="o">=</span><span class="s2">"</span><span class="k">${</span><span class="nv">OPTARG</span><span class="k">}</span><span class="s2">"</span> <span class="p">;;</span>
+	n<span class="p">)</span> <span class="nv">track</span><span class="o">=</span><span class="s2">"</span><span class="k">${</span><span class="nv">OPTARG</span><span class="k">}</span><span class="s2">"</span> <span class="p">;;</span>
+	N<span class="p">)</span> <span class="nv">total</span><span class="o">=</span><span class="s2">"</span><span class="k">${</span><span class="nv">OPTARG</span><span class="k">}</span><span class="s2">"</span> <span class="p">;;</span>
+	d<span class="p">)</span> <span class="nb">date</span><span class="o">=</span><span class="s2">"</span><span class="k">${</span><span class="nv">OPTARG</span><span class="k">}</span><span class="s2">"</span> <span class="p">;;</span>
+	g<span class="p">)</span> <span class="nv">genre</span><span class="o">=</span><span class="s2">"</span><span class="k">${</span><span class="nv">OPTARG</span><span class="k">}</span><span class="s2">"</span> <span class="p">;;</span>
+	c<span class="p">)</span> <span class="nv">comment</span><span class="o">=</span><span class="s2">"</span><span class="k">${</span><span class="nv">OPTARG</span><span class="k">}</span><span class="s2">"</span> <span class="p">;;</span>
+	f<span class="p">)</span> <span class="nv">file</span><span class="o">=</span><span class="s2">"</span><span class="k">${</span><span class="nv">OPTARG</span><span class="k">}</span><span class="s2">"</span> <span class="p">;;</span>
+	<span class="k">*</span><span class="p">)</span> <span class="nb">printf</span> <span class="s2">"Invalid option: -%s</span><span class="se">\</span><span class="s2">
+"</span> <span class="s2">"</span><span class="nv">$OPTARG</span><span class="s2">"</span> <span class="o">&amp;&amp;</span> err <span class="p">;;</span>
+<span class="k">esac</span> <span class="k">done
+
+</span><span class="nb">shift</span> <span class="k">$((</span>OPTIND <span class="o">-</span> <span class="m">1</span><span class="k">))</span>
+
+<span class="nv">file</span><span class="o">=</span><span class="s2">"</span><span class="nv">$1</span><span class="s2">"</span>
+
+<span class="o">[</span> <span class="o">!</span> <span class="nt">-f</span> <span class="s2">"</span><span class="nv">$file</span><span class="s2">"</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s2">"Provide file to tag."</span> <span class="o">&amp;&amp;</span> err
+
+<span class="o">[</span> <span class="nt">-z</span> <span class="s2">"</span><span class="nv">$title</span><span class="s2">"</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s2">"Enter a title."</span> <span class="o">&amp;&amp;</span> <span class="nb">read</span> <span class="nt">-r</span> title
+<span class="o">[</span> <span class="nt">-z</span> <span class="s2">"</span><span class="nv">$artist</span><span class="s2">"</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s2">"Enter an artist."</span> <span class="o">&amp;&amp;</span> <span class="nb">read</span> <span class="nt">-r</span> artist
+<span class="o">[</span> <span class="nt">-z</span> <span class="s2">"</span><span class="nv">$album</span><span class="s2">"</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s2">"Enter an album."</span> <span class="o">&amp;&amp;</span> <span class="nb">read</span> <span class="nt">-r</span> album
+<span class="o">[</span> <span class="nt">-z</span> <span class="s2">"</span><span class="nv">$track</span><span class="s2">"</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s2">"Enter a track number."</span> <span class="o">&amp;&amp;</span> <span class="nb">read</span> <span class="nt">-r</span> track
+
+<span class="k">case</span> <span class="s2">"</span><span class="nv">$file</span><span class="s2">"</span> <span class="k">in</span>
+	<span class="k">*</span>.ogg<span class="p">)</span> <span class="nb">echo</span> <span class="s2">"Title=</span><span class="nv">$title</span><span class="s2">
+Artist=</span><span class="nv">$artist</span><span class="s2">
+Album=</span><span class="nv">$album</span><span class="s2">
+Track=</span><span class="nv">$track</span><span class="s2">
+Total=</span><span class="nv">$total</span><span class="s2">
+Date=</span><span class="nv">$date</span><span class="s2">
+Genre=</span><span class="nv">$genre</span><span class="s2">
+Comment=</span><span class="nv">$comment</span><span class="s2">"</span> | vorbiscomment <span class="nt">-w</span> <span class="s2">"</span><span class="nv">$file</span><span class="s2">"</span> <span class="p">;;</span>
+	<span class="k">*</span>.opus<span class="p">)</span> <span class="nb">echo</span> <span class="s2">"Title=</span><span class="nv">$title</span><span class="s2">
+Artist=</span><span class="nv">$artist</span><span class="s2">
+Album=</span><span class="nv">$album</span><span class="s2">
+Track=</span><span class="nv">$track</span><span class="s2">
+Total=</span><span class="nv">$total</span><span class="s2">
+Date=</span><span class="nv">$date</span><span class="s2">
+Genre=</span><span class="nv">$genre</span><span class="s2">
+Comment=</span><span class="nv">$comment</span><span class="s2">"</span> | opustags <span class="nt">-i</span> <span class="nt">-S</span> <span class="s2">"</span><span class="nv">$file</span><span class="s2">"</span> <span class="p">;;</span>
+	<span class="k">*</span>.mp3<span class="p">)</span> eyeD3 <span class="nt">-Q</span> <span class="nt">--remove-all</span> <span class="nt">-a</span> <span class="s2">"</span><span class="nv">$artist</span><span class="s2">"</span> <span class="nt">-A</span> <span class="s2">"</span><span class="nv">$album</span><span class="s2">"</span> <span class="nt">-t</span> <span class="s2">"</span><span class="nv">$title</span><span class="s2">"</span> <span class="nt">-n</span> <span class="s2">"</span><span class="nv">$track</span><span class="s2">"</span> <span class="nt">-N</span> <span class="s2">"</span><span class="nv">$total</span><span class="s2">"</span> <span class="nt">-Y</span> <span class="s2">"</span><span class="nv">$date</span><span class="s2">"</span> <span class="s2">"</span><span class="nv">$file</span><span class="s2">"</span> <span class="p">;;</span>
+	<span class="k">*</span><span class="p">)</span> <span class="nb">echo</span> <span class="s2">"File type not implemented yet."</span> <span class="p">;;</span>
+<span class="k">esac</span>
+</code></pre></div></div> <h2 id="use"> <a href="#use" class="anchor-head"></a> use </h2> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>booksplit path/to/audio path/to/timecodefile
+</code></pre></div></div> <h2 id="timecodefile"> <a href="#timecodefile" class="anchor-head"></a> timecodefile: </h2> <p>00:00:00 first part name hh:mm:ss second part name …</p> <h1 id="filters"> <a href="#filters" class="anchor-head"></a> filters </h1> <h2 id="frozen-frames-with-mpdecimate"> <a href="#frozen-frames-with-mpdecimate" class="anchor-head"></a> frozen frames with mpdecimate </h2> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ffmpeg -i input.mkv -vf mpdecimate,setpts=N/FRAME_RATE/TB -an output.mkv # remove frozen frames
+
+ffmpeg -hide_banner -nostats -an -i $IN -vf "freezedetect=n=${NOISE}dB:d=${DURATION}" -f null - 2&gt;&amp;1 | grep -e "freeze_start" -e "freeze_end" # detect frozen frames 
+</code></pre></div></div> <h2 id="video-stabliser-vidstabs"> <a href="#video-stabliser-vidstabs" class="anchor-head"></a> video stabliser vidstabs </h2> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ffmpeg -i input.mp4 -vf vidstabdetect -f null - # Use default values
+
+ffmpeg -i input.mp4 -vf vidstabdetect=shakiness=10:accuracy=15:result="mytransforms.trf" -f null - # Analyzing strongly shaky video and putting the results in file mytransforms.trf
+
+ffmpeg -i input.mp4 -vf vidstabdetect=show=1 dummy_output.mp4 # Visualizing the result of internal transformations in the resulting video
+
+ffmpeg -i input.mp4 -vf vidstabdetect=shakiness=5:show=1 dummy_output.mp4 # Analyzing a video with medium shakiness
+
+ffmpeg -i input.mp4 -vf vidstabtransform,unsharp=5:5:0.8:3:3:0.4 out_stabilized.mp4 # Using default values
+
+ffmpeg -i input.mp4 -vf vidstabtransform=zoom=5:input="mytransforms.trf" out_stabilized.mp4 # Zooming-in a bit more and load transform data from a given file
+
+ffmpeg -i input.mp4 -vf vidstabtransform=smoothing=30:input="mytransforms.trf" out_stabilized.mp4 # Smoothening the video even more
+</code></pre></div></div> </div> </article> </main> <nav class="post-nav"> <a class="post-nav-item post-nav-prev" href="/wiki/ssh/" > <div class="nav-arrow">کهنه‌تر</div> <span class="post-title">SSH</span> </a> </nav> <footer class="footer"> <!-- <a class="footer_item" href="/thanks">سپاس</a> --> <a class="footer item" href="https://github.com/mhdzli" target="_blank" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer"> <i class="fab fa-github"></i> گیت‌هاب </a> <a class="footer item" href="https://fosstodon.org/@mzeinali" target="_blank" rel="noopener noreferrer"> <i class="fab fa-mastodon"></i> mastodon </a> <a class="footer item" href="https://mas.to/@mz" target="_blank" rel="noopener noreferrer"> <i class="fab fa-mastodon"></i> ماستودون </a> <a class="footer item" href="https://odysee.com/@mzeinali:c" target="_blank" rel="noopener noreferrer"> <i class="fa fa-video"></i> لایبرری </a> <a class="footer item" href="https://pixelfed.de/mzeinali" target="_blank" rel="noopener noreferrer"> <i class="fa fa-camera"></i> پیکسلفد </a> <a class="footer item" href="/feed.xml"> <i class="fa fa-rss"></i> خوراک </a> <a class="footer item" href="mailto:m@zmim.ir"> <i class="fa fa-envelope-open"></i> تماس </a> <!-- <a class="footer_item" href="javascript::void(0)">رزومه</a> <span class="footer_item">&copy; 2023</span> --> <small class="footer_copyright"> <small id="license"> <i class="fab fa-creative-commons"></i> نوشته‌های این وبلاگ با پروانه <a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.fa" target="_blank" rel="noopener noreferrer"> کریتیو کامنز اتریبیوشن ۴.۰ اینترنشنال </a>منتشر شده‌اند. </small> <!-- simorq Theme: https://github.com/mhdzli/simorq تم <a href="https://github.com/mhdzli/simorq" target="_blank" rel="noreferrer noopener" > سیمرغ </a> نیرو گرفته از <a href="https://jekyllrb.com" target="_blank" rel="noreferrer noopener"> jekyll </a> --> </small> </footer> <script src="/assets/js/jquery-3.3.1.min.js"></script> <script src="/assets/js/persianumber.js"></script> <script> $(document).ready(function(){ $('.post-item-date').persiaNumber(); $('.archive-date').persiaNumber(); $('.recent-date').persiaNumber(); $('.post-updated-at').persiaNumber(); $('.date-modify').persiaNumber(); $('.header-date').persiaNumber(); }); </script> <script src="/assets/js/main.js" defer="defer"></script> </div> </body> </html>

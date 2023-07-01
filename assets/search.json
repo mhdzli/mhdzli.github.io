@@ -1,6 +1,27 @@
 [
   
     {
+      "title"    : "مدیریت فایل‌های تنظیمات با استفاده از Git bare",
+      "tags"     : "git, dotfiles, linux",
+      "url"      : "/How-to-manage-dotfiles-with-git-bare-repo/",
+      "date"     : "2023-07-01 21:10:00 +0330"
+    } ,
+  
+    {
+      "title"    : "تنظیمات صفحه کلید در گنو/لینوکس",
+      "tags"     : "foss, swaywm, wayland, xorg, linux",
+      "url"      : "/keyboard-configurations/",
+      "date"     : "2022-04-22 10:42:36 +0430"
+    } ,
+  
+    {
+      "title"    : "افزودن terminfo به سرور",
+      "tags"     : "foss, termux, ssh, linux",
+      "url"      : "/Adding-terminfo-entries-to-a-remote-machine/",
+      "date"     : "2022-03-24 20:42:36 +0430"
+    } ,
+  
+    {
       "title"    : "نصب Ubuntu 20.04 روی تبلت Lenovo Thinkpad 10",
       "tags"     : "foss, ubuntu, touch",
       "url"      : "/Installing-Ubuntu-20.04-on-a-32-bit-uefi-device/",
